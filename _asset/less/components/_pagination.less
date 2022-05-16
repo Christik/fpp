@@ -30,6 +30,10 @@
   .pagination-divider { width: auto; }
 }
 
+@media @maxMobileOld {
+  .pagination-page { font-size: .6rem; }
+}
+
 @media (hover: hover) {
   .pagination-page:not(.pagination-page_current):hover { border-color: @color-primary; color: @color-primary; }
 }
@@ -45,6 +49,11 @@
     &:nth-child(1) { fill: @color-text; }
     &:nth-child(2) { stroke: @color-text; }
   }
+}
+
+@media @maxMobileOld {
+  .pagination-next__text { font-size: .6rem; }
+  .pagination-next__icon { width: .8rem; height: .8rem; margin-left: .5rem; }
 }
 
 @media (hover: hover) {

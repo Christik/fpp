@@ -1348,6 +1348,10 @@ div.form-error {
           justify-content: center;
   text-align: center;
 }
+.dropzone .dz-preview .dz-progress,
+.dropzone .dz-preview .dz-details,
+.dropzone .dz-preview .dz-success-mark,
+.dropzone .dz-preview .dz-error-mark,
 .dropzone .dz-preview .dz-image {
   z-index: 3;
 }
@@ -2297,6 +2301,11 @@ hr {
     font-size: 0.7rem;
   }
 }
+@media (max-width: 370px) {
+  .site-links {
+    font-size: 0.6rem;
+  }
+}
 @media (hover: hover) {
   .site-links__group a:hover {
     color: #CCBDA2;
@@ -2544,7 +2553,11 @@ hr {
     padding-right: 0;
   }
   .page-footer__bottom {
-    border-top: solid 1px rgba(255, 255, 255, 0.1);
+    border-top: solid 1px rgba(255, 255, 255, 0.3);
+    margin-left: -1.2rem;
+    margin-right: -1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
   }
 }
 /* ==========================================================================
@@ -2719,6 +2732,8 @@ hr {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
             transform: rotate(90deg);
+    position: relative;
+    top: 1px;
   }
   .page-footer__nav .page-group-nav__list {
     display: none;
@@ -2755,9 +2770,14 @@ hr {
   .page-footer__nav__col:nth-child(3) {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2.5rem;
     border-top: none;
     margin-top: 0;
+  }
+}
+@media (max-width: 370px) {
+  .page-footer__nav .page-group-nav__title {
+    font-size: 0.8rem;
   }
 }
 /* ==========================================================================
@@ -3453,6 +3473,11 @@ hr {
     width: auto;
   }
 }
+@media (max-width: 370px) {
+  .pagination-page {
+    font-size: 0.6rem;
+  }
+}
 @media (hover: hover) {
   .pagination-page:not(.pagination-page_current):hover {
     border-color: #153270;
@@ -3485,6 +3510,16 @@ hr {
 }
 .pagination-next__icon path:nth-child(2) {
   stroke: #071228;
+}
+@media (max-width: 370px) {
+  .pagination-next__text {
+    font-size: 0.6rem;
+  }
+  .pagination-next__icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: 0.5rem;
+  }
 }
 @media (hover: hover) {
   .pagination-next:hover {
@@ -3929,6 +3964,21 @@ hr {
   .daterangepicker .drp-buttons .applyBtn {
     float: none;
     width: 100%;
+  }
+}
+@media (max-width: 370px) {
+  .daterangepicker {
+    width: 300px;
+  }
+  .daterangepicker .drp-calendar {
+    padding: 0.5rem;
+  }
+  .daterangepicker .calendar-table th,
+  .daterangepicker .calendar-table td {
+    width: 1.5rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    line-height: 1.5rem;
   }
 }
 /* ==========================================================================
@@ -4400,6 +4450,12 @@ hr {
     height: auto;
   }
 }
+@media (max-width: 370px) {
+  .form-check__form {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}
 /* ==========================================================================
    Form Check Nav
    ========================================================================== */
@@ -4482,6 +4538,15 @@ hr {
   }
   .form-check-nav__item:first-child {
     padding-left: 2rem;
+  }
+}
+@media (max-width: 370px) {
+  .form-check-nav__item {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .form-check-nav__item:first-child {
+    padding-left: 1.2rem;
   }
 }
 @media (hover: hover) {
@@ -5822,6 +5887,16 @@ hr {
     font-size: 1.1rem;
   }
 }
+@media (max-width: 370px) {
+  .step {
+    width: 6.5rem;
+    height: 6.5rem;
+    padding: 0.5rem 0.6rem;
+  }
+  .step__num {
+    font-size: 0.8rem;
+  }
+}
 /* ==========================================================================
    Page Inside Steps
    ========================================================================== */
@@ -5917,6 +5992,18 @@ hr {
     -webkit-transform: rotate(135deg);
         -ms-transform: rotate(135deg);
             transform: rotate(135deg);
+  }
+}
+@media (max-width: 370px) {
+  .steps {
+    width: 14rem;
+  }
+  .steps__arrow {
+    width: 1rem;
+  }
+  .steps__arrow:after {
+    width: 0.5rem;
+    height: 0.5rem;
   }
 }
 /* ==========================================================================
@@ -6134,6 +6221,14 @@ hr {
 @media (max-width: 1239px) {
   .news-footer {
     padding-top: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .news-footer {
+    display: block;
+  }
+  .news-footer__date {
+    margin-bottom: 1rem;
   }
 }
 /* ==========================================================================
@@ -6612,6 +6707,18 @@ hr {
     margin-left: -10rem;
   }
 }
+@media (max-width: 767px) {
+  .doc-footer {
+    display: block;
+  }
+  .doc-footer__text:last-child {
+    text-align: inherit;
+    margin-left: 0;
+  }
+  .doc-footer__text + .doc-footer__text {
+    margin-top: 1rem;
+  }
+}
 /* ==========================================================================
    Reception Contacts
    ========================================================================== */
@@ -6884,6 +6991,15 @@ hr {
   .form-feedback__submit {
     width: 100%;
     margin: 1.5rem 0 0;
+  }
+}
+@media (max-width: 370px) {
+  .form-feedback__footer__captcha {
+    width: 100%;
+  }
+  .form-feedback__footer__captcha .captcha-form__input {
+    padding-left: 0.5rem;
+    padding-right: 0;
   }
 }
 /* ==========================================================================
@@ -7712,6 +7828,21 @@ hr {
   }
   .landing-pic_side .landing-pic__img {
     width: 13rem;
+  }
+}
+@media (max-width: 370px) {
+  .landing-pic_initial,
+  .landing-pic_initial-new {
+    width: 50%;
+  }
+  .landing-pic_initial .landing-pic__img,
+  .landing-pic_initial-new .landing-pic__img {
+    width: 100%;
+  }
+  .landing-pic_initial .landing-pic__caption,
+  .landing-pic_initial-new .landing-pic__caption {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
 }
 /* ==========================================================================

@@ -11,15 +11,15 @@ $(document).ready(function(){
     scrollParallax($('.landing-head__photo-small'), $('.landing-head'), 10);
 
     function scrollParallax(obj, parent, ratio, isBottom) {
-        let margin = isBottom ? 'margin-bottom' : 'margin-top';
+        if ( window.matchMedia('(min-width: 999px)').matches ) {
+            let margin = isBottom ? 'margin-bottom' : 'margin-top';
 
-        obj.css(margin, ($(document).scrollTop() - parent.offset().top)/ratio + 'px');
+            obj.css(margin, ($(document).scrollTop() - parent.offset().top)/ratio + 'px');
 
-        $(document).on('scroll', function() {
-            if ( window.matchMedia('(min-width: 999px)').matches ) {
+            $(document).on('scroll', function() {
                 obj.css(margin, ($(document).scrollTop() - parent.offset().top)/ratio + 'px');
-            }
-        });
+            });
+        }
     }
 
     /* ======================================================================== */

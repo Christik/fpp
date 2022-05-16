@@ -81,3 +81,11 @@
 @media @maxTablet and @minMobile {
     .doc-footer { margin-left: -10rem; }
 }
+
+@media @maxMobile {
+    .doc-footer { display: block; }
+    .doc-footer__text {
+        &:last-child { text-align: inherit; margin-left: 0; }
+        + .doc-footer__text { margin-top: 1rem; }
+    }
+}

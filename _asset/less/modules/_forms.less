@@ -121,7 +121,13 @@ div.form-error { color: @color-red; margin: .25em 0 0; font-size: .8rem; font-we
 
 .dropzone { border: dashed 1px @color-border-blue; border-radius: 1rem; min-height: auto; padding: 1rem;
   .dz-message { margin: 0 auto; font-size: .8rem; line-height: 1.5; font-weight: 500; max-width: 22rem; min-height: 4rem; display: flex; align-items: center; justify-content: center; text-align: center; }
-  .dz-preview .dz-image { z-index: 3; }
+  .dz-preview {
+    .dz-progress,
+    .dz-details,
+    .dz-success-mark,
+    .dz-error-mark,
+    .dz-image { z-index: 3; }
+  }
 }
 
 @media (hover: hover) {
