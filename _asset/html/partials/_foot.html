@@ -1,0 +1,53 @@
+<script src="_asset/js/jquery-3.6.0.min.js"></script>
+<script src="_asset/js/swiper-bundle.min.js"></script>
+<script src="_asset/js/js-throttle-debounce.min.js"></script>
+<script src="_asset/js/snap.svg-min.js"></script>
+<script src="_asset/js/custom-select.min.js"></script>
+<script src="_asset/js/moment.min.js"></script>
+<script src="_asset/js/moment-with-locales.min.js"></script>
+<script src="_asset/js/underscore-min.js"></script>
+<script src="_asset/js/daterangepicker.min.js"></script>
+<script src="_asset/js/clndr.min.js"></script>
+<script src="_asset/js/chart.min.js"></script>
+<script src="_asset/js/chartjs-plugin-datalabels.js"></script>
+<script src="_asset/js/jquery.validate.min.js"></script>
+<script src="_asset/js/dropzone-min.js"></script>
+<script src="_asset/js/app.js"></script>
+@@pageScript
+
+<!-- Версия для слабовидящих -->
+<script src="_asset/js/bvi.js"></script>
+<script>
+    const bviVar = new isvek.Bvi({
+        speech: false,
+        target: '.bvi-open',
+        fontSize: 16,
+        panelFixed: false,
+        images: true,
+        builtElements: true,
+        reload: true,
+    });
+
+    document.addEventListener('click', function (e) {
+       if (e.target.closest('.bvi-open')) {
+           document.location.reload();
+           switchBviStyles();
+       }
+    });
+
+    switchBviStyles();
+
+    function switchBviStyles() {
+        if (document.body.classList.contains('bvi-active')) {
+            const linkApp = document.querySelector('#styles-app');
+            linkApp.href = '_asset/css/styles-bvi.css';
+
+            const linkBvi = document.createElement('link');
+            linkBvi.rel = 'stylesheet';
+            linkBvi.type = 'text/css';
+            linkBvi.href = '_asset/css/bvi.css';
+
+            document.querySelector('head').insertBefore(linkBvi, linkApp);
+        }
+    }
+</script>

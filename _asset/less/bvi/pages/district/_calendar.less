@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Schedule Calendar
+   ========================================================================== */
+
+.schedule-calendar { border-radius: 1rem; border: solid 1px #000; padding: 40px; width: 100%; }
+.schedule-calendar__title { font-weight: 700; margin: 0 2.5em 2em 0; }
+.schedule-calendar__close { position: absolute; top: 10px; right: 10px; }
+
+@media @maxTabletBvi {
+  .schedule-calendar { max-width: 400px; padding: 30px; }
+}
+
+/* ==========================================================================
+   Calendar Month
+   ========================================================================== */
+
+.calend-month { text-align: center; }
+.calend-month__title { font-weight: 700; text-transform: capitalize; margin: 0 0 1.5em; }
+
+/* ==========================================================================
+   Calendar Month Grid
+   ========================================================================== */
+
+.calend-month-grid { display: flex; flex-wrap: wrap; margin: 0 auto; }
+.calend-month-grid__item { width: 14.28%; line-height: 34px; text-align: center; margin: 2px 0 0; }
+.calend-month-grid__label { }
+.calend-month-grid__day {
+  &.event { color: @bvi-white-bg; background: @bvi-white;
+    body .bvi-body[data-bvi-theme=black] & { color: @bvi-black-bg; background: @bvi-black; }
+    body .bvi-body[data-bvi-theme=green] & { color: @bvi-green-bg; background: @bvi-green; }
+    body .bvi-body[data-bvi-theme=brown] & { color: @bvi-brown-bg; background: @bvi-brown; }
+    body .bvi-body[data-bvi-theme=blue] & { color: @bvi-blue-bg; background: @bvi-blue; }
+  }
+  &.last-month,
+  &.next-month { color: transparent; background: none; }
+}
+
+/* ==========================================================================
+   Calendar Months
+   ========================================================================== */
+
+.calend-months { display: flex; justify-content: space-between; position: relative;
+  .calend-month { width: 250px; }
+}
+.calend-months__divider { border-left: solid 1px #000; width: 0;
+  &:first-of-type { display: none; }
+}
+
+@media @maxTabletBvi {
+  .calend-months__divider { display: none; }
+  .calend-month {
+    &:nth-of-type(4),
+    &:nth-of-type(6) { display: none !important; }
+  }
+}
+
+/* ==========================================================================
+   Calendar Nav
+   ========================================================================== */
+
+.schedule-calendar__nav { position: absolute; top: 0; border: none; background: none; display: flex; align-items: center;
+  svg { display: none; }
+
+  &_prev { left: 0;
+    &:before { content: '<'; }
+  }
+  &_next { right: 0;
+    &:before { content: '>'; }
+  }
+}

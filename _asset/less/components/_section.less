@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Section
+   ========================================================================== */
+
+.section { position: relative; padding: 6.5rem 0 7rem;
+  &_white { background-color: #fff; }
+  &_grey { background-color: @color-bg; }
+}
+.section__head { margin: 0 0 2rem; }
+.section__bottom { margin: 2rem 0 0; }
+
+@media @maxTablet {
+  .section { padding: 3.5rem 0; }
+  .section__head { margin-bottom: 1.5rem; }
+}
+
+@media @maxMobile {
+  .section { padding: 3rem 0; }
+}

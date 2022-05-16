@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Page Inside Head
+   ========================================================================== */
+
+.page-inside-head { position: relative; margin: 0 0 40px; }
+.page-inside-head__title { margin: 0 0 1em; }
+.page-inside-head__content { padding: 0 0 40px; border-bottom: solid 1px #000; }
+
+.page-inside-head__cols { display: flex; }
+.page-inside-head__cols__item { width: 50%; padding: 0 40px 0 0; }
+.page-inside-head__text { }
+.page-inside-head__links { display: flex; flex-wrap: wrap;
+  li:not(:last-child) { margin-right: 40px; }
+  a { padding: .25em; }
+
+  .page-inside-head__text + & { margin-top: 40px; }
+}
+
+@media @maxTabletBvi {
+  .page-inside-head__cols { display: block; }
+  .page-inside-head__cols__item { width: auto; padding: 0; }
+}
+

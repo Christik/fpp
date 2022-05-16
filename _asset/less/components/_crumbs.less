@@ -1,0 +1,24 @@
+/* ==========================================================================
+   Crumbs
+   ========================================================================== */
+
+.crumbs { font-size: .7rem; line-height: 2;
+  li { display: inline-block; padding: 0 1rem; position: relative; white-space: nowrap;
+    &:first-child { font-weight: 800; padding-left: 0; }
+    &:last-child { padding-right: 0; }
+    &:not(:first-child):before { content: ''; display: block; position: absolute; left: 0; top: 50%; transform: translate(-50%,-50%) rotate(45deg); width: 4px; height: 4px; background: @color-text; }
+  }
+
+  &_white { color: #fff;
+    li:not(:first-child):before { background-color: #fff; }
+    .text-link { color: #fff; }
+  }
+}
+
+@media (hover: hover) {
+  .crumbs {
+    &_white {
+      .text-link:hover { opacity: .7; }
+    }
+  }
+}

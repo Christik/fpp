@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Filter
+   ========================================================================== */
+
+.filter { }
+.filter__buttons { }
+
+.filter-fields { display: flex; justify-content: space-between; }
+.filter-field { position: relative; width: 32%; }
+
+.filter-buttons { display: flex; flex-wrap: wrap; margin: 1em 0 0; }
+.filter-buttons__item {
+  &:not(:last-child) { margin-right: 2em; }
+}
+
+@media @maxTabletBvi {
+  .filter-fields { display: block; }
+  .filter-field { width: auto; margin: 0 0 1em; }
+
+  .filter-buttons { display: block; }
+  .filter-buttons__item { margin: 0 0 1em !important; display: block; width: 100%; }
+}

@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Page Inside Grid
+   ========================================================================== */
+
+.page-inside { display: flex; align-items: flex-start; width: 100%; padding: 0 0 60px;
+  &_no-padding { }
+  &_no-padding-top { }
+}
+.page-inside__side { width: 300px; min-width: 300px; position: relative; padding: 0 30px 0 0; }
+.page-inside__content { flex-grow: 1; }
+.page-inside__content__container { }
+.page-inside__content__full { }
+.page-inside__content__right-width { }
+
+.page-inside__side-note { position: relative; height: 0;
+  &.over-landing-h2 { margin-top: 3.5rem; }
+}
+.page-inside__side-note__in { position: absolute; top: 0; left: -300px; width: 270px;
+  .page-inside__side-note.direction-reverse & { top: auto; bottom: 0; }
+}
+.page-inside__side-note__right { display: none; }
+
+@media @maxTabletBvi {
+  .page-inside { display: block; }
+  .page-inside__side { display: none; }
+
+  .page-inside__side-note { height: auto; margin: 0 0 30px; }
+  .page-inside__side-note__in { position: static; width: auto; }
+}
+
+/* ==========================================================================
+   Page Inside Center
+   ========================================================================== */
+
+.page-inside-center { padding: 0 0 60px; }
+

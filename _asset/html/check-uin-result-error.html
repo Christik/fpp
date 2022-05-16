@@ -1,0 +1,82 @@
+@@include('./partials/_head.html', {
+    "title": "Федеральная пробирная палата",
+})
+<body>
+<div class="page">
+    @@include('./partials/_header.html')
+
+    <main class="page-content">
+        <div class="container">
+            <div class="crumbs-panel page-content__top-panel">
+                <div class="crumbs-panel__left">
+                    <ul class="crumbs">
+                        <li><a class="text-link" href="#">Главная</a></li>
+                        <li><a class="text-link" href="#">Проверить ювелирное изделие</a></li>
+                    </ul>
+                </div><!--.crumbs-panel__left-->
+
+                <div class="crumbs-panel__right">
+                    @@include('./components/_share.html')
+                </div><!--.crumbs-panel__right-->
+            </div><!--.crumbs-panel-->
+
+            <h1 class="h1 page-content__title">
+                Проверить<br/>
+                ювелирное изделие
+            </h1>
+
+            <div class="page-inside page-inside_no-padding-top check-org">
+                <aside class="page-inside__side">
+                    <p class="text-basic">
+                        <a href="#"
+                           class="text-link text-link_arrow">Проверить организацию</a>
+                    </p>
+                </aside><!--.page-inside__side-->
+
+                <article class="page-inside__content">
+                    <div class="page-inside__content__container">
+                        <div class="article-content check-org__text">
+                            <p class="loud">Получить информацию о происхождении ювелирного изделия и его характеристиках по уникальному идентификационному номеру (УИН)</p>
+                        </div><!--.article-content-->
+
+                        <form class="form-check-org">
+                            <div class="form-row">
+                                <input type="text"
+                                       class="form-field form-row__field"
+                                       placeholder="Введите УИН">
+                                <button type="submit" class="button">
+                                    Проверить
+                                </button>
+                            </div><!--.form-row-->
+                        </form>
+                    </div><!--.page-inside__content__container-->
+                </article><!--.page-inside__content-->
+            </div><!--.page-inside-->
+
+            <section class="page-inside tabs check-org-result">
+                <aside class="page-inside__side check-org-result__side">
+                </aside><!--.page-inside__side-->
+
+                <div class="page-inside__content">
+                    <div class="page-inside__content__container">
+                        <div class="check-org-result__head">
+                            <h2 class="h3">Результат проверки: 1027700201902</h2>
+                        </div>
+
+                        <p class="alert-row">
+                            Проверочный код введен неверно
+                        </p>
+                    </div><!--.page-inside__content__container-->
+                </div><!--.page-inside__content-->
+            </section><!--.page-inside-->
+        </div><!--.container-->
+    </main><!--.page-content-->
+
+    @@include('./partials/_footer.html')
+</div><!--.page-->
+
+@@include('./partials/_foot.html', {
+"pageScript": ''
+})
+</body>
+</html>

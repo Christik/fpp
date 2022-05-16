@@ -1,0 +1,21 @@
+.align-items(@val) when  ( @val = flex-start ) {
+	-webkit-box-align: start;
+	-moz-box-align: start;
+	-ms-flex-align: start;
+	-webkit-align-items: @val;
+	align-items: @val;
+}
+.align-items(@val) when  ( @val = flex-end ) {
+	-webkit-box-align: end;
+	-moz-box-align: end;
+	-ms-flex-align: end;
+	-webkit-align-items: @val;
+	align-items: @val;
+}
+.align-items(@val) when not ( @val = flex-end ), not ( @val = flex-start ) {
+	-webkit-box-align: @val;
+	-moz-box-align: @val;
+	-ms-flex-align: @val;
+	-webkit-align-items: @val;
+	align-items: @val;
+}

@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Info News
+   ========================================================================== */
+
+.info-news { }
+.info-news__date { margin: 0 0 1em; }
+.info-news__title { font-family: @font-addl; font-size: 1rem; line-height: 1.3; font-weight: 500; }
+
+@media @maxTablet {
+  .info-news__title { font-size: .7rem; }
+}
+
+@media @maxMobile {
+  .info-news__title { font-size: 1rem; }
+}
+
+/* ==========================================================================
+   Info News Grid
+   ========================================================================== */
+
+.info-news-grid { display: flex; margin: 0 -2.5rem; }
+.info-news-grid__col { width: 33.333333%; padding: 0 2.5rem;
+  &:not(:first-child) { border-left: solid 1px @color-border; }
+}
+
+@media @maxTablet {
+  .info-news-grid { margin: 0 -1.2rem; }
+  .info-news-grid__col { padding: 0 1.2rem; }
+}
+
+@media @maxMobile {
+  .info-news-grid { display: block; margin: 0; }
+  .info-news-grid__col { width: auto; padding: 0;
+    &:not(:first-child) { border-left: none; border-top: solid 1px @color-border; padding-top: 1.4rem; margin-top: 1.4rem; }
+  }
+}

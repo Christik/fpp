@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Faq
+   ========================================================================== */
+
+.faq { }
+.faq__side { padding-top: 5rem; }
+.faq__head { min-height: 5rem; padding: 0 0 1.5rem; color: @color-text-blue; }
+
+@media @maxMobile {
+  .faq__head { min-height: auto; }
+}
+
+/* ==========================================================================
+   Faq Item
+   ========================================================================== */
+
+.faq-item { position: relative; }
+
+.faq-item__head { position: relative; padding: 1.5rem 4rem 1.5rem 0; cursor: pointer; }
+.faq-item__question { font-weight: 700; margin: 0; font-size: .9rem; line-height: 1.4; }
+.faq-item__arrow { position: absolute; right: 0; top: 50%; transform: translateY(-50%) rotate(0); transition: transform .3s; }
+
+.faq-item__body { display: none; padding: 0 4rem 3rem 0; }
+
+// is opened
+.faq-item.is-opened {
+  .faq-item__arrow { transform: translateY(-50%) rotate(180deg); }
+}
+
+@media @maxTablet {
+  .faq-item__head { padding-right: 3rem; }
+  .faq-item__body { padding-right: 3rem; padding-bottom: 2rem; }
+  .faq-item__question { font-size: .7rem; }
+}
+
+@media @maxMobile {
+  .faq-item__head { padding-top: 1rem; padding-bottom: 1rem; }
+  .faq-item__question { font-weight: 600; }
+  .faq-item__body .text-basic { font-size: .7rem; }
+}
+
+@media (hover: hover) {
+  .faq-item__head:hover {
+    .faq-item__question { color: @color-primary; }
+    .faq-item__arrow { border-color: @color-primary;
+      path {
+        &:nth-child(1) { fill: @color-primary; }
+        &:nth-child(2) { stroke: @color-primary; }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+   Faq List
+   ========================================================================== */
+
+.faq-list { margin-top: -1.5rem;
+  .faq-item {
+    &:not(:first-child) { border-top: solid 1px @color-border; }
+  }
+}
+
+@media @maxMobile {
+  .faq-list { margin-top: 0; }
+}
+
+/* ==========================================================================
+   Faq Nav Mobile
+   ========================================================================== */
+
+.faq__nav { margin: 0 0 1rem; }
+.faq__nav__label { margin: 0 0 1em; font-size: .7rem; font-weight: 500; }

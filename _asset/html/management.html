@@ -1,0 +1,122 @@
+@@include('./partials/_head.html', {
+    "title": "Федеральная пробирная палата",
+})
+<body>
+<div class="page">
+    @@include('./partials/_header.html')
+
+    <main class="page-content">
+        <div class="container">
+            <div class="crumbs-panel page-content__top-panel">
+                <div class="crumbs-panel__left">
+                    <ul class="crumbs">
+                        <li><a class="text-link" href="#">Главная</a></li>
+                        <li><a class="text-link" href="#">Руководство</a></li>
+                    </ul>
+                </div><!--.crumbs-panel__left-->
+
+                <div class="crumbs-panel__right">
+                    @@include('./components/_share.html')
+                </div><!--.crumbs-panel__right-->
+            </div><!--.crumbs-panel-->
+
+            <h1 class="h1 page-content__title">
+                Руководство ФПП
+            </h1>
+
+            <div class="page-inside-center management">
+                <div class="manager-preview-main">
+                    <a href="#">
+                        <img class="lazyload manager-preview-main__photo"
+                             data-sizes="auto"
+                             data-srcset="_asset/uploads/management/zubarev-preview.jpg 230w, _asset/uploads/management/zubarev-preview@2x.jpg 460w"
+                             width="230" height="285"
+                             alt="Зубарев Юрий Иванович">
+                    </a>
+                    <div class="manager-preview-main__content">
+                        <p class="manager-preview-main__name">
+                            <a class="text-link" href="#">
+                                Зубарев Юрий Иванович
+                            </a>
+                        </p>
+                        <p class="manager-preview-main__status">
+                            Руководитель Федеральной пробирной палаты
+                        </p>
+                    </div>
+                </div><!--.manager-preview-main-->
+
+                <div class="management__list">
+                    <h2 class="h3 management__list__title">
+                        Заместители руководителя
+                    </h2>
+
+                    <div class="manager-previews">
+                        <div class="manager-previews__item">
+                            <div class="manager-preview">
+                                <a href="#">
+                                    <img class="manager-preview__photo lazyload"
+                                         data-sizes="auto"
+                                         data-srcset="_asset/uploads/management/bogodist-preview.jpg 180w, _asset/uploads/management/bogodist-preview@2x.jpg 360w"
+                                         width="180" height="210"
+                                         alt="Богодист Дмитрий Валерьевич">
+                                </a>
+                                <p class="manager-preview__text">
+                                    <a class="text-link" href="#">
+                                        Богодист Дмитрий Валерьевич
+                                    </a>
+                                </p>
+                            </div><!--.manager-preview-->
+                        </div><!--.manager-previews__item-->
+
+                        <div class="manager-previews__item">
+                            <div class="manager-preview">
+                                <a href="#">
+                                    <img class="manager-preview__photo lazyload"
+                                         data-sizes="auto"
+                                         data-srcset="_asset/uploads/management/zamyshlyaev-preview.jpg 180w, _asset/uploads/management/zamyshlyaev-preview@2x.jpg 360w"
+                                         width="180" height="210"
+                                         alt="Замышляев Дмитрий Владимирович">
+                                </a>
+                                <p class="manager-preview__text">
+                                    <a class="text-link" href="#">
+                                        Замышляев Дмитрий Владимирович
+                                    </a>
+                                </p>
+                            </div><!--.manager-preview-->
+                        </div><!--.manager-previews__item-->
+
+                        <div class="manager-previews__item">
+                            <div class="manager-preview">
+                                <a href="#">
+                                    <img class="manager-preview__photo lazyload"
+                                         data-sizes="auto"
+                                         data-srcset="_asset/uploads/management/trocenko-preview.jpg 180w, _asset/uploads/management/trocenko-preview@2x.jpg 360w"
+                                         width="180" height="210"
+                                         alt="Троценко Светлана Анатольевна">
+                                </a>
+                                <p class="manager-preview__text">
+                                    <a class="text-link" href="#">
+                                        Троценко Светлана Анатольевна
+                                    </a>
+                                </p>
+                            </div><!--.manager-preview-->
+                        </div><!--.manager-previews__item-->
+                    </div><!--.manager-previews-->
+                </div><!--.management__list-->
+
+                <div class="article-content management__text">
+                    <p>Федеральную пробирную палату возглавляет руководитель, назначаемый на должность и освобождаемый от должности Правительством Российской Федерации по представлению Министра финансов Российской Федерации.</p>
+                    <p>Руководитель Федеральной пробирной палаты несет персональную ответственность за осуществление возложенных на Федеральную пробирную палату полномочий.</p>
+                </div>
+            </div><!--.page-inside-center-->
+        </div><!--.container-->
+    </main><!--.page-content-->
+
+    @@include('./partials/_footer.html')
+</div><!--.page-->
+
+@@include('./partials/_foot.html', {
+"pageScript": ''
+})
+</body>
+</html>

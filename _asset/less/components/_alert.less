@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Alert
+   ========================================================================== */
+
+.alert { background: #fff; border-radius: .5rem; padding: 1rem; display: flex; align-items: flex-start; }
+.alert__icon { width: 1.2rem; height: 1.2rem; min-width: 1.2rem; margin: 0 1rem 0 0;
+  .button-circle__attention { font-size: 1rem; }
+}
+.alert__text { font-size: .7rem; line-height: 1.5; font-weight: 500; }
+
+/* ==========================================================================
+   Alert Row
+   ========================================================================== */
+
+.alert-row { font-size: .8rem; line-height: 1.5; font-weight: 500; position: relative; padding: 0 0 0 2rem;
+  &:before { content: ''; display: block; width: 1.2rem; height: 1.2rem; border-radius: 50%; background: @color-primary url('@{path-images}/alert.svg') no-repeat 50% 50%; position: absolute; left: 0; top: 0; }
+}

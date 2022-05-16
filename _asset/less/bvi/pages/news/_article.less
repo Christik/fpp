@@ -1,0 +1,31 @@
+/* ==========================================================================
+   News Head
+   ========================================================================== */
+
+.news-head { padding: 1px 0 3.5em; position: relative; background: none !important; }
+
+.news-head__content { position: relative; margin: 4em 0 0; display: flex; }
+.news-head__content__left { width: 200px; min-width: 200px; padding: 0 1em 0 0; }
+.news-head__content__right { flex-grow: 1; }
+
+.news-head__date { display: block; font-weight: 700; margin: .5em 0 1em; }
+
+.news-head__title { margin: 0; }
+
+@media @maxMobile {
+  .news-head__content { display: block; }
+  .news-head__content__left { width: auto; min-width: auto; padding: 0; }
+}
+
+/* ==========================================================================
+   News Footer
+   ========================================================================== */
+
+.news-footer { display: flex; align-items: center; justify-content: space-between; border-top: solid 1px #000; margin: 2.5em 0 0; padding: 1.5em 0 0; }
+.news-footer__date { display: block; font-weight: 700; }
+
+@media @maxMobile {
+  .news-footer { display: block; }
+  .news-footer__date { margin: 0 0 1.5em; }
+}
+

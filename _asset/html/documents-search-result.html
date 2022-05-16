@@ -1,0 +1,136 @@
+@@include('./partials/_head.html', {
+    "title": "Федеральная пробирная палата",
+})
+<body>
+    <div class="page">
+        @@include('./partials/_header.html')
+
+        <main class="page-content page-docs">
+            <section class="page-inside-head page-inside-head_grey">
+                <div class="container">
+                    <h1 class="h1 page-inside-head__title">
+                        Документы
+                    </h1>
+                    <div class="page-inside-head__content page-inside-head__content_indent">
+                        <div class="page-inside-head__text">
+                            Деятельность Федеральной пробирной палаты регулируется федеральными законами, указами Президента Российской Федерации, постановлениями Правительства Российской Федерации, приказами Минфина России и международными договорами. Ознакомиться с ними, а также с документами Федеральной пробирной палаты,  можно ниже.
+                        </div>
+                    </div><!--.page-inside-head__content-->
+                </div><!--.container-->
+            </section><!--.page-inside-head-->
+
+            <div class="container">
+                <div class="filter page-docs__filter">
+                    <div class="filter-fields filter-fields_docs">
+                        <div class="filter-field filter-field_name">
+                            <input type="text"
+                                   class="form-field"
+                                   placeholder="Название документа"
+                                   value="Драгоценных">
+                        </div><!--.filter-field-->
+
+                        <div class="filter-field filter-field_type">
+                            <select class="custom-select">
+                                <option selected disabled value="placeholder">Тип документа</option>
+                                <option value="2">Акты Президента Российской Федерации</option>
+                                <option value="3">Федеральные законы</option>
+                                <option value="4">Международные договоры и акты, составляющие право Евразийского экономического союза</option>
+                                <option value="5">Акты Правительства Российской Федерации</option>
+                                <option value="6">Приказы Федеральной пробирной палаты</option>
+                                <option value="7">Иные документы Федеральной пробирной палаты</option>
+                                <option value="8">Перечни нормативных правовых актов (их отдельных положений), содержащих обязательные требования</option>
+                                <option value="9">Общественное обсуждение</option>
+                            </select>
+                        </div><!--.filter-field-->
+
+                        <div class="filter-field filter-field_arrow filter-field_date">
+                            <input type="text"
+                                   class="form-field"
+                                   placeholder="Дата или диапазон"
+                                   readonly
+                                   data-datepicker>
+                        </div><!--.filter-field-->
+                    </div><!--.filter-fields-->
+
+                    <div class="filter-buttons filter__buttons">
+                        <button type="submit" class="button filter-buttons__item">
+                            Применить
+                        </button>
+                        <button type="button"
+                                class="button-clean filter-buttons__item">
+                            <svg class="button-clean__icon" viewBox="0 0 18 18">
+                                <path d="M13.392 13.392L4.60742 4.60742"
+                                      stroke-width="1.5"/>
+                                <path d="M4.60797 13.392L13.3926 4.60742"
+                                      stroke-width="1.5"/>
+                            </svg>
+
+                            Сбросить фильтры
+                        </button>
+                    </div><!--.filter-buttons-->
+                </div><!--.filter-->
+
+                <div class="page-inside-center page-docs__list">
+                    <section class="docs-list">
+                        <h2 class="h3 docs-list__title">
+                            Найдено 4 документа
+                        </h2>
+
+                        <div class="docs-list__list">
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    28.09.2000 № 731
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Указ Президента Российской Федерации от 28.10.2019 №529 «Об образовании Федеральной пробирной палаты»
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    20.09.2010 № 1137
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Указ Президента Российской Федерации от 20.09.2010 № 1137 «Об утверждении Положения о ввозе в Российскую Федерацию из государств, не входящих в Евразийский экономический союз, и вывозе из Российской Федерации в эти государства <span class="text-highlight">драгоценных</span> металлов, <span class="text-highlight">драгоценных</span> камней и сырьевых товаров, содержащих <span class="text-highlight">драгоценные</span> металлы»
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    20.09.2010 № 1137
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Федеральный закон от 26.03.1998 № 41-ФЗ «О <span class="text-highlight">драгоценных</span> металлах и <span class="text-highlight">драгоценных</span> камнях»
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    20.09.2010 № 1137
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Федеральный закон от 26.03.1998 № 41-ФЗ «О <span class="text-highlight">драгоценных</span> металлах и <span class="text-highlight">драгоценных</span> камнях»
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+                        </div><!--.docs-list__list-->
+                    </section><!--.docs-list-->
+                </div><!--.page-inside-center-->
+            </div><!--.container-->
+        </main><!--.page-content-->
+
+        @@include('./partials/_footer.html')
+    </div><!--.page-->
+
+@@include('./partials/_foot.html', {
+"pageScript": '<script src="_asset/js/pages/documents.js"></script>'
+})
+</body>
+</html>

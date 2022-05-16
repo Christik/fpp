@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Slider Arrow
+   ========================================================================== */
+
+.slider-arrow { display: block; width: 3rem; height: 3rem; border: none; background: none; position: relative; overflow: hidden; text-indent: -1000px; z-index: 3;
+  &.swiper-button-disabled { pointer-events: none; opacity: .35; }
+}
+.slider-arrow__svg { display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 33%; height: 58%; fill: none;
+  path { fill: @color-text; transition: fill .5s; }
+}
+
+@media @maxTablet {
+  .slider-arrow { width: 2.6rem; height: 2.6rem; }
+}
+
+@media (hover: hover) {
+  .slider-arrow:hover { opacity: .75; }
+}
+
+/* ==========================================================================
+   Slider Arrows
+   ========================================================================== */
+
+.slider-arrows { display: flex; justify-content: space-between; width: 8rem; }
+
+@media @maxTablet {
+  .slider-arrows { width: 6rem; }
+}
+
+/* ==========================================================================
+   Slider Progress
+   ========================================================================== */
+
+.slider-progress { display: flex; align-items: center; color: @color-text; transition: color .5s; }
+.slider-progress__timer,
+.slider-progress__bar { width: 3rem !important; height: 2px !important; background: fade(@color-text, 30%); position: relative; left: auto; top: auto; transition: background-color .5s;
+  >div { position: absolute; left: 0; top: 0; height: 100%; width: 0; background-color: @color-text; transition: background-color .5s, transform .5s; }
+  .swiper-pagination-progressbar-fill { background-color: @color-text; transition: background-color .5s, transform .5s; }
+
+  &.start {
+    >div { }
+  }
+}
+.slider-progress__num { font-size: .7rem; font-weight: 700; line-height: 1; width: 1.5rem;
+  &_current { text-align: left; }
+  &_total { text-align: right; }
+}
+
+@media @maxTablet {
+  .slider-progress__timer,
+  .slider-progress__bar { width: 2rem !important; }
+  .slider-progress__num { width: 1rem; font-size: .5rem; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

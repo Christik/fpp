@@ -1,0 +1,56 @@
+/* ==========================================================================
+   News Head
+   ========================================================================== */
+
+.news-head { padding: 1px 0 3.5rem; position: relative;
+  &_bg { color: #fff; padding-bottom: 4rem; margin-bottom: 5rem; background: @color-bg-sky no-repeat 50% 50%; background-size: cover;
+    &:before { content: ''; display: block; position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: #000; opacity: .4; pointer-events: none; }
+  }
+}
+
+.news-head__content { position: relative; margin: 7rem 0 0; display: flex; }
+.news-head__content__left { width: 11.5rem; min-width: 11.5rem; }
+.news-head__content__right { flex-grow: 1; }
+
+.news-head__date { display: block; font-size: .7rem; line-height: 2; font-weight: 700; margin: 0 0 1em; }
+
+.news-head__title { max-width: 65vw; font-family: @font-addl; }
+
+@media @maxTablet {
+  .news-head { padding-bottom: 2rem;
+    &_bg { margin-bottom: 2.5rem; }
+  }
+  .news-head__content { margin-top: 0; }
+  .news-head__title { max-width: none; }
+}
+
+@media @maxTablet and @minMobile {
+  .news-head__content__left { position: absolute; left: 0; top: 100%; transform: translateY(2rem);
+    .news-head_bg & { transform: translateY(4.5rem); color: @color-text; }
+  }
+}
+
+@media @maxMobile {
+  .news-head__content { display: block; }
+  .news-head__title { font-size: 1.4rem; }
+}
+
+/* ==========================================================================
+   News Article
+   ========================================================================== */
+
+@media @maxTablet and @minMobile {
+  .news-article { margin-left: 9rem; margin-right: 3rem; }
+}
+
+/* ==========================================================================
+   News Footer
+   ========================================================================== */
+
+.news-footer { display: flex; align-items: center; justify-content: space-between; border-top: solid 1px @color-text; margin: 2.5rem 0 0; padding: 1.5rem 0 0; }
+.news-footer__date { display: block; font-size: .7rem; line-height: 2; font-weight: 500; }
+
+@media @maxTablet {
+  .news-footer { padding-top: 1rem; }
+}
+

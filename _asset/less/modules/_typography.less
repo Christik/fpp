@@ -1,0 +1,136 @@
+/* ==========================================================================
+/* ==========================================================================
+/* ==========================================================================
+
+   Typography
+
+   ==========================================================================
+   ==========================================================================
+   ========================================================================== */
+
+html, body, button, input, select, textarea { color: @color-text; font-family: @font-text; line-height: 1.4; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
+
+html { font-size: 20px; }
+
+/* ==========================================================================
+   Text
+   ========================================================================== */
+
+.strike { text-decoration: line-through; }
+.nowrap { white-space: nowrap; }
+
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+.text-color-white { color: #fff !important; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a { color: @color-link; text-decoration: none; cursor: pointer; outline: none !important; }
+
+.text-link {
+  &_white { color: #fff; }
+
+  &_arrow { position: relative;
+    &:after { content: ''; display: inline-block; width: .5rem; height: .5rem; background: url('@{path-images}/target-blank-black.svg') no-repeat 50% 50%; background-size: contain; margin: 0 0 0 .5em; position: absolute; left: 100%; top: 60%; transform: translateY(-50%); }
+  }
+}
+
+.icon-link-arrow { display: inline-block; vertical-align: baseline; position: relative; top: -1px; width: .5rem; height: .5rem; background: url('@{path-images}/target-blank-black.svg') no-repeat 50% 50%; background-size: contain; margin: 0 0 0 .5em; }
+
+@media (hover: hover) {
+  .text-link {
+    &:hover { color: @color-primary; }
+    &_white:hover { color: fade(#fff, 75%); }
+  }
+}
+
+/* ==========================================================================
+   Links Border
+   ========================================================================== */
+
+.text-link-border { position: relative;
+  &:before, &:after { content: ''; height: 1px; position: absolute; bottom: -.1em; left: 0; width: 100%; background-color: @color-text; }
+  &:before { transform: scaleX(0); transform-origin: bottom left; transition: transform .3s .3s ease-out; }
+  &:after { transform: scaleX(1); transform-origin: bottom left; transition: transform .3s ease-out; }
+
+  &_black { color: @color-text; }
+  &_white { color: #fff;
+    &:before, &:after { background-color: fade(#fff, 80%); }
+  }
+}
+
+@media (hover: hover) {
+  .text-link-border {
+    &:hover { color: #333;
+      &:before { transform: scaleX(1); transform-origin: bottom left; }
+      &:after { transform: scaleX(0); transform-origin: bottom right; }
+    }
+
+    &_white:hover { color: fade(#fff, 80%); }
+  }
+}
+
+/* ==========================================================================
+   Links Border Hover
+   ========================================================================== */
+
+.text-link-border-hover { color: @color-link; border-bottom: solid 1px transparent;
+  &_white { color: #fff; }
+}
+
+@media (hover: hover) {
+  .text-link-border-hover {
+    &:hover { border-bottom-color: fade(@color-link, 50%); }
+    &_white:hover { border-bottom-color: fade(#fff, 50%); }
+  }
+}
+
+/* ==========================================================================
+   Basic Text
+   ========================================================================== */
+
+.text-basic { font-size: .8rem; line-height: 1.6; font-weight: 500;
+  p + p { margin-top: 1.5em; }
+  ul { }
+  li + li { margin-top: .75em; }
+}
+
+@media @maxTablet {
+  .text-basic { font-size: .6rem; line-height: 1.5; }
+}
+
+/* ==========================================================================
+   List Rhombus
+   ========================================================================== */
+
+.list-rhombus {
+  li { position: relative; padding: 0 0 0 1rem; margin: 0 0 .75em !important;
+    &:before { content: ''; display: block; width: 4px; height: 4px; position: absolute; left: 0; top: .75em; transform: translateY(-50%) rotate(-45deg); background: #fff; }
+    &:not(:last-child) { }
+  }
+}
+
+@media @maxMobile {
+  .list-rhombus {
+    li { margin: 0 0 1.5em !important;
+      &:not(:last-child) { }
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Highlight
+   ========================================================================== */
+
+.text-highlight { background: @color-secondary-light; padding: 0 .25em; }
+
+
+
+
+
+

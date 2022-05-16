@@ -1,0 +1,10 @@
+.flex-wrap(@val) when ( @val = nowrap ) {
+	-webkit-flex-wrap: @val;
+	-ms-flex-wrap: none;
+	flex-wrap: @val;
+}
+.flex-wrap(@val) when not  ( @val = nowrap ) {
+	-webkit-flex-wrap: @val;
+	-ms-flex-wrap: @val;
+	flex-wrap: @val;
+}

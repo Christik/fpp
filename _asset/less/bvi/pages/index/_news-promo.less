@@ -1,0 +1,25 @@
+/* ==========================================================================
+   News Promo Preview
+   ========================================================================== */
+
+.news-promo-preview { position: relative; border-top: solid 1px #000; padding: 1.5em 0; }
+.news-promo-preview__date { display: block; margin: 0 0 .5em; }
+.news-promo-preview__title { margin: 0;
+  a { padding: .25em; margin: 0 -.25em; }
+}
+.news-promo-preview__text { margin: 1em 0 0; }
+.news-promo-preview__num { display: none; }
+
+/* ==========================================================================
+   News Promo
+   ========================================================================== */
+
+.news-promo { border-top: solid 1px #000; }
+.news-promo__head { margin: 0 0 2em; }
+.news-promo__grid { }
+.news-promo__grid__col {
+  &:first-child .news-promo-preview:first-child { border-top: none; }
+}
+.news-promo__bottom { margin: 2em 0 0; }
+
+

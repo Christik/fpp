@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Page Inside Step
+   ========================================================================== */
+
+.step { border: solid 1px #000; border-radius: 20px; text-align: center; padding: 20px; }
+.step__num { font-weight: 700; margin: 0 0 .5em; }
+.step__text { }
+
+/* ==========================================================================
+   Page Inside Steps
+   ========================================================================== */
+
+.steps { margin: 40px 0; display: flex; justify-content: center; align-items: stretch; flex-wrap: wrap; }
+.steps__item { position: relative; z-index: 3; width: 30%; margin: 0 1.5% 20px; }
+.steps__arrow { display: none; }
+
+@media @maxMobile {
+  .steps { display: block; }
+  .steps__item { width: auto; margin-left: 0; margin-right: 0; }
+}

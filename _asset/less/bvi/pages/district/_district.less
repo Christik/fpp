@@ -1,0 +1,44 @@
+/* ==========================================================================
+   District Head
+   ========================================================================== */
+
+.district-head { margin: 0 0 5em; }
+.district-head__title { }
+.district-head__map { display: none; }
+
+/* ==========================================================================
+   District Map
+   ========================================================================== */
+
+.district-map { display: none; }
+
+/* ==========================================================================
+   District Page
+   ========================================================================== */
+
+.district-page { padding: 0 0 80px;
+  .h4 { font-weight: 700; margin: 1.5em 0 1em; }
+}
+
+/* ==========================================================================
+   Content Grid
+   ========================================================================== */
+
+.content-grid { position: relative; }
+.content-grid__calendar { display: none; position: absolute; left: 0; top: -.5em; z-index: 3;
+  &.is-opened { display: block; }
+}
+
+/* ==========================================================================
+   Content Label
+   ========================================================================== */
+
+.content-label { margin: 2em 0 1em; font-weight: 700; text-transform: uppercase; }
+
+/* ==========================================================================
+   City Title
+   ========================================================================== */
+
+.city-title { display: flex; align-items: center; margin: 2em 0 1em; }
+.city-title__gerb { height: 3rem; width: 3rem; min-width: 3rem; margin: 0 1.2rem 0 0; }
+.city-title__text { color: @color-text-blue; font-size: 1.2rem; line-height: 1.25; font-weight: 800; }

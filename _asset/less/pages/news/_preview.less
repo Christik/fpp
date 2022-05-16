@@ -1,0 +1,23 @@
+/* ==========================================================================
+   News Preview
+   ========================================================================== */
+
+.news-preview { position: relative; }
+.news-preview__date { margin-bottom: 2em; }
+.news-preview__title { font-family: @font-addl; font-weight: 500; font-size: 2rem; line-height: 1; margin: 0 0 .75em; }
+.news-preview__num { font-size: 2rem; height: 0; transform: translateX(-7rem); pointer-events: none; }
+
+@media @maxTablet {
+  .news-preview { margin-left: 9rem; }
+  .news-preview__num,
+  .news-preview__title { font-size: 1.3rem; }
+  .news-preview__num { transform: translateX(-6rem); }
+  .news-preview__text { font-size: .65rem; }
+}
+
+@media @maxMobile {
+  .news-preview { margin-left: 0; }
+  .news-preview__num,
+  .news-preview__title { font-size: 1rem; }
+  .news-preview__num { text-align: right; transform: translate(0, -2.1rem); }
+}

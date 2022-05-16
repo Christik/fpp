@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Banner Slider
+   ========================================================================== */
+
+.banner-slider { position: relative; }
+.banner-slider__pages,
+.banner-slider__arrows { position: absolute; left: 3rem; z-index: 5; }
+.banner-slider__pages { top: 4.5rem; font-size: 1.5rem; line-height: normal; font-weight: 500; font-family: @font-addl; transition: color .5s;
+  .total { opacity: .5; }
+}
+.banner-slider__arrows { bottom: 4rem; }
+.banner-slider__slide { position: relative; height: auto;
+  &_dark { color: #fff; }
+  &_blue { background: @color-primary; }
+  &_grey { background: #273045; }
+  &_beige { background: @color-secondary; }
+}
+.banner-slider__content { width: 33rem; height: 100%; min-height: 32rem; padding: 8.5rem 0 4rem 3rem; .flex(); .flex-direction(column); .align-items(flex-start); }
+.banner-slider__title { font-family: @font-addl; font-weight: 500; font-size: 2.9rem; line-height: 1; margin: 0 0 .5em; }
+.banner-slider__text { margin: 0 0 1em 11.5rem; }
+.banner-slider__more { margin: auto 0 0 11.5rem; font-size: .8rem; font-weight: 600; line-height: 3rem;
+  a { }
+}
+
+// dark
+.banner-slider_dark {
+  .banner-slider__pages { color: #fff; }
+  .slider-arrow__svg path { fill: #fff; }
+}
+.banner-slider__slide_dark {
+  .banner-slider__more a { color: #fff; }
+}
+
+@media @maxTablet {
+  .banner-slider__pages,
+  .banner-slider__arrows { left: 2rem; }
+  .banner-slider__pages { top: 2rem; font-size: 1.1rem; }
+  .banner-slider__arrows { bottom: 1.5rem; }
+  .banner-slider__content { min-height: 19.5rem; padding: 5rem 0 1.5rem 2rem; width: 19rem; }
+  .banner-slider__title { font-size: 1.5rem; }
+  .banner-slider__text { margin-left: 0; }
+  .banner-slider__more { margin-left: 8rem; font-size: .6rem; line-height: 2.6rem; }
+}
+
+@media @maxMobile {
+  .banner-slider__slide { .flex(); .flex-direction(column); .justify-content(space-between); padding: 0  0 2rem 1.2rem; }
+  .banner-slider__pages,
+  .banner-slider__arrows { top: 1.5rem; }
+  .banner-slider__pages { left: 1.2rem; font-size: 1rem; line-height: 2.6rem; }
+  .banner-slider__arrows { bottom: auto; left: auto; right: 1.2rem; }
+  .banner-slider__content { min-height: auto; height: auto; width: auto; padding-left: 0; padding-right: 1.2rem; padding-bottom: 1rem; }
+  .banner-slider__more { margin-left: 0; }
+}
+
+@media (hover: hover) {
+  .banner-slider__more {
+    a:hover { opacity: .7; }
+  }
+}
+
+/* ==========================================================================
+   Banner Slider Pic
+   ========================================================================== */
+
+.banner-slider__pic { position: absolute; left: 36rem; right: 0; top: 9.4%; bottom: 9.4%; background: no-repeat 50% 50%; background-size: cover;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+
+  &_type-1 {
+    -webkit-mask-image: url('@{path-images}/banners/banner-mask-1.svg');
+    mask-image: url('@{path-images}/banners/banner-mask-1.svg');
+  }
+  &_type-2 {
+    -webkit-mask-image: url('@{path-images}/banners/banner-mask-2.svg');
+    mask-image: url('@{path-images}/banners/banner-mask-2.svg');
+  }
+  &_type-3 {
+    -webkit-mask-image: url('@{path-images}/banners/banner-mask-3.svg');
+    mask-image: url('@{path-images}/banners/banner-mask-3.svg');
+  }
+}
+
+@media @maxTablet {
+  .banner-slider__pic { left: 20rem; }
+}
+
+@media @maxMobile {
+  .banner-slider__pic { position: relative; left: auto; top: auto; bottom: auto; height: 13rem; }
+}

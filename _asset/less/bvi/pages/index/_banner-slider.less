@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Banner Slider
+   ========================================================================== */
+
+.banner-slider { .container; position: relative; border: solid 1px #000; overflow: hidden; padding: 0; }
+.banner-slider__pages,
+.banner-slider__arrows { position: absolute; left: 40px; z-index: 5; }
+.banner-slider__pages { top: 40px;
+  .total { }
+}
+.banner-slider__arrows { bottom: 40px; }
+.banner-slider__slide { position: relative; height: auto; overflow: hidden; display: flex; }
+.banner-slider__content { flex-grow: 1; height: 100%; padding: 80px 40px 120px; }
+.banner-slider__title {  font-weight: 700; margin: 0 0 .5em; }
+.banner-slider__text { margin: 0 0 1em; }
+.banner-slider__more { margin: auto 0 0 0; font-weight: 700;
+  a { padding: .25em; margin: 0 -.25em; }
+}
+
+@media @maxTabletBvi {
+  .banner-slider__pages,
+  .banner-slider__arrows { left: 20px; }
+  .banner-slider__content { padding-left: 20px; padding-right: 20px; }
+}
+
+
+/* ==========================================================================
+   Banner Slider Pic
+   ========================================================================== */
+
+.banner-slider__pic { min-width: 50%; flex-grow: 1; height: 100%; background: no-repeat 50% 50%; background-size: cover;
+  .bvi-body[data-bvi-images="false"] & { display: none; }
+  .bvi-body[data-bvi-images="grayscale"] & {
+    filter: gray;
+    -webkit-filter: grayscale(1); }
+}
+
+@media @maxTabletBvi {
+  .banner-slider__pic { display: none; }
+}

@@ -1,0 +1,84 @@
+@@include('./partials/_head.html', {
+    "title": "Федеральная пробирная палата",
+})
+<body>
+<div class="page">
+    @@include('./partials/_header.html')
+
+    <main class="page-content">
+        <div class="container">
+            <div class="crumbs-panel page-content__top-panel">
+                <div class="crumbs-panel__left">
+                    <ul class="crumbs">
+                        <li><a class="text-link" href="#">Главная</a></li>
+                        <li><a class="text-link" href="#">Проверить организацию</a></li>
+                    </ul>
+                </div><!--.crumbs-panel__left-->
+
+                <div class="crumbs-panel__right">
+                    @@include('./components/_share.html')
+                </div><!--.crumbs-panel__right-->
+            </div><!--.crumbs-panel-->
+
+            <h1 class="h1 page-content__title">
+                Проверить<br/>
+                организацию
+            </h1>
+
+            <div class="page-inside page-inside_no-padding-top check-org">
+                <aside class="page-inside__side">
+                    <p class="text-basic">
+                        <a href="#"
+                           class="text-link text-link_arrow">Проверить ювелирное изделие</a>
+                    </p>
+                </aside><!--.page-inside__side-->
+
+                <article class="page-inside__content">
+                    <div class="page-inside__content__container">
+                        <div class="article-content check-org__text">
+                            <p class="loud">Получить информацию из электронного реестра специального учета юридических лиц и индивидуальных предпринимателей, осуществляющих операции с драгоценными камнями и драгоценными металлами</p>
+                        </div><!--.article-content-->
+
+                        <form class="form-check-org">
+                            <div class="form-row">
+                                <input type="text"
+                                       class="form-field form-row__field"
+                                       placeholder="Введите ОГРН или ИНН">
+                                <button type="submit" class="button">
+                                    Проверить
+                                </button>
+                            </div><!--.form-row-->
+
+                            <div class="captcha form-check-org__captcha">
+                                <div class="captcha-form">
+                                    <img class="captcha-form__img"
+                                         src="_asset/img/captcha.png" alt="">
+                                    <input type="text"
+                                           placeholder="Введите код"
+                                           class="form-field-square captcha-form__input">
+                                </div>
+                                <button type="button"
+                                        class="captcha-refresh">
+                                    <svg class="captcha-refresh__icon bvi-no-styles"
+                                         viewBox="0 0 20 15">
+                                        <path class="bvi-no-styles" d="M5.98598 6.50245C5.86119 6.37245 5.65523 6.36832 5.52566 6.49311L3.25813 8.67015C3.1852 8.26821 3.14701 7.8591 3.14701 7.44783C3.14701 3.70015 6.1965 0.651091 9.94483 0.651091C11.7573 0.651091 13.462 1.35579 14.7451 2.6354C14.8727 2.76236 15.0789 2.76193 15.2056 2.63475C15.3326 2.50757 15.3322 2.30139 15.205 2.17443C13.7989 0.772411 11.9307 0 9.94483 0C5.83732 0 2.49592 3.34118 2.49592 7.44783C2.49592 7.77446 2.51805 8.09979 2.56016 8.42186L0.551107 6.49311C0.42154 6.36876 0.215795 6.37266 0.0907854 6.50245C-0.03379 6.63201 -0.0296664 6.83819 0.100118 6.96277L2.813 9.56713C2.87594 9.62768 2.95732 9.65785 3.03849 9.65785C3.11966 9.65785 3.20105 9.62768 3.26399 9.56713L5.97687 6.96277C6.10643 6.83819 6.11056 6.63201 5.98598 6.50245Z"/>
+                                        <path class="bvi-no-styles" d="M13.8851 8.49755C14.0099 8.62755 14.2159 8.63168 14.3454 8.50689L16.613 6.32985C16.6859 6.73179 16.7241 7.1409 16.7241 7.55217C16.7241 11.2998 13.6746 14.3489 9.92626 14.3489C8.11384 14.3489 6.40907 13.6442 5.12598 12.3646C4.99837 12.2376 4.79219 12.2381 4.66545 12.3653C4.53848 12.4924 4.53892 12.6986 4.6661 12.8256C6.07224 14.2276 7.94043 15 9.92626 15C14.0338 15 17.3752 11.6588 17.3752 7.55217C17.3752 7.22554 17.353 6.90021 17.3109 6.57814L19.32 8.50689C19.4496 8.63124 19.6553 8.62734 19.7803 8.49755C19.9049 8.36799 19.9008 8.16181 19.771 8.03723L17.0581 5.43287C16.9952 5.37232 16.9138 5.34215 16.8326 5.34215C16.7514 5.34215 16.67 5.37232 16.6071 5.43287L13.8942 8.03723C13.7647 8.16181 13.7605 8.36799 13.8851 8.49755Z"/>
+                                    </svg>
+                                    Обновить код
+                                </button>
+                            </div><!--.captcha-->
+                        </form>
+                    </div><!--.page-inside__content__container-->
+                </article><!--.page-inside__content-->
+            </div><!--.page-inside-->
+        </div><!--.container-->
+    </main><!--.page-content-->
+
+    @@include('./partials/_footer.html')
+</div><!--.page-->
+
+@@include('./partials/_foot.html', {
+"pageScript": ''
+})
+</body>
+</html>

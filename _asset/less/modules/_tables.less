@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Table
+   ========================================================================== */
+
+.table-wrapper { overflow: auto; margin: 0 -3rem; padding: 0 3rem;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  &::-webkit-scrollbar { display: none; }
+
+  table { width: 100%; font-size: .7rem; line-height: 1.5; text-align: left; min-width: 35rem; }
+  th, td { padding: 1.5em 0;
+    &:not(:first-child) { padding-left: 1.5em; }
+    &:not(:last-child) { padding-right: 1.5em; }
+  }
+  th { font-weight: 800; vertical-align: top; }
+  thead th { border-bottom: solid 2px @color-text; }
+  tbody tr:not(:first-child) td { border-top: solid 1px @color-border; }
+}
+
+@media @maxTablet {
+  .table-wrapper { margin: 0 -2rem; padding: 0 2rem;
+    table { font-size: .5rem; }
+  }
+}
+
+@media @maxMobile {
+  .table-wrapper { margin: 0 -1.2rem; padding: 0 1.2rem;
+    table { font-size: .7rem; }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

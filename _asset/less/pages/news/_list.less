@@ -1,0 +1,26 @@
+/* ==========================================================================
+   News List
+   ========================================================================== */
+
+.news-list { }
+.news-list__item {
+  &:not(:first-child) { border-top: solid 1px @color-border; padding-top: 2rem; margin-top: 2rem; }
+}
+
+@media @maxTablet {
+  .news-list__item { margin-left: 3rem; margin-right: 3rem;
+    &:not(:first-child) { padding-top: 1.5rem; margin-top: 1.5rem; }
+  }
+}
+
+@media @maxMobile {
+  .news-list__item { margin-left: 0; margin-right: 0; }
+}
+
+/* ==========================================================================
+   News List Pagination
+   ========================================================================== */
+
+@media @maxTablet and @minMobile {
+  .news-list + .pagination { margin-left: 3rem; margin-right: 3rem; }
+}

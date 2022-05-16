@@ -1,0 +1,44 @@
+/* ==========================================================================
+   Filter
+   ========================================================================== */
+
+.filter { }
+.filter__buttons { }
+
+.filter-fields { display: flex; margin: 0 -1rem 0 0; }
+.filter-field { margin: 0 1rem 2rem 0; position: relative;
+  &_name { flex-grow: 1; }
+  &_type { min-width: 17rem; width: 26%; }
+  &_date { min-width: 17rem; width: 26%; }
+  &_arrow {
+    .form-field { padding-right: 2.5rem; }
+
+    &:after { content: ''; position: absolute; top: 50%; right: 1rem; transform: translateY(-50%) rotate(0); display: block; width: 1rem; height: .6rem; background: url('@{path-images}/select-arrow.svg') no-repeat 50% 50%; background-size: 100% 100%; }
+  }
+  &_arrow-opened {
+    &:after { transform: translateY(-50%) rotate(180deg); }
+  }
+}
+
+.filter-buttons { display: flex; flex-wrap: wrap; }
+.filter-buttons__item {
+  &:not(:last-child) { margin-right: 2rem; }
+}
+
+@media @maxTablet {
+  .filter-fields { flex-wrap: wrap; }
+  .filter-field { margin-bottom: 1.2rem;
+    &_name { width: 100%; }
+    &_type,
+    &_date { min-width: auto; flex-grow: 1; }
+  }
+}
+
+@media @maxMobile {
+  .filter-field { width: 100%; }
+
+  .filter-buttons { justify-content: center; }
+  .filter-buttons__item { margin: 0 !important;
+    &:first-child { width: 100%; }
+  }
+}

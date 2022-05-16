@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Promo Slider
+   ========================================================================== */
+
+.promo-slider { overflow: hidden; position: relative; }
+.promo-slider__wrapper { position: relative; }
+.promo-slider__slide { position: relative; padding: 40px 30px 130px;
+
+  &.swiper-slide-active { }
+}
+.promo-slider__bg,
+.promo-slider__bg__img,
+.promo-slider__bg__vector { display: none; }
+
+.promo-slider__content { position: relative; }
+.promo-slider__date { display: block; font-weight: 700; margin: 0 0 2em; }
+body .bvi-body[data-bvi-theme] .promo-slider__title { font-weight: 700; font-size: 2em !important; }
+
+@media @maxMobile {
+  .promo-slider__slide { padding-left: 20px; padding-right: 20px; }
+}
+
+/* ==========================================================================
+   Promo Slider Nav
+   ========================================================================== */
+
+.promo-slider__nav { position: absolute; left: 30px; right: 30px; bottom: 40px; z-index: 3; display: flex; align-items: center; justify-content: space-between; height: 50px; }

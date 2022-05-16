@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Custom Select
+   ========================================================================== */
+
+.custom-select-container { position: relative; box-sizing: border-box; }
+.custom-select-container * { box-sizing: border-box; }
+.custom-select-container.is-disabled { opacity: .333; }
+.custom-select-opener { background-color: #fff; padding: .5rem 2.5rem .5rem 1rem; display: block; cursor: pointer; width: 100%; height: 3rem; border-radius: 1rem; border: solid 1px @color-border-blue; font-size: .8rem; font-weight: 500; line-height: 1.9rem; color: @color-text; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+
+  &:after { content: ''; position: absolute; top: 50%; right: 1rem; transform: translateY(-50%) rotate(0); display: block; width: 1rem; height: .6rem; background: url('@{path-images}/select-arrow.svg') no-repeat 50% 50%; background-size: 100% 100%; }
+
+  .custom-select-container.is-open & { border-color: @color-text;
+    &:after { transform: translateY(-50%) rotate(180deg); }
+  }
+}
+.custom-select-container select { visibility: hidden; position: absolute; top: 0; left: 0; }
+.custom-select-panel { display: none; background-color: #fff; position: absolute; top: 100%; z-index: 1; min-width: 100%; transform: translateY(.5rem); border: solid 1px @color-border-blue; border-radius: 1rem; padding: 1rem .3rem; max-height: 20rem; overflow: auto;
+  .custom-select-container.is-open & { display: block; }
+}
+.custom-select-option { padding: .5em .7rem; font-size: .8rem; line-height: 1.4; font-weight: 500; cursor: pointer;
+  &[data-value="placeholder"] { display: none; }
+}
+.custom-select-option.has-focus { background-color: @color-bg; }
+.custom-select-option.is-selected { font-weight: 800; }
+.custom-select-optgroup > .custom-select-option { padding-left: 2em; }
+.custom-select-optgroup::before { content: attr(data-label); display: block; padding: 0.5em; color: #888; }

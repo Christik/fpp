@@ -1,0 +1,24 @@
+/* ==========================================================================
+   Page Inside Chart
+   ========================================================================== */
+
+.chart { position: relative; padding: 0 1.5rem 0 0; margin: 2rem 0; }
+.chart__legend { position: absolute; left: 100%; bottom: 0; width: 17.5rem; transform: translate(1.5rem, -2.3rem);
+  ul {
+    li { padding: 0 0 0 1.7rem; margin: 0 0 1rem; color: @color-text-blue;
+      &:before { display: none; }
+      span { position: absolute; left: 0; top: .1em; display: block; width: 1rem; height: 1rem; }
+      p { margin: 0; }
+    }
+  }
+}
+
+@media @maxTablet {
+  .chart__legend { position: relative; left: auto; width: auto; transform: none;
+    ul {
+      li { padding-left: 1.5rem; margin: .75rem 0 0;
+        span { width: .8rem; height: .8rem; }
+      }
+    }
+  }
+}

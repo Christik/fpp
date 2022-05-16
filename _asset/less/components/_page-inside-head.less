@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Page Inside Head
+   ========================================================================== */
+
+.page-inside-head { position: relative; min-height: 33.5rem; overflow: hidden; padding: 8rem 0 4rem; }
+.page-inside-head__title { max-width: 80%; margin: 0 0 .5em; }
+.page-inside-head__content {
+  &_indent { padding-left: 16.5rem; }
+}
+
+.page-inside-head__cols { display: flex; }
+.page-inside-head__cols__item { max-width: 50%; padding: 0 2.5rem 0 0; }
+.page-inside-head__text { font-size: 1.1rem; line-height: 1.5; font-weight: 500; width: 46vw; min-width: 33rem; }
+.page-inside-head__links { font-size: .8rem; font-weight: 500; line-height: 1.5; display: flex;
+  li:not(:first-child) { margin-left: 3rem; }
+  a { }
+
+  .page-inside-head__text + & { margin-top: 3rem; }
+}
+
+@media @maxTablet {
+  .page-inside-head { padding: 5rem 0 3rem; min-height: auto; }
+  .page-inside-head__title { max-width: none; }
+  .page-inside-head__content {
+    &_indent { padding-left: 0; max-width: 75vw; }
+  }
+  .page-inside-head__text { font-size: .8rem; width: auto; min-width: auto; }
+  .page-inside-head__links { font-size: .6rem; }
+}
+
+@media @maxMobile {
+  .page-inside-head { padding: 3.5rem 0 2rem; }
+  .page-inside-head__content {
+    &_indent { max-width: none; }
+
+    .text-basic { font-size: .7rem; }
+  }
+
+  .page-inside-head__cols { display: block; }
+  .page-inside-head__cols__item { max-width: none; padding-right: 0; }
+}
+
+@media (hover: hover) {
+  .page-inside-head__links {
+    a.text-link:hover { color: #333; }
+  }
+}
+
+/* ==========================================================================
+   Page Inside Head Background
+   ========================================================================== */
+
+.page-inside-head { position: relative;
+  &:before { content: ''; display: block; position: absolute; pointer-events: none; background: no-repeat 0 0; background-size: 100% 100%; }
+
+  &_sky { background: @color-bg-sky;
+    &:before { top: 2.5%; left: 0; width: 77%; height: 95%; background-image: url('@{path-images}/page-inside-head/page-inside-head-1.svg'); }
+  }
+  &_grey { background: @color-bg-grey-dark; color: #fff;
+    &:before { top: 7.5%; left: 0; width: 77%; height: 85%; background-image: url('@{path-images}/page-inside-head/page-inside-head-2.svg'); }
+  }
+  &_blue { background: @color-primary; color: #fff;
+    &:before { top: 0; left: 0; width: 77%; height: 100%; background-image: url('@{path-images}/page-inside-head/page-inside-head-3.svg'); opacity: .3; }
+  }
+  &_gold { background: @color-secondary;
+    &:before { top: 7.5%; left: 0; width: 77%; height: 81%; background-image: url('@{path-images}/page-inside-head/page-inside-head-4.svg'); opacity: .3; }
+  }
+}
+
+@media @maxTablet {
+  .page-inside-head {
+    &_sky:before { width: 90%; }
+    &_grey:before { width: 90%; }
+    &_blue:before { width: 93%; }
+    &_gold:before { width: 95%; top: 7%; height: 86%; }
+  }
+}
+
+@media @maxMobile {
+  .page-inside-head {
+    &_sky:before { width: 160%; left: auto; right: 1rem; top: 1.2rem; height: 15rem; }
+    &_grey:before { left: -8.5rem; top: 2.3rem; width: 26.5rem; height: 15.5rem; }
+    &_blue:before { left: -2.5rem; top: 1.7rem; width: 26.5rem; height: 15.5rem; }
+    &_gold:before { left: -1.5rem; top: 1.5rem; width: 31rem; height: 15.5rem; }
+  }
+}

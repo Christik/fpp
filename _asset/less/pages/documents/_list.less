@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Documents List
+   ========================================================================== */
+
+.docs-list {
+    + .docs-list { margin-top: 4rem; }
+}
+.docs-list__title { margin: 0 0 2em; font-size: 1.2rem; }
+.docs-list__list { }
+.docs-list__pagination { margin: 2.5rem 0 0; }
+
+@media @maxTablet and @minMobile {
+    .docs-list__title,
+    .docs-list__pagination { margin-left: 9rem; }
+}
+
+/* ==========================================================================
+   Document Preview
+   ========================================================================== */
+
+.doc-preview { position: relative; }
+.doc-preview__title { font-family: @font-addl; font-size: 1rem; color: @color-secondary; height: 0; transform: translateX(-11.5rem); width: 11rem; }
+.doc-preview__text { font-family: @font-addl; font-size: 1rem; font-weight: 500; line-height: 1.35; }
+
+.doc-preview + .doc-preview { margin-top: 1.5rem; padding-top: 1.5rem; border-top: solid 1px @color-border; }
+
+@media @maxTablet {
+    .doc-preview__title { font-size: .9rem; width: 9rem; transform: translateX(-9rem); }
+    .doc-preview__text { font-size: .9rem; }
+}
+
+@media @maxTablet and @minMobile {
+    .doc-preview { margin-left: 9rem; }
+    .doc-preview__title {
+        span { display: block; }
+    }
+}
+
+@media @maxMobile {
+    .doc-preview__title { width: auto; height: auto; transform: none; margin: 0 0 .75em; }
+}
+

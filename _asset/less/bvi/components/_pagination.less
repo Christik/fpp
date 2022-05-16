@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+
+.pagination { display: flex; align-items: center; justify-content: space-between; font-weight: 700; }
+
+/* ==========================================================================
+   Pagination Pages
+   ========================================================================== */
+
+.pagination-pages { display: flex;
+  li {
+    &:not(:first-child) { margin-left: .5em; }
+  }
+}
+
+.pagination-page { width: auto; padding: .5em 1em; border-radius: 20px; border: solid 1px #000; text-decoration: none; display: block;
+  &_current { border-color: @color-text; }
+}
+
+.pagination-divider { padding: .5em .75em; border-color: transparent; }
+
+/* ==========================================================================
+   Pagination Next
+   ========================================================================== */
+
+.pagination-next { display: flex; align-items: center; text-decoration: none; border: solid 1px #000; padding: .5em 1em; border-radius: 20px; }
+.pagination-next__text { }
+.pagination-next__icon { display: none; }

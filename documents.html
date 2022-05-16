@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>Федеральная пробирная палата</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="_asset/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="_asset/css/dropzone.css">
+	<link rel="stylesheet" id="styles-app" href="_asset/css/styles.css?v02">
+
+	<script src="_asset/js/ls.bgset.min.js"></script>
+	<script src="_asset/js/lazysizes.min.js"></script>
+	<script>
+		(function(){
+			window.lazySizesConfig = window.lazySizesConfig || {};
+			window.lazySizesConfig.preloadAfterLoad = true;
+		})();
+	</script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="page__header" data-header>
+            <header class="page-header">
+                <div class="container">
+                    <div class="page-header__in">
+                        <div class="page-logo">
+                            <a href="#">
+                                <img class="lazyload page-logo__img"
+                                     data-sizes="auto"
+                                     data-srcset="_asset/img/logo.png 74w, _asset/img/logo@2x.png 148w"
+                                     width="74" height="74"
+                                     alt="Федеральная пробирная палата">
+                            </a>
+                            <div class="page-logo__text">
+                                <p class="page-logo__title">
+                                    Федеральная<br/>
+                                    пробирная палата
+                                </p>
+                                <p class="page-logo__sub-title">
+                                    Осуществляем пробирный<br/>
+                                    надзор с&nbsp;1700&nbsp;года
+                                </p>
+                            </div>
+                        </div><!--.page-logo-->
+
+                        <ul class="page-menu page-header__menu">
+                            <li class="page-menu__item">
+                                <a class="page-menu__link"
+                                   href="#">
+                                    О палате
+                                </a>
+                            </li>
+                            <li class="page-menu__item">
+                                <a class="page-menu__link"
+                                   href="#">
+                                    Деятельность
+                                </a>
+                            </li>
+                            <li class="page-menu__item">
+                                <a class="page-menu__link"
+                                   href="#">
+                                    Документы
+                                </a>
+                            </li>
+                            <li class="page-menu__item">
+                                <a class="page-menu__link"
+                                   href="#">
+                                    ГИИС ДМДК
+                                </a>
+                            </li>
+                        </ul><!--.page-.menu-->
+
+                        <ul class="form-check-nav form-check-nav_detacked page-header__form-check-nav bvi-hide">
+                            <li class="form-check-nav__item">
+                                <span>Проверить<br/>ювелирное изделие</span>
+                            </li>
+                            <li class="form-check-nav__item">
+                                <span>Проверить<br/>организацию</span>
+                            </li>
+                        </ul><!--.form-check__nav-->
+
+                        <div class="page-header__buttons">
+                            <button type="button"
+                                    class="button-header page-header__buttons__button bvi-hide"
+                                    data-search-open>
+                                <svg class="button-header__search"
+                                     viewBox="0 0 18 18">
+                                    <path d="M6.971 12.942C10.2687 12.942 12.942 10.2687 12.942 6.971C12.942 3.67331 10.2687 1 6.971 1C3.67331 1 1 3.67331 1 6.971C1 10.2687 3.67331 12.942 6.971 12.942Z"
+                                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.1562 11.2305L17.0013 17.1575"
+                                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button type="button"
+                                    class="button-header page-header__buttons__button"
+                                    data-burger>
+                                <div class="button-header__burger"></div>
+                            </button>
+                        </div><!--.page-header__buttons-->
+                    </div><!--.page-header__in-->
+                </div><!--.container-->
+            </header><!--.page-header-->
+
+            <div class="page-search page__header__search"
+                 data-search>
+                <div class="page-search__in">
+                    <input class="page-search__input"
+                           type="text"
+                           placeholder="Поиск по сайту">
+                    <button type="submit"
+                            class="page-search__submit">Искать</button>
+                </div>
+
+                <button type="button"
+                        class="button-header is-active page-search__close bvi-hide"
+                        data-search-close>
+                    <div class="button-header__burger"></div>
+                    Закрыть
+                </button>
+            </div><!--.page-search-->
+
+            <div class="page-header-detail page__header__detail"
+                 data-menu-collapse>
+                <div class="container">
+                    <div class="page-header-detail__content">
+                        <div class="page-header-detail__content__column">
+                            <nav class="page-group-nav">
+                                <p class="page-group-nav__title">
+                                    <a href="#">
+                                        О <span class="hidden-max-tablet bvi-hide">Федеральной пробирной</span> палате
+                                        <svg class="page-group-nav__title__icon bvi-no-styles"
+                                             viewBox="0 0 7 11">
+                                            <path class="bvi-no-styles"
+                                                  d="M1 10L5.5 5.5L0.999999 1" stroke-width="1.5"/>
+                                        </svg>
+                                    </a>
+                                </p>
+                                <ul class="page-group-nav__list">
+                                    <li>
+                                        <a href="#">Задачи и функции</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Руководство</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Структура</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">История пробирного надзора</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Открытое ведомство</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кадровое обеспечение</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Контактная информация</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Общественный совет</a>
+                                    </li>
+                                </ul>
+                            </nav><!--.page-group-nav-->
+                        </div><!--.page-header-detail__content__column-->
+
+                        <div class="page-header-detail__content__column">
+                            <nav class="page-group-nav">
+                                <p class="page-group-nav__title">
+                                    <a href="#">
+                                        Деятельность
+                                        <svg class="page-group-nav__title__icon bvi-no-styles"
+                                             viewBox="0 0 7 11">
+                                            <path class="bvi-no-styles"
+                                                  d="M1 10L5.5 5.5L0.999999 1" stroke-width="1.5"/>
+                                        </svg>
+                                    </a>
+                                </p>
+                                <ul class="page-group-nav__list">
+                                    <li>
+                                        <a href="#">Спецучет</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Лицензирование</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Регистрация именников</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Опробование и клеймение</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Аффинаж</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ломбарды и скупка</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Пробирный надзор</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Контроль за ввозом и вывозом</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Финансовый мониторинг</a>
+                                    </li>
+                                </ul>
+                            </nav><!--.page-group-nav-->
+                        </div><!--.page-header-detail__content__column-->
+
+                        <div class="page-header-detail__content__column">
+                            <nav class="site-links">
+                                <ul class="site-links__group">
+                                    <li>
+                                        <a href="#">Документы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Территориальные органы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Открытые данные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Противодействие коррупции</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Интернет-приёмная</a>
+                                    </li>
+                                </ul>
+                                <ul class="site-links__group">
+                                    <li>
+                                        <a href="#">ГИИС ДМДК</a>
+                                    </li>
+                                </ul>
+                                <ul class="site-links__group">
+                                    <li>
+                                        <a href="#">Карта сайта</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">О сайте</a>
+                                    </li>
+                                </ul>
+                            </nav><!--.site-links-->
+                        </div><!--.page-header-detail__content__column-->
+                    </div><!--.page-header-detail__content-->
+
+                    <div class="page-header-detail__footer">
+                        <p class="site-copy page-header-detail__copy">
+                            &copy; Федеральная пробирная палата, 2022
+                        </p>
+                        <p class="page-header-detail__address">
+                            125009, г.&nbsp;Москва, ул.&nbsp;Большая Никитская, д.&nbsp;17, стр.&nbsp;2
+                        </p>
+                        <p class="page-header-detail__phone">
+                            <a class="site-phone"
+                               href="mailto:+74956902727">
+                                +7 (495) 690-27-27
+                            </a>
+                        </p>
+                    </div><!--.page-header-detail__footer-->
+                </div><!--.container-->
+            </div><!--.page-header-detail-->
+        </div><!--.page__header-->
+
+
+
+        <main class="page-content page-docs">
+            <section class="page-inside-head page-inside-head_grey">
+                <div class="container">
+                    <h1 class="h1 page-inside-head__title">
+                        Документы
+                    </h1>
+                    <div class="page-inside-head__content page-inside-head__content_indent">
+                        <div class="page-inside-head__text">
+                            Деятельность Федеральной пробирной палаты регулируется федеральными законами, указами Президента Российской Федерации, постановлениями Правительства Российской Федерации, приказами Минфина России и международными договорами. Ознакомиться с ними, а также с документами Федеральной пробирной палаты,  можно ниже.
+                        </div>
+                    </div><!--.page-inside-head__content-->
+                </div><!--.container-->
+            </section><!--.page-inside-head-->
+
+            <div class="container">
+                <div class="filter page-docs__filter">
+                    <div class="filter-fields filter-fields_docs">
+                        <div class="filter-field filter-field_name">
+                            <input type="text"
+                                   class="form-field"
+                                   placeholder="Название документа">
+                        </div><!--.filter-field-->
+
+                        <div class="filter-field filter-field_type">
+                            <select class="custom-select">
+                                <option selected disabled value="placeholder">Тип документа</option>
+                                <option value="2">Акты Президента Российской Федерации</option>
+                                <option value="3">Федеральные законы</option>
+                                <option value="4">Международные договоры и акты, составляющие право Евразийского экономического союза</option>
+                                <option value="5">Акты Правительства Российской Федерации</option>
+                                <option value="6">Приказы Федеральной пробирной палаты</option>
+                                <option value="7">Иные документы Федеральной пробирной палаты</option>
+                                <option value="8">Перечни нормативных правовых актов (их отдельных положений), содержащих обязательные требования</option>
+                                <option value="9">Общественное обсуждение</option>
+                            </select>
+                        </div><!--.filter-field-->
+
+                        <div class="filter-field filter-field_arrow filter-field_date">
+                            <input type="text"
+                                   class="form-field"
+                                   placeholder="Дата или диапазон"
+                                   readonly
+                                   data-datepicker>
+                        </div><!--.filter-field-->
+                    </div><!--.filter-fields-->
+
+                    <div class="filter-buttons filter__buttons">
+                        <button type="submit"
+                                class="button filter-buttons__item"
+                                disabled>
+                            Применить
+                        </button>
+
+                        <button type="button"
+                                class="button-clean filter-buttons__item"
+                                disabled>
+                            <svg class="button-clean__icon" viewBox="0 0 18 18">
+                                <path d="M13.392 13.392L4.60742 4.60742"
+                                      stroke-width="1.5"/>
+                                <path d="M4.60797 13.392L13.3926 4.60742"
+                                      stroke-width="1.5"/>
+                            </svg>
+                            Сбросить фильтры
+                        </button>
+                    </div><!--.filter-buttons-->
+                </div><!--.filter-->
+
+                <div class="page-inside-center page-docs__list">
+                    <section class="docs-list">
+                        <h2 class="h3 docs-list__title">
+                            Акты Президента Российской Федерации
+                        </h2>
+
+                        <div class="docs-list__list">
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    <span>28.09.2000</span>
+                                    <span>№ 731</span>
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Указ Президента Российской Федерации от 28.10.2019 №529 «Об образовании Федеральной пробирной палаты»
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    <span>20.09.2010</span>
+                                    <span>№ 1137</span>
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Указ Президента Российской Федерации от 20.09.2010 № 1137 «Об утверждении Положения о ввозе в Российскую Федерацию из государств, не входящих в Евразийский экономический союз, и вывозе из Российской Федерации в эти государства драгоценных металлов, драгоценных камней и сырьевых товаров, содержащих драгоценные металлы»
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+                        </div><!--.docs-list__list-->
+                    </section><!--.docs-list-->
+
+                    <section class="docs-list">
+                        <h2 class="h3 docs-list__title">
+                            Федеральные законы
+                        </h2>
+
+                        <div class="docs-list__list">
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    <span>28.09.2000</span>
+                                    <span>№ 731</span>
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Федеральный закон от 26.03.1998 № 41-ФЗ «О драгоценных металлах и драгоценных камнях»
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    <span>20.09.2010</span>
+                                    <span>№ 1137</span>
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Федеральный закон от 07.08.2001 № 115-ФЗ «О противодействии легализации (отмыванию) доходов, полученных преступным путем, и финансированию терроризма»
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    <span>20.09.2010</span>
+                                    <span>№ 1137</span>
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Федеральный закон от 26.12.2008 № 294-ФЗ «О защите прав юридических лиц и индивидуальных предпринимателей при осуществлении государственного контроля (надзора) и муниципального контроля»
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+                        </div><!--.docs-list__list-->
+
+                        <nav class="pagination docs-list__pagination">
+                            <ul class="pagination-pages">
+                                <li>
+                                    <a class="button-circle pagination-page pagination-page_current"
+                                       href="#">1</a>
+                                </li>
+                                <li>
+                                    <a class="button-circle pagination-page"
+                                       href="#">2</a>
+                                </li>
+                            </ul>
+
+                            <a class="pagination-next"
+                               href="#">
+                                <span class="pagination-next__text">Далее</span>
+                                <svg class="pagination-next__icon" viewBox="0 0 18 17">
+                                    <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                    <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </nav><!--.pagination-->
+                    </section><!--.docs-list-->
+
+                    <section class="docs-list">
+                        <h2 class="h3 docs-list__title">
+                            Международные договоры и акты, составляющие право Евразийского экономического союза
+                        </h2>
+
+                        <div class="docs-list__list">
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    <span>28.09.2000</span>
+                                    <span>№ 731</span>
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Решение Коллегии Евразийской экономической комиссии от 21.04.2015 № 30 «О мерах нетарифного регулирования»
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    <span>20.09.2010</span>
+                                    <span>№ 1137</span>
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Соглашение об особенностях осуществления операций с драгоценными металлами и драгоценными камнями в рамках Евразийского экономического союза (заключено в г. Москве 22.11.2019)
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    <span>20.09.2010</span>
+                                    <span>№ 1137</span>
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Соглашение между Правительством Российской Федерации и Федеральным Советом Швейцарской Конфедерации о взаимном признании официальных клейм на изделиях часовой промышленности, изготовленных из драгоценных металлов (подписано в г. Москве 14.12.2011)
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+                        </div><!--.docs-list__list-->
+
+                        <nav class="pagination docs-list__pagination">
+                            <ul class="pagination-pages">
+                                <li>
+                                    <a class="button-circle pagination-page pagination-page_current"
+                                       href="#">1</a>
+                                </li>
+                                <li>
+                                    <a class="button-circle pagination-page"
+                                       href="#">2</a>
+                                </li>
+                                <li>
+                                    <a class="button-circle pagination-page"
+                                       href="#">3</a>
+                                </li>
+                                <li>
+                                    <div class="button-circle pagination-divider">...</div>
+                                </li>
+                                <li>
+                                    <a class="button-circle pagination-page"
+                                       href="#">15</a>
+                                </li>
+                            </ul>
+
+                            <a class="pagination-next"
+                               href="#">
+                                <span class="pagination-next__text">Далее</span>
+                                <svg class="pagination-next__icon" viewBox="0 0 18 17">
+                                    <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                    <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </nav><!--.pagination-->
+                    </section><!--.docs-list-->
+
+                    <section class="docs-list">
+                        <h2 class="h3 docs-list__title">
+                            Акты Правительства Российской Федерации
+                        </h2>
+
+                        <div class="docs-list__list">
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    <span>28.09.2000</span>
+                                    <span>№ 731</span>
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Постановление Правительства Российской Федерации от 20.03.2020 № 307 «О Федеральной пробирной палате»
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    <span>20.09.2010</span>
+                                    <span>№ 1137</span>
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Постановление Правительства Российской Федерации от 17.08.1998 № 972 «Об утверждении Порядка работы организаций, осуществляющих аффинаж драгоценных металлов, и перечня организаций, имеющих право осуществлять аффинаж драгоценных металлов»
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+
+                            <article class="doc-preview">
+                                <p class="doc-preview__title">
+                                    <span>20.09.2010</span>
+                                    <span>№ 1137</span>
+                                </p>
+                                <p class="doc-preview__text">
+                                    <a class="text-link" href="#">
+                                        Постановление Правительства Российской Федерации от 01.12.1998 № 1419 «Об утверждении Порядка совершения операций с минеральным сырьем, содержащим драгоценные металлы, до аффинажа»
+                                    </a>
+                                </p>
+                            </article><!--.doc-preview-->
+                        </div><!--.docs-list__list-->
+
+                        <nav class="pagination docs-list__pagination">
+                            <ul class="pagination-pages">
+                                <li>
+                                    <a class="button-circle pagination-page pagination-page_current"
+                                       href="#">1</a>
+                                </li>
+                                <li>
+                                    <a class="button-circle pagination-page"
+                                       href="#">2</a>
+                                </li>
+                                <li>
+                                    <a class="button-circle pagination-page"
+                                       href="#">3</a>
+                                </li>
+                                <li>
+                                    <div class="button-circle pagination-divider">...</div>
+                                </li>
+                                <li>
+                                    <a class="button-circle pagination-page"
+                                       href="#">6</a>
+                                </li>
+                            </ul>
+
+                            <a class="pagination-next"
+                               href="#">
+                                <span class="pagination-next__text">Далее</span>
+                                <svg class="pagination-next__icon" viewBox="0 0 18 17">
+                                    <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                    <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </nav><!--.pagination-->
+                    </section><!--.docs-list-->
+                </div><!--.page-inside-center-->
+            </div><!--.container-->
+        </main><!--.page-content-->
+
+        <footer class="page-footer">
+            <div class="container">
+                <div class="page-footer__top">
+                    <div class="page-footer__left">
+                        <div class="page-logo page-logo_column page-footer__logo">
+                            <a href="#">
+                                <img class="lazyload page-logo__img"
+                                     data-sizes="auto"
+                                     data-srcset="_asset/img/logo.png 74w, _asset/img/logo@2x.png 148w"
+                                     width="74" height="74"
+                                     alt="Федеральная пробирная палата">
+                            </a>
+                            <div class="page-logo__text">
+                                <p class="page-logo__title">
+                                    Федеральная<br/>
+                                    пробирная палата
+                                </p>
+                                <p class="page-logo__sub-title">
+                                    Осуществляем пробирный<br/>
+                                    надзор с&nbsp;1700&nbsp;года
+                                </p>
+                            </div>
+                        </div><!--.page-logo-->
+
+                        <p class="page-footer__phone hidden-max-mobile">
+                            <a class="site-phone"
+                               href="mailto:+74956902727">
+                                +7 (495) 690-27-27
+                            </a>
+                        </p>
+                        <p class="page-footer__mail hidden-max-mobile">
+                            <a class="text-link-border text-link-border_white"
+                               href="mailto:probpalata@probpalata.ru">
+                                probpalata@probpalata.ru
+                            </a>
+                        </p>
+                        <p class="page-footer__address hidden-max-mobile">
+                            125009, г.&nbsp;Москва, ул.&nbsp;Большая Никитская, д.&nbsp;17, стр.&nbsp;2
+                        </p>
+                        <p class="page-footer__bvi hidden-max-mobile bvi-hide">
+                            <a href="#" class="text-link-border text-link-border_white bvi-open">
+                                Версия сайта для слабовидящих
+                            </a>
+                        </p>
+
+                        <ul class="page-footer__partners hidden-min-tablet">
+                            <li class="gos-partner">
+                                <img class="lazyload gos-partner__logo"
+                                     data-src="_asset/img/gos-partners/government.svg"
+                                     width="40" height="40"
+                                     alt="icon">
+                                <span class="gos-partner__text">Правительство России</span>
+                            </li>
+                            <li class="gos-partner">
+                                <img class="lazyload gos-partner__logo"
+                                     data-src="_asset/img/gos-partners/government.svg"
+                                     width="40" height="40"
+                                     alt="icon">
+                                <span class="gos-partner__text">Минфин России</span>
+                            </li>
+                            <li class="gos-partner">
+                                <img class="lazyload gos-partner__logo"
+                                     data-sizes="auto"
+                                     data-srcset="_asset/img/gos-partners/gosuslugi.png 40w, _asset/img/gos-partners/gosuslugi@2x.png 80w"
+                                     width="40" height="40"
+                                     alt="icon">
+                                <span class="gos-partner__text">Госуслуги</span>
+                            </li>
+                            <li class="gos-partner">
+                                <img class="lazyload gos-partner__logo"
+                                     data-src="_asset/img/gos-partners/gosznak.svg"
+                                     width="40" height="40"
+                                     alt="icon">
+                                <span class="gos-partner__text">Госзнак</span>
+                            </li>
+                            <li class="gos-partner">
+                                <img class="lazyload gos-partner__logo"
+                                     data-src="_asset/img/gos-partners/gosznak.svg"
+                                     width="40" height="40"
+                                     alt="icon">
+                                <span class="gos-partner__text">Стопкоронавирус</span>
+                            </li>
+                        </ul><!--.page-footer__partners-->
+                    </div><!--.page-footer__left-->
+
+                    <div class="page-footer__right">
+                        <div class="page-footer__nav">
+                            <div class="page-footer__nav__col">
+                                <nav class="page-group-nav">
+                                    <p class="page-group-nav__title">
+                                        <a href="#">
+                                            О палате
+                                            <svg class="page-group-nav__title__icon"
+                                                 viewBox="0 0 7 11">
+                                                <path d="M1 10L5.5 5.5L0.999999 1" stroke-width="1.5"/>
+                                            </svg>
+                                        </a>
+                                    </p>
+                                    <ul class="page-group-nav__list">
+                                        <li>
+                                            <a href="#">Задачи и функции</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Руководство</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Структура</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">История пробирного надзора</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Открытое ведомство</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Кадровое обеспечение</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Контактная информация</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Общественный совет</a>
+                                        </li>
+                                    </ul>
+                                </nav><!--.page-group-nav-->
+                            </div><!--.page-footer__nav__col-->
+
+                            <div class="page-footer__nav__col">
+                                <nav class="page-group-nav">
+                                    <p class="page-group-nav__title">
+                                        <a href="#">
+                                            Деятельность
+                                            <svg class="page-group-nav__title__icon"
+                                                 viewBox="0 0 7 11">
+                                                <path d="M1 10L5.5 5.5L0.999999 1" stroke-width="1.5"/>
+                                            </svg>
+                                        </a>
+                                    </p>
+                                    <ul class="page-group-nav__list">
+                                        <li>
+                                            <a href="#">Спецучет</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Лицензирование</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Регистрация именников</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Опробование и клеймение</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Аффинаж</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ломбарды и скупка</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Пробирный надзор</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Контроль за ввозом и вывозом</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Финансовый мониторинг</a>
+                                        </li>
+                                    </ul>
+                                </nav><!--.page-group-nav-->
+                            </div><!--.page-footer__nav__col-->
+
+                            <div class="page-footer__nav__col">
+                                <nav class="site-links">
+                                    <ul class="site-links__group">
+                                        <li>
+                                            <a href="#">Документы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Территориальные органы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Открытые данные</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Противодействие коррупции</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Интернет-приёмная</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="site-links__group">
+                                        <li>
+                                            <a href="#">ГИИС ДМДК</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="site-links__group">
+                                        <li>
+                                            <a href="#">Карта сайта</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">О сайте</a>
+                                        </li>
+                                    </ul>
+                                </nav><!--.site-links-->
+                            </div><!--.page-footer__nav__col-->
+                        </div><!--.page-footer__nav-->
+                    </div><!--.page-footer__right-->
+
+                    <div class="page-footer__contacts-mobile hidden-min-mobile">
+                        <p class="page-footer__phone">
+                            <a class="site-phone"
+                               href="mailto:+74956902727">
+                                +7 (495) 690-27-27
+                            </a>
+                        </p>
+                        <p class="page-footer__mail">
+                            <a href="mailto:probpalata@probpalata.ru"
+                               class="text-link-border text-link-border_white">
+                                probpalata@probpalata.ru
+                            </a>
+                        </p>
+                        <p class="page-footer__address">
+                            125009, г.&nbsp;Москва, ул.&nbsp;Большая Никитская, д.&nbsp;17, стр.&nbsp;2
+                        </p>
+                        <p class="page-footer__bvi bvi-hide">
+                            <a href="#" class="text-link-border text-link-border_white bvi-open">
+                                Версия сайта для слабовидящих
+                            </a>
+                        </p>
+                    </div><!--.page-footer__contacts-mobile-->
+                </div><!--.page-footer__top-->
+
+                <div class="page-footer__bottom">
+                    <div class="page-footer__left">
+                        <p class="page-footer__copy">
+                            &copy; Федеральная пробирная палата, 2022
+                        </p>
+                    </div><!--.page-footer__left-->
+
+                    <div class="page-footer__right hidden-max-tablet">
+                        <ul class="page-footer__partners">
+                            <li class="gos-partner">
+                                <img class="lazyload gos-partner__logo"
+                                     data-src="_asset/img/gos-partners/government.svg"
+                                     width="40" height="40"
+                                     alt="icon">
+                                <span class="gos-partner__text">Правительство России</span>
+                            </li>
+                            <li class="gos-partner">
+                                <img class="lazyload gos-partner__logo"
+                                     data-src="_asset/img/gos-partners/government.svg"
+                                     width="40" height="40"
+                                     alt="icon">
+                                <span class="gos-partner__text">Минфин России</span>
+                            </li>
+                            <li class="gos-partner">
+                                <img class="lazyload gos-partner__logo"
+                                     data-sizes="auto"
+                                     data-srcset="_asset/img/gos-partners/gosuslugi.png 40w, _asset/img/gos-partners/gosuslugi@2x.png 80w"
+                                     width="40" height="40"
+                                     alt="icon">
+                                <span class="gos-partner__text">Госуслуги</span>
+                            </li>
+                            <li class="gos-partner">
+                                <img class="lazyload gos-partner__logo"
+                                     data-src="_asset/img/gos-partners/gosznak.svg"
+                                     width="40" height="40"
+                                     alt="icon">
+                                <span class="gos-partner__text">Госзнак</span>
+                            </li>
+                            <li class="gos-partner">
+                                <img class="lazyload gos-partner__logo"
+                                     data-src="_asset/img/gos-partners/stopcorona.svg"
+                                     width="40" height="40"
+                                     alt="icon">
+                                <span class="gos-partner__text">Стопкоронавирус</span>
+                            </li>
+                        </ul><!--.page-footer__partners-->
+                    </div><!--.page-footer__right-->
+                </div><!--.page-footer__bottom-->
+            </div><!--.container-->
+        </footer><!--.page-footer-->
+
+    </div><!--.page-->
+
+<script src="_asset/js/jquery-3.6.0.min.js"></script>
+<script src="_asset/js/swiper-bundle.min.js"></script>
+<script src="_asset/js/js-throttle-debounce.min.js"></script>
+<script src="_asset/js/snap.svg-min.js"></script>
+<script src="_asset/js/custom-select.min.js"></script>
+<script src="_asset/js/moment.min.js"></script>
+<script src="_asset/js/moment-with-locales.min.js"></script>
+<script src="_asset/js/underscore-min.js"></script>
+<script src="_asset/js/daterangepicker.min.js"></script>
+<script src="_asset/js/clndr.min.js"></script>
+<script src="_asset/js/chart.min.js"></script>
+<script src="_asset/js/chartjs-plugin-datalabels.js"></script>
+<script src="_asset/js/jquery.validate.min.js"></script>
+<script src="_asset/js/dropzone-min.js"></script>
+<script src="_asset/js/app.js"></script>
+<script src="_asset/js/pages/documents.js"></script>
+
+<!-- Версия для слабовидящих -->
+<script src="_asset/js/bvi.js"></script>
+<script>
+    const bviVar = new isvek.Bvi({
+        speech: false,
+        target: '.bvi-open',
+        fontSize: 16,
+        panelFixed: false,
+        images: true,
+        builtElements: true,
+        reload: true,
+    });
+
+    document.addEventListener('click', function (e) {
+       if (e.target.closest('.bvi-open')) {
+           document.location.reload();
+           switchBviStyles();
+       }
+    });
+
+    switchBviStyles();
+
+    function switchBviStyles() {
+        if (document.body.classList.contains('bvi-active')) {
+            const linkApp = document.querySelector('#styles-app');
+            linkApp.href = '_asset/css/styles-bvi.css';
+
+            const linkBvi = document.createElement('link');
+            linkBvi.rel = 'stylesheet';
+            linkBvi.type = 'text/css';
+            linkBvi.href = '_asset/css/bvi.css';
+
+            document.querySelector('head').insertBefore(linkBvi, linkApp);
+        }
+    }
+</script>
+
+</body>
+</html>

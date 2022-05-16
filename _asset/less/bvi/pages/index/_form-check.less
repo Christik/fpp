@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Form Check
+   ========================================================================== */
+
+.form-check { position: relative; overflow: hidden; border: solid 1px #000; }
+.form-check__body { width: 200%; display: flex; transform: translateX(0);
+  .form-check.is-slide & { transform: translateX(-50%); }
+}
+.form-check__form { width: 100%; padding: 1em; display: flex; flex-direction: column; }
+
+/* ==========================================================================
+   Form Check Nav
+   ========================================================================== */
+
+.form-check-nav { display: flex; }
+.form-check-nav__item { width: 50%; font-weight: 700; cursor: pointer; border-bottom: solid 1px #000; padding: 1em;
+  &:not(:first-child) { border-left: solid 1px #fff; }
+
+  span { border-bottom: solid 2px #000; }
+
+  &.is-active { pointer-events: none; border-bottom: none;
+    span { border-bottom: none; }
+  }
+}
+
+/* ==========================================================================
+   Form Check Text
+   ========================================================================== */
+
+.form-check__title { font-weight: 700; }
+.form-check__description { margin: 0 0 1em;
+  .form-check__title + & { margin-top: .75em; }
+}
+
+/* ==========================================================================
+   Form Check Form
+   ========================================================================== */
+
+.form-check__field { margin-top: auto; }
+.form-check__captcha { margin-top: 2em; }
+.form-check__send { display: block; width: 100%; margin: 2em 0 0; }

@@ -1,0 +1,525 @@
+@@include('./partials/_head.html', {
+    "title": "Федеральная пробирная палата",
+})
+<body>
+<div class="page">
+    @@include('./partials/_header.html')
+
+    <main class="page-content">
+        <div class="container">
+            <div class="crumbs-panel page-content__top-panel">
+                <div class="crumbs-panel__left">
+                    <ul class="crumbs">
+                        <li><a class="text-link" href="#">Главная</a></li>
+                        <li><a class="text-link" href="#">Интернет-приёмная</a></li>
+                    </ul>
+                </div><!--.crumbs-panel__left-->
+
+                <div class="crumbs-panel__right">
+                    @@include('./components/_share.html')
+                </div><!--.crumbs-panel__right-->
+            </div><!--.crumbs-panel-->
+
+            <h1 class="h1 page-content__title">
+                Интернет-приёмная
+            </h1>
+
+            <div class="page-inside page-inside_no-padding-top">
+                <aside class="page-inside__side">
+                </aside><!--.page-inside__side-->
+
+                <article class="page-inside__content">
+                    <div class="page-inside__content__container">
+                        <div class="article-content">
+                            <p class="loud">На этой странице вы можете найти ответы на интерисующие вас вопросы по работе Федеральной пробирной палаты, отправить сообщение в интернет-приемную, а также найти контакную информацию и номер телефона</p>
+                            <p>По вопросам работы официального сайта Федеральной Пробирной Платы вы можете написать напрямую в службу поддержки: <a href="mailto:webmaster@mail.ru" class="text-link-border">webmaster@mail.ru</a>. Вопросы и обращения по другим темам по этому адресу не рассматриваются.</p>
+                            <p>В интернет-приемную Банка России могут обратиться как физические, так и юридические лица. Приложите, пожалуйста, скан-копии всех документов, которые помогут нам разобраться в обстоятельствах вашей проблемы.</p>
+                            <br/>
+                            <a class="button" href="#">Написать сообщение</a>
+                        </div><!--.article-content-->
+                    </div><!--.page-inside__content__container-->
+                </article><!--.page-inside__content-->
+            </div><!--.page-inside-->
+
+            <section class="page-inside faq tabs">
+                <aside class="page-inside__side faq__side">
+                    <nav class="side-nav">
+                        <div class="side-nav__section">
+                            <p class="side-nav__title">
+                                Вопросы по темам
+                            </p>
+                            <ul class="side-nav__list">
+                                <li>
+                                    <a class="text-link side-nav__list__current"
+                                       href="#"
+                                       data-tabs-link="accounting">Специальный учет</a>
+                                </li>
+                                <li>
+                                    <a class="text-link"
+                                       href="#"
+                                       data-tabs-link="giis">ГИИС ДМДК</a>
+                                </li>
+                                <li>
+                                    <a class="text-link"
+                                       href="#"
+                                       data-tabs-link="testing">Опробование, анализ и&nbsp;клеймение</a>
+                                </li>
+                                <li>
+                                    <a class="text-link"
+                                       href="#"
+                                       data-tabs-link="license">Лицензирование</a>
+                                </li>
+                                <li>
+                                    <a class="text-link"
+                                       href="#"
+                                       data-tabs-link="supervision">Пробирный надзор</a>
+                                </li>
+                                <li>
+                                    <a class="text-link"
+                                       href="#"
+                                       data-tabs-link="control">Контроль за ввозом и&nbsp;вывозом</a>
+                                </li>
+                                <li>
+                                    <a class="text-link"
+                                       href="#"
+                                       data-tabs-link="finance">Финансовый мониторинг</a>
+                                </li>
+                            </ul>
+                        </div><!--.side-nav__section-->
+                    </nav><!--.side-nav-->
+                </aside><!--.page-inside__side-->
+
+                <div class="page-inside__content">
+                    <div class="page-inside__content__container">
+                        <div class="faq__head">
+                            <h2 class="h3">Частозадаваемые вопросы</h2>
+                        </div>
+
+                        <div class="faq__nav hidden-min-mobile">
+                            <p class="faq__nav__label">Выбрать тему вопросов</p>
+
+                            <select class="custom-select faq-select">
+                                <option value="accounting" selected>Специальный учет</option>
+                                <option value="giis">ГИИС ДМДК</option>
+                                <option value="testing">Опробование, анализ и&nbsp;клеймение</option>
+                                <option value="license">Лицензирование</option>
+                                <option value="supervision">Пробирный надзор</option>
+                                <option value="control">Контроль за ввозом и&nbsp;вывозом</option>
+                                <option value="finance">Финансовый мониторинг</option>
+                            </select>
+
+                        </div><!--.faq__nav-->
+
+                        <div class="tabs__content is-opened" data-tabs-content="accounting">
+                            <div class="faq-list">
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Что подразумевается под понятием специального учета?
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                    <svg class="button-circle__arrow button-circle__arrow_down"
+                                         viewBox="0 0 18 17">
+                                        <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                        <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>В соответствии со статьей 1 Федерального закона от 26 марта 1998 г. № 41-ФЗ, специальный учет – это ведение реестра осуществляющих операции с драгоценными металлами и драгоценными камнями организаций и индивидуальных предпринимателей, не предполагающее взимания сбора за внесение указанных организаций и индивидуальных предпринимателей в этот реестр.</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Кто подлежит постановке на специальный учет?
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                    <svg class="button-circle__arrow button-circle__arrow_down"
+                                         viewBox="0 0 18 17">
+                                        <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                        <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>В соответствии со статьей 1 Федерального закона от 26 марта 1998 г. № 41-ФЗ, специальный учет – это ведение реестра осуществляющих операции с драгоценными металлами и драгоценными камнями организаций и индивидуальных предпринимателей, не предполагающее взимания сбора за внесение указанных организаций и индивидуальных предпринимателей в этот реестр.</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Как подать заявление о постановке на специальный учет/снятии со специального учета?
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                    <svg class="button-circle__arrow button-circle__arrow_down"
+                                         viewBox="0 0 18 17">
+                                        <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                        <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>В соответствии со статьей 1 Федерального закона от 26 марта 1998 г. № 41-ФЗ, специальный учет – это ведение реестра осуществляющих операции с драгоценными металлами и драгоценными камнями организаций и индивидуальных предпринимателей, не предполагающее взимания сбора за внесение указанных организаций и индивидуальных предпринимателей в этот реестр.</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Какая ответственность предусмотрена за осуществление операций с драгоценными металлами и драгоценными камнями без постановки на специальный учет?
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                    <svg class="button-circle__arrow button-circle__arrow_down"
+                                         viewBox="0 0 18 17">
+                                        <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                        <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>В соответствии со статьей 1 Федерального закона от 26 марта 1998 г. № 41-ФЗ, специальный учет – это ведение реестра осуществляющих операции с драгоценными металлами и драгоценными камнями организаций и индивидуальных предпринимателей, не предполагающее взимания сбора за внесение указанных организаций и индивидуальных предпринимателей в этот реестр.</p>
+                                            <p>В соответствии со статьей 1 Федерального закона от 26 марта 1998 г. № 41-ФЗ, специальный учет – это ведение реестра осуществляющих операции с драгоценными металлами и драгоценными камнями организаций и индивидуальных предпринимателей, не предполагающее взимания сбора за внесение указанных организаций и индивидуальных предпринимателей в этот реестр.</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Как можно узнать, состоит ли организация или индивидуальный предприниматель на специальном учете?
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                    <svg class="button-circle__arrow button-circle__arrow_down"
+                                         viewBox="0 0 18 17">
+                                        <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                        <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>В соответствии со статьей 1 Федерального закона от 26 марта 1998 г. № 41-ФЗ, специальный учет – это ведение реестра осуществляющих операции с драгоценными металлами и драгоценными камнями организаций и индивидуальных предпринимателей, не предполагающее взимания сбора за внесение указанных организаций и индивидуальных предпринимателей в этот реестр.</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+                            </div><!--.faq-list-->
+                        </div><!--.tabs__content-->
+
+                        <div class="tabs__content" data-tabs-content="giis">
+                            <div class="faq-list">
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            ГИИС ДМДК
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                            <svg class="button-circle__arrow button-circle__arrow_down"
+                                                 viewBox="0 0 18 17">
+                                                <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                                <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>ГИИС ДМДК</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            ГИИС ДМДК
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                            <svg class="button-circle__arrow button-circle__arrow_down"
+                                                 viewBox="0 0 18 17">
+                                                <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                                <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>ГИИС ДМДК</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+                            </div><!--.faq-list-->
+                        </div><!--.tabs__content-->
+
+                        <div class="tabs__content" data-tabs-content="testing">
+                            <div class="faq-list">
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Опробование, анализ и&nbsp;клеймение
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                            <svg class="button-circle__arrow button-circle__arrow_down"
+                                                 viewBox="0 0 18 17">
+                                                <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                                <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>Опробование, анализ и&nbsp;клеймение</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Опробование, анализ и&nbsp;клеймение
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                            <svg class="button-circle__arrow button-circle__arrow_down"
+                                                 viewBox="0 0 18 17">
+                                                <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                                <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>Опробование, анализ и&nbsp;клеймение</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+                            </div><!--.faq-list-->
+                        </div><!--.tabs__content-->
+
+                        <div class="tabs__content" data-tabs-content="license">
+                            <div class="faq-list">
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Лицензирование
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                            <svg class="button-circle__arrow button-circle__arrow_down"
+                                                 viewBox="0 0 18 17">
+                                                <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                                <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>Лицензирование</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Лицензирование
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                            <svg class="button-circle__arrow button-circle__arrow_down"
+                                                 viewBox="0 0 18 17">
+                                                <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                                <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>Лицензирование</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+                            </div><!--.faq-list-->
+                        </div><!--.tabs__content-->
+
+                        <div class="tabs__content" data-tabs-content="supervision">
+                            <div class="faq-list">
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Пробирный надзор
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                            <svg class="button-circle__arrow button-circle__arrow_down"
+                                                 viewBox="0 0 18 17">
+                                                <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                                <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>Пробирный надзор</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Пробирный надзор
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                            <svg class="button-circle__arrow button-circle__arrow_down"
+                                                 viewBox="0 0 18 17">
+                                                <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                                <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>Пробирный надзор</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+                            </div><!--.faq-list-->
+                        </div><!--.tabs__content-->
+
+                        <div class="tabs__content" data-tabs-content="control">
+                            <div class="faq-list">
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Контроль за ввозом и&nbsp;вывозом
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                            <svg class="button-circle__arrow button-circle__arrow_down"
+                                                 viewBox="0 0 18 17">
+                                                <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                                <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>Контроль за ввозом и&nbsp;вывозом</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Контроль за ввозом и&nbsp;вывозом
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                            <svg class="button-circle__arrow button-circle__arrow_down"
+                                                 viewBox="0 0 18 17">
+                                                <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                                <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>Контроль за ввозом и&nbsp;вывозом</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+                            </div><!--.faq-list-->
+                        </div><!--.tabs__content-->
+
+                        <div class="tabs__content" data-tabs-content="finance">
+                            <div class="faq-list">
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Финансовый мониторинг
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                            <svg class="button-circle__arrow button-circle__arrow_down"
+                                                 viewBox="0 0 18 17">
+                                                <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                                <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>Финансовый мониторинг</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+
+                                <article class="faq-item">
+                                    <div class="faq-item__head">
+                                        <h3 class="faq-item__question">
+                                            Финансовый мониторинг
+                                        </h3>
+                                        <span class="button-circle faq-item__arrow">
+                                            <svg class="button-circle__arrow button-circle__arrow_down"
+                                                 viewBox="0 0 18 17">
+                                                <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                                <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </div><!--.faq-item__head-->
+                                    <div class="faq-item__body">
+                                        <div class="text-basic">
+                                            <p>Финансовый мониторинг</p>
+                                        </div>
+                                    </div><!--.faq-item__body-->
+                                </article><!--.faq-item-->
+                            </div><!--.faq-list-->
+                        </div><!--.tabs__content-->
+                    </div><!--.page-inside__content__container-->
+                </div><!--.page-inside__content-->
+            </section><!--.page-inside-->
+        </div><!--.container-->
+
+        <section class="section section_white">
+            <div class="container">
+                <div class="page-inside page-inside_no-padding">
+                    <aside class="page-inside__side">
+                    </aside><!--.page-inside__side-->
+
+                    <div class="page-inside__content">
+                        <div class="page-inside__content__container">
+                            <article class="reception-contacts">
+                                <h3 class="reception-contacts__title">
+                                    Контактный центр
+                                </h3>
+                                <p class="text-basic reception-contacts__text">
+                                    Если вам нужна информация справочного характера, вы можете задать вопрос оператору контактного центра
+                                </p>
+                                <p class="reception-contacts__phone">
+                                    <a class="site-phone"
+                                       href="mailto:+74956902727">
+                                        +7 (495) 690-27-27
+                                    </a>
+                                </p>
+                                <p class="text-basic reception-contacts__text">
+                                    Круглосуточно, без выходных
+                                </p>
+                            </article>
+                        </div><!--.page-inside__content__container-->
+                    </div><!--.page-inside__content-->
+                </div><!--.page-inside-->
+            </div><!--.container-->
+        </section><!--.section-->
+    </main><!--.page-content-->
+
+    @@include('./partials/_footer.html')
+</div><!--.page-->
+
+@@include('./partials/_foot.html', {
+"pageScript": '<script src="_asset/js/pages/faq.js"></script>'
+})
+</body>
+</html>

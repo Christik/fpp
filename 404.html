@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>Федеральная пробирная палата</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="_asset/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="_asset/css/dropzone.css">
+	<link rel="stylesheet" id="styles-app" href="_asset/css/styles.css?v02">
+
+	<script src="_asset/js/ls.bgset.min.js"></script>
+	<script src="_asset/js/lazysizes.min.js"></script>
+	<script>
+		(function(){
+			window.lazySizesConfig = window.lazySizesConfig || {};
+			window.lazySizesConfig.preloadAfterLoad = true;
+		})();
+	</script>
+</head>
+
+<body class="page-error page-error_404">
+<div class="page page_error">
+    <div class="page-error__container">
+        <div class="page-error__num">
+            404
+        </div>
+        <div class="text-basic page-error__text">
+            <p>Неправильно набран адрес, или такой страницы больше не&nbsp;существует.</p>
+            <p>Можно перейти на <a href="#" class="text-link-border text-link-border_white">главную страницу</a>, или воспользоваться <a href="#" class="text-link-border text-link-border_white">поиском по сайту</a>.</p>
+        </div>
+    </div><!--.page-error__container-->
+</div><!--.page-->
+
+<script src="_asset/js/jquery-3.6.0.min.js"></script>
+<script src="_asset/js/swiper-bundle.min.js"></script>
+<script src="_asset/js/js-throttle-debounce.min.js"></script>
+<script src="_asset/js/snap.svg-min.js"></script>
+<script src="_asset/js/custom-select.min.js"></script>
+<script src="_asset/js/moment.min.js"></script>
+<script src="_asset/js/moment-with-locales.min.js"></script>
+<script src="_asset/js/underscore-min.js"></script>
+<script src="_asset/js/daterangepicker.min.js"></script>
+<script src="_asset/js/clndr.min.js"></script>
+<script src="_asset/js/chart.min.js"></script>
+<script src="_asset/js/chartjs-plugin-datalabels.js"></script>
+<script src="_asset/js/jquery.validate.min.js"></script>
+<script src="_asset/js/dropzone-min.js"></script>
+<script src="_asset/js/app.js"></script>
+
+
+<!-- Версия для слабовидящих -->
+<script src="_asset/js/bvi.js"></script>
+<script>
+    const bviVar = new isvek.Bvi({
+        speech: false,
+        target: '.bvi-open',
+        fontSize: 16,
+        panelFixed: false,
+        images: true,
+        builtElements: true,
+        reload: true,
+    });
+
+    document.addEventListener('click', function (e) {
+       if (e.target.closest('.bvi-open')) {
+           document.location.reload();
+           switchBviStyles();
+       }
+    });
+
+    switchBviStyles();
+
+    function switchBviStyles() {
+        if (document.body.classList.contains('bvi-active')) {
+            const linkApp = document.querySelector('#styles-app');
+            linkApp.href = '_asset/css/styles-bvi.css';
+
+            const linkBvi = document.createElement('link');
+            linkBvi.rel = 'stylesheet';
+            linkBvi.type = 'text/css';
+            linkBvi.href = '_asset/css/bvi.css';
+
+            document.querySelector('head').insertBefore(linkBvi, linkApp);
+        }
+    }
+</script>
+
+</body>
+</html>

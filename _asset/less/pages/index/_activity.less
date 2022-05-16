@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Section Activity
+   ========================================================================== */
+
+.section-activity { background: @color-bg; }
+
+/* ==========================================================================
+   Activity card
+   ========================================================================== */
+
+.activity-card { position: relative; min-height: 18.6rem; border-radius: 2.5rem; .overflow-border-radius(); background: #fff; .flex(); height: 100%; overflow: hidden; }
+.activity-card__content { padding: 1.7rem; position: relative; .flex(); .flex-direction(column); width: 100%; }
+.activity-card__title { font-family: @font-addl; font-size: 1.3rem; line-height: 1.1; font-weight: 500; margin: 0 0 1em; transition: color .45s; color: @color-text; }
+.activity-card__icon { display: block; position: absolute; right: 1.7rem; bottom: 1.7rem; height: 4rem; pointer-events: none; opacity: 1; }
+.activity-card__links { font-size: .7rem; line-height: 1.4; font-weight: 500; margin: 0 0 1.5em;
+  li {
+    &:not(:first-child) { margin-top: .75em; }
+  }
+  a { color: #fff; }
+}
+.activity-card__more { .flex(); .align-items(flex-end); .justify-content(space-between); margin: auto 0 0; color: #fff; }
+.activity-card__more__text { font-size: .8rem; line-height: 1; font-weight: 600; }
+.activity-card__more__icon { width: 3rem; height: 3rem; }
+
+// hover
+@media @minMobile {
+  .activity-card {
+    &:before { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: @color-primary; z-index: -1; transition: transform .45s cubic-bezier(0.165,  0.84,  0.44,  1); transform-origin: center top; transform: scaleY(0); pointer-events: none; }
+
+    &:hover {
+      &:before { transform-origin: center bottom; transform: scaleY(1); }
+      .activity-card__title { color: #fff; }
+      .activity-card__icon { opacity: 0; }
+    }
+
+  }
+}
+
+@media @maxTablet {
+  .activity-card { min-height: 13rem; border-radius: 1.7rem; }
+  .activity-card__content { padding: 1.3rem 1rem; }
+  .activity-card__title { font-size: .9rem; }
+  .activity-card__icon { height: 2.5rem; }
+  .activity-card__links { font-size: .6rem; }
+  .activity-card__more__text { font-size: .7rem; }
+  .activity-card__more__icon { width: 2rem; height: 2rem; }
+}
+
+@media @maxMobile {
+  .activity-card { min-height: 10.4rem; }
+  .activity-card__content { padding: 1.5rem; }
+  .activity-card__title { font-size: 1.1rem; }
+  .activity-card__links { display: none; }
+  .activity-card__icon { height: 3.5rem; }
+  .activity-card__more { display: block; position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+  .activity-card__more__text,
+  .activity-card__more__icon { display: none; }
+}
+
+@media (hover: hover) {
+  .activity-card__links a:hover,
+  .activity-card__more:hover { opacity: .5; }
+}
+
+/* ==========================================================================
+   Activity cards
+   ========================================================================== */
+
+.activity-cards { .flex(); .flex-wrap(wrap); margin: 0 -2rem -2rem 0; }
+.activity-cards__item { padding: 0 2rem 2rem 0; width: 25%; }
+
+@media @maxTablet {
+  .activity-cards { margin-right: -1.7rem; margin-bottom: -1.7rem; }
+  .activity-cards__item { width: 33.333333%; padding-right: 1.7rem; padding-bottom: 1.7rem; }
+}
+
+@media @maxMobile {
+  .activity-cards { display: block; margin: 0; }
+  .activity-cards__item { padding: 0; width: auto;
+    &:not(:first-child) { margin: 1.2rem 0 0; }
+  }
+}

@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Section Activity
+   ========================================================================== */
+
+.section-activity { border-top: none; }
+
+/* ==========================================================================
+   Activity card
+   ========================================================================== */
+
+.activity-card { position: relative; min-height: 300px; height: 100%; padding: 20px; border: solid 1px #000; border-radius: 20px; display: flex; flex-direction: column;
+  a { padding: .25em; }
+}
+.activity-card__content,
+.activity-card__hover { }
+.activity-card__content { }
+.activity-card__hover { flex-grow: 1; display: flex; flex-direction: column; align-items: flex-start;
+  .activity-card__title { display: none; }
+}
+.activity-card__title { line-height: normal; margin: 0 0 1em; }
+.activity-card__icon { display: none; }
+.activity-card__links { margin: 0 0 1.5em;
+  li { position: relative; padding: 0 0 0 15px;
+    &:before { content: ''; display: block; position: absolute; left: 0; top: .7em; width: 6px; height: 6px; background: @bvi-white; border-radius: 50%; transform: translateY(-50%);
+      body .bvi-body[data-bvi-theme=black] & { background-color: @bvi-black; }
+      body .bvi-body[data-bvi-theme=green] & { background-color: @bvi-green; }
+      body .bvi-body[data-bvi-theme=brown] & { background-color: @bvi-brown; }
+      body .bvi-body[data-bvi-theme=blue] & { background-color: @bvi-blue; }
+    }
+    &:not(:first-child) { margin-top: .75em; }
+  }
+}
+.activity-card__more { font-weight: 700; margin-top: auto; }
+.activity-card__more__text { }
+.activity-card__more__icon { display: none; }
+
+
+/* ==========================================================================
+   Activity cards
+   ========================================================================== */
+
+.activity-cards { display: flex; flex-wrap: wrap; margin: 0 -30px -30px 0; }
+.activity-cards__item { padding: 0 30px 30px 0; width: 25%; }
+
+@media @maxTabletBvi {
+  .activity-cards__item { width: 50%; }
+}
+
+@media @maxMobile {
+  .activity-cards { display: block; margin: 0; }
+  .activity-cards__item { padding: 0 0 30px; width: auto; }
+}
+

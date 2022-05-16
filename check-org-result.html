@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>Федеральная пробирная палата</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="_asset/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="_asset/css/dropzone.css">
+	<link rel="stylesheet" id="styles-app" href="_asset/css/styles.css?v02">
+
+	<script src="_asset/js/ls.bgset.min.js"></script>
+	<script src="_asset/js/lazysizes.min.js"></script>
+	<script>
+		(function(){
+			window.lazySizesConfig = window.lazySizesConfig || {};
+			window.lazySizesConfig.preloadAfterLoad = true;
+		})();
+	</script>
+</head>
+
+<body>
+<div class="page">
+    <div class="page__header" data-header>
+        <header class="page-header">
+            <div class="container">
+                <div class="page-header__in">
+                    <div class="page-logo">
+                        <a href="#">
+                            <img class="lazyload page-logo__img"
+                                 data-sizes="auto"
+                                 data-srcset="_asset/img/logo.png 74w, _asset/img/logo@2x.png 148w"
+                                 width="74" height="74"
+                                 alt="Федеральная пробирная палата">
+                        </a>
+                        <div class="page-logo__text">
+                            <p class="page-logo__title">
+                                Федеральная<br/>
+                                пробирная палата
+                            </p>
+                            <p class="page-logo__sub-title">
+                                Осуществляем пробирный<br/>
+                                надзор с&nbsp;1700&nbsp;года
+                            </p>
+                        </div>
+                    </div><!--.page-logo-->
+
+                    <ul class="page-menu page-header__menu">
+                        <li class="page-menu__item">
+                            <a class="page-menu__link"
+                               href="#">
+                                О палате
+                            </a>
+                        </li>
+                        <li class="page-menu__item">
+                            <a class="page-menu__link"
+                               href="#">
+                                Деятельность
+                            </a>
+                        </li>
+                        <li class="page-menu__item">
+                            <a class="page-menu__link"
+                               href="#">
+                                Документы
+                            </a>
+                        </li>
+                        <li class="page-menu__item">
+                            <a class="page-menu__link"
+                               href="#">
+                                ГИИС ДМДК
+                            </a>
+                        </li>
+                    </ul><!--.page-.menu-->
+
+                    <ul class="form-check-nav form-check-nav_detacked page-header__form-check-nav bvi-hide">
+                        <li class="form-check-nav__item">
+                            <span>Проверить<br/>ювелирное изделие</span>
+                        </li>
+                        <li class="form-check-nav__item">
+                            <span>Проверить<br/>организацию</span>
+                        </li>
+                    </ul><!--.form-check__nav-->
+
+                    <div class="page-header__buttons">
+                        <button type="button"
+                                class="button-header page-header__buttons__button bvi-hide"
+                                data-search-open>
+                            <svg class="button-header__search"
+                                 viewBox="0 0 18 18">
+                                <path d="M6.971 12.942C10.2687 12.942 12.942 10.2687 12.942 6.971C12.942 3.67331 10.2687 1 6.971 1C3.67331 1 1 3.67331 1 6.971C1 10.2687 3.67331 12.942 6.971 12.942Z"
+                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.1562 11.2305L17.0013 17.1575"
+                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+
+                        <button type="button"
+                                class="button-header page-header__buttons__button"
+                                data-burger>
+                            <div class="button-header__burger"></div>
+                        </button>
+                    </div><!--.page-header__buttons-->
+                </div><!--.page-header__in-->
+            </div><!--.container-->
+        </header><!--.page-header-->
+
+        <div class="page-search page__header__search"
+             data-search>
+            <div class="page-search__in">
+                <input class="page-search__input"
+                       type="text"
+                       placeholder="Поиск по сайту">
+                <button type="submit"
+                        class="page-search__submit">Искать</button>
+            </div>
+
+            <button type="button"
+                    class="button-header is-active page-search__close bvi-hide"
+                    data-search-close>
+                <div class="button-header__burger"></div>
+                Закрыть
+            </button>
+        </div><!--.page-search-->
+
+        <div class="page-header-detail page__header__detail"
+             data-menu-collapse>
+            <div class="container">
+                <div class="page-header-detail__content">
+                    <div class="page-header-detail__content__column">
+                        <nav class="page-group-nav">
+                            <p class="page-group-nav__title">
+                                <a href="#">
+                                    О <span class="hidden-max-tablet bvi-hide">Федеральной пробирной</span> палате
+                                    <svg class="page-group-nav__title__icon bvi-no-styles"
+                                         viewBox="0 0 7 11">
+                                        <path class="bvi-no-styles"
+                                              d="M1 10L5.5 5.5L0.999999 1" stroke-width="1.5"/>
+                                    </svg>
+                                </a>
+                            </p>
+                            <ul class="page-group-nav__list">
+                                <li>
+                                    <a href="#">Задачи и функции</a>
+                                </li>
+                                <li>
+                                    <a href="#">Руководство</a>
+                                </li>
+                                <li>
+                                    <a href="#">Структура</a>
+                                </li>
+                                <li>
+                                    <a href="#">История пробирного надзора</a>
+                                </li>
+                                <li>
+                                    <a href="#">Открытое ведомство</a>
+                                </li>
+                                <li>
+                                    <a href="#">Кадровое обеспечение</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контактная информация</a>
+                                </li>
+                                <li>
+                                    <a href="#">Общественный совет</a>
+                                </li>
+                            </ul>
+                        </nav><!--.page-group-nav-->
+                    </div><!--.page-header-detail__content__column-->
+
+                    <div class="page-header-detail__content__column">
+                        <nav class="page-group-nav">
+                            <p class="page-group-nav__title">
+                                <a href="#">
+                                    Деятельность
+                                    <svg class="page-group-nav__title__icon bvi-no-styles"
+                                         viewBox="0 0 7 11">
+                                        <path class="bvi-no-styles"
+                                              d="M1 10L5.5 5.5L0.999999 1" stroke-width="1.5"/>
+                                    </svg>
+                                </a>
+                            </p>
+                            <ul class="page-group-nav__list">
+                                <li>
+                                    <a href="#">Спецучет</a>
+                                </li>
+                                <li>
+                                    <a href="#">Лицензирование</a>
+                                </li>
+                                <li>
+                                    <a href="#">Регистрация именников</a>
+                                </li>
+                                <li>
+                                    <a href="#">Опробование и клеймение</a>
+                                </li>
+                                <li>
+                                    <a href="#">Аффинаж</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ломбарды и скупка</a>
+                                </li>
+                                <li>
+                                    <a href="#">Пробирный надзор</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контроль за ввозом и вывозом</a>
+                                </li>
+                                <li>
+                                    <a href="#">Финансовый мониторинг</a>
+                                </li>
+                            </ul>
+                        </nav><!--.page-group-nav-->
+                    </div><!--.page-header-detail__content__column-->
+
+                    <div class="page-header-detail__content__column">
+                        <nav class="site-links">
+                            <ul class="site-links__group">
+                                <li>
+                                    <a href="#">Документы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Территориальные органы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Открытые данные</a>
+                                </li>
+                                <li>
+                                    <a href="#">Противодействие коррупции</a>
+                                </li>
+                                <li>
+                                    <a href="#">Интернет-приёмная</a>
+                                </li>
+                            </ul>
+                            <ul class="site-links__group">
+                                <li>
+                                    <a href="#">ГИИС ДМДК</a>
+                                </li>
+                            </ul>
+                            <ul class="site-links__group">
+                                <li>
+                                    <a href="#">Карта сайта</a>
+                                </li>
+                                <li>
+                                    <a href="#">О сайте</a>
+                                </li>
+                            </ul>
+                        </nav><!--.site-links-->
+                    </div><!--.page-header-detail__content__column-->
+                </div><!--.page-header-detail__content-->
+
+                <div class="page-header-detail__footer">
+                    <p class="site-copy page-header-detail__copy">
+                        &copy; Федеральная пробирная палата, 2022
+                    </p>
+                    <p class="page-header-detail__address">
+                        125009, г.&nbsp;Москва, ул.&nbsp;Большая Никитская, д.&nbsp;17, стр.&nbsp;2
+                    </p>
+                    <p class="page-header-detail__phone">
+                        <a class="site-phone"
+                           href="mailto:+74956902727">
+                            +7 (495) 690-27-27
+                        </a>
+                    </p>
+                </div><!--.page-header-detail__footer-->
+            </div><!--.container-->
+        </div><!--.page-header-detail-->
+    </div><!--.page__header-->
+
+
+
+    <main class="page-content">
+        <div class="container">
+            <div class="crumbs-panel page-content__top-panel">
+                <div class="crumbs-panel__left">
+                    <ul class="crumbs">
+                        <li><a class="text-link" href="#">Главная</a></li>
+                        <li><a class="text-link" href="#">Проверить организацию</a></li>
+                    </ul>
+                </div><!--.crumbs-panel__left-->
+
+                <div class="crumbs-panel__right">
+                    <div class="share-links @@class">
+                        <a class="share-link"
+                           title="VKontakte"
+                           href="#">
+                            <svg viewBox="0 0 20 20">
+                                <path d="M19.894 14.3053C19.8698 14.2531 19.8472 14.2098 19.8262 14.1751C19.4792 13.5502 18.8161 12.7831 17.8373 11.8736L17.8166 11.8528L17.8063 11.8426L17.7958 11.8321H17.7853C17.341 11.4087 17.0597 11.1239 16.9419 10.9781C16.7264 10.7004 16.6781 10.4193 16.7959 10.1345C16.8791 9.91933 17.1918 9.46488 17.7331 8.77056C18.0178 8.40258 18.2433 8.10767 18.4099 7.88548C19.611 6.28871 20.1317 5.26835 19.9719 4.82401L19.9099 4.72017C19.8682 4.65766 19.7606 4.60047 19.5872 4.54831C19.4135 4.49627 19.1914 4.48766 18.9206 4.52235L15.9217 4.54306C15.8731 4.52585 15.8037 4.52745 15.7134 4.54831C15.6231 4.56918 15.5779 4.57964 15.5779 4.57964L15.5257 4.60572L15.4843 4.63705C15.4496 4.65777 15.4114 4.6942 15.3697 4.74629C15.3282 4.79819 15.2936 4.8591 15.2658 4.9285C14.9393 5.7685 14.5681 6.54949 14.1515 7.27143C13.8946 7.70191 13.6587 8.07499 13.4433 8.39088C13.2281 8.70666 13.0476 8.93931 12.9019 9.08845C12.756 9.23773 12.6244 9.35733 12.5061 9.44767C12.3881 9.53805 12.298 9.57623 12.2355 9.56226C12.173 9.5483 12.1141 9.53444 12.0583 9.52058C11.9612 9.45806 11.8831 9.37305 11.8242 9.26545C11.765 9.15786 11.7252 9.02244 11.7044 8.85929C11.6836 8.69604 11.6714 8.55562 11.6679 8.43756C11.6646 8.31965 11.6661 8.15286 11.6732 7.93767C11.6804 7.72237 11.6836 7.5767 11.6836 7.50033C11.6836 7.23649 11.6888 6.95014 11.6991 6.64122C11.7096 6.33229 11.7181 6.08753 11.7252 5.90721C11.7323 5.7267 11.7356 5.53574 11.7356 5.33441C11.7356 5.13308 11.7233 4.97519 11.6991 4.86059C11.6752 4.74614 11.6385 4.63505 11.5901 4.52734C11.5414 4.41975 11.4701 4.33652 11.3766 4.27743C11.2829 4.21842 11.1664 4.17159 11.0278 4.13679C10.6598 4.05353 10.1912 4.00848 9.62185 4.00148C8.33069 3.98762 7.50105 4.071 7.13311 4.2515C6.98733 4.32776 6.85541 4.43197 6.73746 4.56378C6.61247 4.71656 6.59504 4.79994 6.68527 4.81365C7.10186 4.87606 7.39677 5.02534 7.57035 5.26135L7.6329 5.38642C7.68155 5.47665 7.73013 5.6364 7.77875 5.86545C7.8273 6.09449 7.85863 6.34787 7.87241 6.62542C7.90706 7.13228 7.90706 7.56616 7.87241 7.92709C7.83765 8.28817 7.80483 8.56926 7.7735 8.77059C7.74217 8.97192 7.69534 9.13506 7.6329 9.25998C7.57035 9.38494 7.52873 9.46131 7.50787 9.48903C7.48704 9.51675 7.46968 9.53422 7.4559 9.54107C7.36566 9.57565 7.27182 9.59327 7.17469 9.59327C7.07742 9.59327 6.95947 9.54461 6.82065 9.44738C6.68188 9.35014 6.53785 9.21658 6.38856 9.04647C6.23928 8.87633 6.07093 8.63856 5.88342 8.33314C5.69606 8.02772 5.50166 7.66675 5.30033 7.25024L5.13376 6.94817C5.02963 6.75384 4.88739 6.47089 4.70689 6.09956C4.52628 5.72809 4.36664 5.36876 4.22786 5.02165C4.17238 4.87587 4.08904 4.76489 3.97799 4.68851L3.92587 4.65718C3.89122 4.62947 3.8356 4.60003 3.7593 4.56867C3.68289 4.53734 3.60316 4.51487 3.51978 4.50105L0.666572 4.52176C0.375011 4.52176 0.177184 4.58781 0.073018 4.71973L0.0313299 4.78214C0.0105041 4.8169 0 4.87241 0 4.94882C0 5.02519 0.0208258 5.11893 0.0625139 5.22991C0.47903 6.20884 0.931983 7.15293 1.42137 8.06233C1.91076 8.97174 2.33603 9.70429 2.69692 10.2593C3.05789 10.8148 3.42583 11.339 3.80073 11.8317C4.17563 12.3247 4.42379 12.6405 4.54521 12.7793C4.66677 12.9184 4.76225 13.0223 4.83166 13.0917L5.09204 13.3416C5.25865 13.5082 5.5033 13.7078 5.82612 13.9403C6.14901 14.173 6.50648 14.402 6.89871 14.6278C7.291 14.8533 7.74739 15.0372 8.2681 15.1795C8.78875 15.3219 9.2955 15.3791 9.78842 15.3515H10.986C11.2288 15.3305 11.4128 15.2542 11.5379 15.1224L11.5793 15.0702C11.6072 15.0287 11.6333 14.9644 11.6573 14.8777C11.6817 14.791 11.6938 14.6954 11.6938 14.5914C11.6867 14.2929 11.7094 14.0239 11.7614 13.7845C11.8133 13.5451 11.8724 13.3646 11.9386 13.243C12.0047 13.1215 12.0793 13.0191 12.1624 12.936C12.2456 12.8527 12.3049 12.8023 12.3397 12.7849C12.3743 12.7674 12.4019 12.7556 12.4227 12.7485C12.5893 12.693 12.7854 12.7467 13.0112 12.91C13.2369 13.0731 13.4486 13.2746 13.6465 13.514C13.8444 13.7536 14.0821 14.0225 14.3597 14.3209C14.6376 14.6195 14.8805 14.8414 15.0886 14.9874L15.2968 15.1124C15.4359 15.1957 15.6164 15.2721 15.8386 15.3415C16.0604 15.4109 16.2547 15.4283 16.4215 15.3936L19.0872 15.352C19.3509 15.352 19.556 15.3083 19.7015 15.2217C19.8474 15.1349 19.934 15.0393 19.9619 14.9354C19.9898 14.8313 19.9913 14.7132 19.9672 14.5811C19.9425 14.4494 19.9182 14.3573 19.894 14.3053Z"/>
+                            </svg>
+                        </a>
+                        <a class="share-link"
+                           title="Telegram"
+                           href="#">
+                            <svg viewBox="0 0 20 20">
+                                <path d="M2.82918 6.81017L15.6541 2.94843C16.0375 2.83297 16.4542 2.93819 16.7382 3.22219C17.0222 3.50618 17.1275 3.92285 17.012 4.30625L13.1489 17.1311C13.0314 17.5211 12.6196 17.7408 12.2291 17.6218C12.0466 17.5661 11.8924 17.4422 11.7987 17.276L9.4159 13.046L12.0335 7.92641L6.8992 10.5296L2.6848 8.16048C2.3287 7.9603 2.20116 7.51002 2.39994 7.15476C2.49291 6.9886 2.64674 6.86511 2.82918 6.81017Z"/>
+                            </svg>
+                        </a>
+                        <a class="share-link"
+                           title="Print"
+                           href="#">
+                            <svg viewBox="0 0 20 20">
+                                <path d="M11.6678 13.7721H7.29033C6.93809 13.7721 6.65283 13.4868 6.65283 13.1346C6.65283 12.7823 6.93809 12.4971 7.29033 12.4971H11.6678C12.0201 12.4971 12.3138 12.7691 12.3138 13.1346C12.3138 13.5001 12.0201 13.7636 11.6763 13.7721H11.6678Z"/>
+                                <path d="M11.6678 16.1949H7.29033C6.93809 16.1949 6.65283 15.9097 6.65283 15.5574C6.65283 15.2052 6.93809 14.9199 7.29033 14.9199H11.6678C12.0201 14.9199 12.3138 15.1919 12.3138 15.5574C12.3138 15.9229 12.0201 16.2119 11.6763 16.1949H11.6678Z"/>
+                                <path d="M16.9375 6.25H14.8125V3.0625C14.8125 2.476 14.328 2 13.75 2H5.25C4.66316 2 4.1875 2.47566 4.1875 3.0625V6.25H2.0625C1.47566 6.25 1 6.726 1 7.3125V13.5175C1 14.104 1.476 14.58 2.054 14.58H4.179V17.9375C4.1875 18.524 4.672 19 5.25 19H13.75C14.3372 19 14.8125 18.5247 14.8125 17.9375V14.58H16.9375C17.5247 14.58 18 14.104 18 13.5175V7.3125C18 6.726 17.524 6.25 16.946 6.25H16.9375ZM13.5375 14.58V17.725H5.4625V14.58V10.925H13.5375V14.58ZM13.5375 6.25H5.4625V3.275H13.5375V6.25ZM15.7475 9.65C15.278 9.65 14.8975 9.26954 14.8975 8.8C14.8975 8.33046 15.278 7.95 15.7475 7.95C16.217 7.95 16.5975 8.324 16.5975 8.8C16.5975 9.276 16.217 9.65 15.756 9.65H15.7475Z"/>
+                            </svg>
+                        </a>
+                        <a class="share-link"
+                           title="Поделиться"
+                           href="#">
+                            <svg viewBox="0 0 20 20">
+                                <path d="M19 10L12 3V7C5 8 2 13 1 18C3.5 14.5 7 12.9 12 12.9V17L19 10Z"/>
+                            </svg>
+                        </a>
+                    </div><!--.share-links-->
+                </div><!--.crumbs-panel__right-->
+            </div><!--.crumbs-panel-->
+
+            <h1 class="h1 page-content__title">
+                Проверить<br/>
+                организацию
+            </h1>
+
+            <div class="page-inside page-inside_no-padding-top check-org">
+                <aside class="page-inside__side">
+                    <p class="text-basic">
+                        <a href="#"
+                           class="text-link text-link_arrow">Проверить ювелирное изделие</a>
+                    </p>
+                </aside><!--.page-inside__side-->
+
+                <article class="page-inside__content">
+                    <div class="page-inside__content__container">
+                        <div class="article-content check-org__text">
+                            <p class="loud">Получить информацию из электронного реестра специального учета юридических лиц и индивидуальных предпринимателей, осуществляющих операции с драгоценными камнями и драгоценными металлами</p>
+                        </div><!--.article-content-->
+
+                        <form class="form-check-org">
+                            <div class="form-row">
+                                <input type="text"
+                                       class="form-field form-row__field"
+                                       placeholder="Введите ОГРН или ИНН">
+                                <button type="submit" class="button">
+                                    Проверить
+                                </button>
+                            </div><!--.form-row-->
+
+                            <div class="captcha form-check-org__captcha">
+                                <div class="captcha-form">
+                                    <img class="captcha-form__img"
+                                         src="_asset/img/captcha.png" alt="">
+                                    <input type="text"
+                                           placeholder="Введите код"
+                                           class="form-field-square captcha-form__input">
+                                </div>
+                                <button type="button"
+                                        class="captcha-refresh">
+                                    <svg class="captcha-refresh__icon bvi-no-styles"
+                                         viewBox="0 0 20 15">
+                                        <path class="bvi-no-styles" d="M5.98598 6.50245C5.86119 6.37245 5.65523 6.36832 5.52566 6.49311L3.25813 8.67015C3.1852 8.26821 3.14701 7.8591 3.14701 7.44783C3.14701 3.70015 6.1965 0.651091 9.94483 0.651091C11.7573 0.651091 13.462 1.35579 14.7451 2.6354C14.8727 2.76236 15.0789 2.76193 15.2056 2.63475C15.3326 2.50757 15.3322 2.30139 15.205 2.17443C13.7989 0.772411 11.9307 0 9.94483 0C5.83732 0 2.49592 3.34118 2.49592 7.44783C2.49592 7.77446 2.51805 8.09979 2.56016 8.42186L0.551107 6.49311C0.42154 6.36876 0.215795 6.37266 0.0907854 6.50245C-0.03379 6.63201 -0.0296664 6.83819 0.100118 6.96277L2.813 9.56713C2.87594 9.62768 2.95732 9.65785 3.03849 9.65785C3.11966 9.65785 3.20105 9.62768 3.26399 9.56713L5.97687 6.96277C6.10643 6.83819 6.11056 6.63201 5.98598 6.50245Z"/>
+                                        <path class="bvi-no-styles" d="M13.8851 8.49755C14.0099 8.62755 14.2159 8.63168 14.3454 8.50689L16.613 6.32985C16.6859 6.73179 16.7241 7.1409 16.7241 7.55217C16.7241 11.2998 13.6746 14.3489 9.92626 14.3489C8.11384 14.3489 6.40907 13.6442 5.12598 12.3646C4.99837 12.2376 4.79219 12.2381 4.66545 12.3653C4.53848 12.4924 4.53892 12.6986 4.6661 12.8256C6.07224 14.2276 7.94043 15 9.92626 15C14.0338 15 17.3752 11.6588 17.3752 7.55217C17.3752 7.22554 17.353 6.90021 17.3109 6.57814L19.32 8.50689C19.4496 8.63124 19.6553 8.62734 19.7803 8.49755C19.9049 8.36799 19.9008 8.16181 19.771 8.03723L17.0581 5.43287C16.9952 5.37232 16.9138 5.34215 16.8326 5.34215C16.7514 5.34215 16.67 5.37232 16.6071 5.43287L13.8942 8.03723C13.7647 8.16181 13.7605 8.36799 13.8851 8.49755Z"/>
+                                    </svg>
+                                    Обновить код
+                                </button>
+                            </div><!--.captcha-->
+                        </form>
+                    </div><!--.page-inside__content__container-->
+                </article><!--.page-inside__content-->
+            </div><!--.page-inside-->
+
+            <section class="page-inside check-org-result">
+                <aside class="page-inside__side">
+                </aside><!--.page-inside__side-->
+
+                <div class="page-inside__content">
+                    <div class="page-inside__content__container">
+                        <div class="check-org-result__head">
+                            <h2 class="h3">Результат проверки: 1027700201902</h2>
+                        </div>
+
+                        <div class="check-org-result__list">
+                            <div class="check-org-result__item">
+                                <p class="check-org-result__label">
+                                    Наименование
+                                </p>
+                                <p class="check-org-result__value">
+                                    Акционерное общество Московкий ювелирный завод
+                                </p>
+                            </div>
+                            <div class="check-org-result__item">
+                                <p class="check-org-result__label">
+                                    Статус
+                                </p>
+                                <p class="check-org-result__value">
+                                    Организация зарегистрирована, состоит на специальном учёте в ГИИС ДИМК
+                                </p>
+                            </div>
+                            <div class="check-org-result__item">
+                                <p class="check-org-result__label">
+                                    Номер постановки на спецучет
+                                </p>
+                                <p class="check-org-result__value">
+                                    ЮЛ77010041194
+                                </p>
+                            </div>
+                            <div class="check-org-result__item">
+                                <p class="check-org-result__label">
+                                    Дата постановки на спецучет
+                                </p>
+                                <p class="check-org-result__value">
+                                    2021-08-20
+                                </p>
+                            </div>
+                            <div class="check-org-result__item">
+                                <p class="check-org-result__label">
+                                    Дата и время проверки
+                                </p>
+                                <p class="check-org-result__value">
+                                    2022-04-18 19:01:07
+                                </p>
+                            </div>
+                        </div><!--.check-org-result__list-->
+                    </div><!--.page-inside__content__container-->
+                </div><!--.page-inside__content-->
+            </section><!--.page-inside-->
+        </div><!--.container-->
+    </main><!--.page-content-->
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="page-footer__top">
+                <div class="page-footer__left">
+                    <div class="page-logo page-logo_column page-footer__logo">
+                        <a href="#">
+                            <img class="lazyload page-logo__img"
+                                 data-sizes="auto"
+                                 data-srcset="_asset/img/logo.png 74w, _asset/img/logo@2x.png 148w"
+                                 width="74" height="74"
+                                 alt="Федеральная пробирная палата">
+                        </a>
+                        <div class="page-logo__text">
+                            <p class="page-logo__title">
+                                Федеральная<br/>
+                                пробирная палата
+                            </p>
+                            <p class="page-logo__sub-title">
+                                Осуществляем пробирный<br/>
+                                надзор с&nbsp;1700&nbsp;года
+                            </p>
+                        </div>
+                    </div><!--.page-logo-->
+
+                    <p class="page-footer__phone hidden-max-mobile">
+                        <a class="site-phone"
+                           href="mailto:+74956902727">
+                            +7 (495) 690-27-27
+                        </a>
+                    </p>
+                    <p class="page-footer__mail hidden-max-mobile">
+                        <a class="text-link-border text-link-border_white"
+                           href="mailto:probpalata@probpalata.ru">
+                            probpalata@probpalata.ru
+                        </a>
+                    </p>
+                    <p class="page-footer__address hidden-max-mobile">
+                        125009, г.&nbsp;Москва, ул.&nbsp;Большая Никитская, д.&nbsp;17, стр.&nbsp;2
+                    </p>
+                    <p class="page-footer__bvi hidden-max-mobile bvi-hide">
+                        <a href="#" class="text-link-border text-link-border_white bvi-open">
+                            Версия сайта для слабовидящих
+                        </a>
+                    </p>
+
+                    <ul class="page-footer__partners hidden-min-tablet">
+                        <li class="gos-partner">
+                            <img class="lazyload gos-partner__logo"
+                                 data-src="_asset/img/gos-partners/government.svg"
+                                 width="40" height="40"
+                                 alt="icon">
+                            <span class="gos-partner__text">Правительство России</span>
+                        </li>
+                        <li class="gos-partner">
+                            <img class="lazyload gos-partner__logo"
+                                 data-src="_asset/img/gos-partners/government.svg"
+                                 width="40" height="40"
+                                 alt="icon">
+                            <span class="gos-partner__text">Минфин России</span>
+                        </li>
+                        <li class="gos-partner">
+                            <img class="lazyload gos-partner__logo"
+                                 data-sizes="auto"
+                                 data-srcset="_asset/img/gos-partners/gosuslugi.png 40w, _asset/img/gos-partners/gosuslugi@2x.png 80w"
+                                 width="40" height="40"
+                                 alt="icon">
+                            <span class="gos-partner__text">Госуслуги</span>
+                        </li>
+                        <li class="gos-partner">
+                            <img class="lazyload gos-partner__logo"
+                                 data-src="_asset/img/gos-partners/gosznak.svg"
+                                 width="40" height="40"
+                                 alt="icon">
+                            <span class="gos-partner__text">Госзнак</span>
+                        </li>
+                        <li class="gos-partner">
+                            <img class="lazyload gos-partner__logo"
+                                 data-src="_asset/img/gos-partners/gosznak.svg"
+                                 width="40" height="40"
+                                 alt="icon">
+                            <span class="gos-partner__text">Стопкоронавирус</span>
+                        </li>
+                    </ul><!--.page-footer__partners-->
+                </div><!--.page-footer__left-->
+
+                <div class="page-footer__right">
+                    <div class="page-footer__nav">
+                        <div class="page-footer__nav__col">
+                            <nav class="page-group-nav">
+                                <p class="page-group-nav__title">
+                                    <a href="#">
+                                        О палате
+                                        <svg class="page-group-nav__title__icon"
+                                             viewBox="0 0 7 11">
+                                            <path d="M1 10L5.5 5.5L0.999999 1" stroke-width="1.5"/>
+                                        </svg>
+                                    </a>
+                                </p>
+                                <ul class="page-group-nav__list">
+                                    <li>
+                                        <a href="#">Задачи и функции</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Руководство</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Структура</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">История пробирного надзора</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Открытое ведомство</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кадровое обеспечение</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Контактная информация</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Общественный совет</a>
+                                    </li>
+                                </ul>
+                            </nav><!--.page-group-nav-->
+                        </div><!--.page-footer__nav__col-->
+
+                        <div class="page-footer__nav__col">
+                            <nav class="page-group-nav">
+                                <p class="page-group-nav__title">
+                                    <a href="#">
+                                        Деятельность
+                                        <svg class="page-group-nav__title__icon"
+                                             viewBox="0 0 7 11">
+                                            <path d="M1 10L5.5 5.5L0.999999 1" stroke-width="1.5"/>
+                                        </svg>
+                                    </a>
+                                </p>
+                                <ul class="page-group-nav__list">
+                                    <li>
+                                        <a href="#">Спецучет</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Лицензирование</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Регистрация именников</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Опробование и клеймение</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Аффинаж</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ломбарды и скупка</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Пробирный надзор</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Контроль за ввозом и вывозом</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Финансовый мониторинг</a>
+                                    </li>
+                                </ul>
+                            </nav><!--.page-group-nav-->
+                        </div><!--.page-footer__nav__col-->
+
+                        <div class="page-footer__nav__col">
+                            <nav class="site-links">
+                                <ul class="site-links__group">
+                                    <li>
+                                        <a href="#">Документы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Территориальные органы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Открытые данные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Противодействие коррупции</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Интернет-приёмная</a>
+                                    </li>
+                                </ul>
+                                <ul class="site-links__group">
+                                    <li>
+                                        <a href="#">ГИИС ДМДК</a>
+                                    </li>
+                                </ul>
+                                <ul class="site-links__group">
+                                    <li>
+                                        <a href="#">Карта сайта</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">О сайте</a>
+                                    </li>
+                                </ul>
+                            </nav><!--.site-links-->
+                        </div><!--.page-footer__nav__col-->
+                    </div><!--.page-footer__nav-->
+                </div><!--.page-footer__right-->
+
+                <div class="page-footer__contacts-mobile hidden-min-mobile">
+                    <p class="page-footer__phone">
+                        <a class="site-phone"
+                           href="mailto:+74956902727">
+                            +7 (495) 690-27-27
+                        </a>
+                    </p>
+                    <p class="page-footer__mail">
+                        <a href="mailto:probpalata@probpalata.ru"
+                           class="text-link-border text-link-border_white">
+                            probpalata@probpalata.ru
+                        </a>
+                    </p>
+                    <p class="page-footer__address">
+                        125009, г.&nbsp;Москва, ул.&nbsp;Большая Никитская, д.&nbsp;17, стр.&nbsp;2
+                    </p>
+                    <p class="page-footer__bvi bvi-hide">
+                        <a href="#" class="text-link-border text-link-border_white bvi-open">
+                            Версия сайта для слабовидящих
+                        </a>
+                    </p>
+                </div><!--.page-footer__contacts-mobile-->
+            </div><!--.page-footer__top-->
+
+            <div class="page-footer__bottom">
+                <div class="page-footer__left">
+                    <p class="page-footer__copy">
+                        &copy; Федеральная пробирная палата, 2022
+                    </p>
+                </div><!--.page-footer__left-->
+
+                <div class="page-footer__right hidden-max-tablet">
+                    <ul class="page-footer__partners">
+                        <li class="gos-partner">
+                            <img class="lazyload gos-partner__logo"
+                                 data-src="_asset/img/gos-partners/government.svg"
+                                 width="40" height="40"
+                                 alt="icon">
+                            <span class="gos-partner__text">Правительство России</span>
+                        </li>
+                        <li class="gos-partner">
+                            <img class="lazyload gos-partner__logo"
+                                 data-src="_asset/img/gos-partners/government.svg"
+                                 width="40" height="40"
+                                 alt="icon">
+                            <span class="gos-partner__text">Минфин России</span>
+                        </li>
+                        <li class="gos-partner">
+                            <img class="lazyload gos-partner__logo"
+                                 data-sizes="auto"
+                                 data-srcset="_asset/img/gos-partners/gosuslugi.png 40w, _asset/img/gos-partners/gosuslugi@2x.png 80w"
+                                 width="40" height="40"
+                                 alt="icon">
+                            <span class="gos-partner__text">Госуслуги</span>
+                        </li>
+                        <li class="gos-partner">
+                            <img class="lazyload gos-partner__logo"
+                                 data-src="_asset/img/gos-partners/gosznak.svg"
+                                 width="40" height="40"
+                                 alt="icon">
+                            <span class="gos-partner__text">Госзнак</span>
+                        </li>
+                        <li class="gos-partner">
+                            <img class="lazyload gos-partner__logo"
+                                 data-src="_asset/img/gos-partners/stopcorona.svg"
+                                 width="40" height="40"
+                                 alt="icon">
+                            <span class="gos-partner__text">Стопкоронавирус</span>
+                        </li>
+                    </ul><!--.page-footer__partners-->
+                </div><!--.page-footer__right-->
+            </div><!--.page-footer__bottom-->
+        </div><!--.container-->
+    </footer><!--.page-footer-->
+
+</div><!--.page-->
+
+<script src="_asset/js/jquery-3.6.0.min.js"></script>
+<script src="_asset/js/swiper-bundle.min.js"></script>
+<script src="_asset/js/js-throttle-debounce.min.js"></script>
+<script src="_asset/js/snap.svg-min.js"></script>
+<script src="_asset/js/custom-select.min.js"></script>
+<script src="_asset/js/moment.min.js"></script>
+<script src="_asset/js/moment-with-locales.min.js"></script>
+<script src="_asset/js/underscore-min.js"></script>
+<script src="_asset/js/daterangepicker.min.js"></script>
+<script src="_asset/js/clndr.min.js"></script>
+<script src="_asset/js/chart.min.js"></script>
+<script src="_asset/js/chartjs-plugin-datalabels.js"></script>
+<script src="_asset/js/jquery.validate.min.js"></script>
+<script src="_asset/js/dropzone-min.js"></script>
+<script src="_asset/js/app.js"></script>
+
+
+<!-- Версия для слабовидящих -->
+<script src="_asset/js/bvi.js"></script>
+<script>
+    const bviVar = new isvek.Bvi({
+        speech: false,
+        target: '.bvi-open',
+        fontSize: 16,
+        panelFixed: false,
+        images: true,
+        builtElements: true,
+        reload: true,
+    });
+
+    document.addEventListener('click', function (e) {
+       if (e.target.closest('.bvi-open')) {
+           document.location.reload();
+           switchBviStyles();
+       }
+    });
+
+    switchBviStyles();
+
+    function switchBviStyles() {
+        if (document.body.classList.contains('bvi-active')) {
+            const linkApp = document.querySelector('#styles-app');
+            linkApp.href = '_asset/css/styles-bvi.css';
+
+            const linkBvi = document.createElement('link');
+            linkBvi.rel = 'stylesheet';
+            linkBvi.type = 'text/css';
+            linkBvi.href = '_asset/css/bvi.css';
+
+            document.querySelector('head').insertBefore(linkBvi, linkApp);
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Section Promo
+   ========================================================================== */
+
+.section-promo { display: flex; margin: 0 0 3rem; }
+.section-promo__slider { flex-grow: 1; position: relative; }
+.section-promo__slider__in { position: absolute; left: 0; top: 0; width: 100%; bottom: -3rem; }
+.section-promo__side { width: 23.5rem; min-width: 23.5rem; position: relative; }
+
+@media @maxTablet {
+  .section-promo { margin-bottom: .75rem; }
+  .section-promo__side { width: 18.6rem; min-width: 18.6rem; }
+  .section-promo__slider__in { bottom: -.75rem; }
+}
+
+@media @maxMobile {
+  .section-promo { flex-direction: column; }
+  .section-promo__slider { width: 100%; }
+  .section-promo__slider__in { position: relative; width: auto; bottom: auto; }
+  .section-promo__side { width: 100%; min-width: auto; order: -1; }
+}

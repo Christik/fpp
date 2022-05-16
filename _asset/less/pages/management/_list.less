@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Management
+   ========================================================================== */
+
+.management { }
+
+@media @maxTablet and @minMobile {
+  .management { margin-left: 9rem; }
+}
+
+/* ==========================================================================
+   Manager Preview Main
+   ========================================================================== */
+
+.manager-preview-main { display: flex; }
+.manager-preview-main__photo { width: 11.5rem; min-width: 11.5rem; height: auto; }
+.manager-preview-main__content { padding: 0 0 0 2rem; max-width: 17rem; }
+.manager-preview-main__name { font-family: @font-addl; font-size: 2rem; line-height: 1; font-weight: 500; margin: 0 0 .4em; }
+.manager-preview-main__status { font-weight: 500; font-size: .8rem; line-height: 1.5; }
+
+@media @maxTablet {
+  .manager-preview-main__content { padding-left: 1.2rem; }
+  .manager-preview-main__name { font-size: 1.3rem; }
+  .manager-preview-main__status { font-size: .7rem; }
+}
+
+@media @maxMobile {
+  .manager-preview-main { display: block; }
+  .manager-preview-main__photo { width: auto; min-width: auto; height: 16rem; }
+  .manager-preview-main__content { max-width: none; padding: 1.5rem 0 0; }
+  .manager-preview-main__name { font-size: 1.4rem; }
+}
+
+/* ==========================================================================
+   Manager Preview
+   ========================================================================== */
+
+.manager-preview { max-width: 9rem; }
+.manager-preview__photo { display: block; }
+.manager-preview__text { font-size: .8rem; line-height: 1.5; font-weight: 500; margin: 1em 0 0; }
+
+@media @maxTablet {
+  .manager-preview { max-width: 7.6rem; }
+  .manager-preview__photo { width: 7.6rem; height: auto; }
+  .manager-preview__text { font-size: .7rem; }
+}
+
+@media @maxMobile {
+  .manager-preview { max-width: none; }
+  .manager-preview__photo { width: auto; height: 11rem; }
+}
+
+/* ==========================================================================
+   Manager Previews
+   ========================================================================== */
+
+.manager-previews { display: flex; margin: 0 -2.3rem 0 0; }
+.manager-previews__item { margin: 0 2.3rem 2rem 0; }
+
+@media @maxTablet {
+  .manager-previews { margin-right: -1.2rem; }
+  .manager-previews__item { margin-right: 1.2rem; margin-bottom: 1rem; }
+}
+
+@media @maxMobile {
+  .manager-previews { display: block; margin: 0; }
+  .manager-previews__item { margin: 0 0 1.2rem; }
+}
+
+/* ==========================================================================
+   Management List
+   ========================================================================== */
+
+.management__list { margin: 3.5rem 0 0; }
+.management__list__title { margin: 0 0 2em; }
+
+@media @maxMobile {
+  .management__list { margin-top: 2rem; }
+  .management__list__title { font-size: 1rem; margin-bottom: 1.2rem; }
+}
+
+/* ==========================================================================
+   Management Text
+   ========================================================================== */
+
+.management__text { margin: 2rem 0 0; padding: 2rem 0 0; border-top: solid 1px @color-border; }

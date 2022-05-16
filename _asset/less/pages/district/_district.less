@@ -1,0 +1,123 @@
+/* ==========================================================================
+   District Head
+   ========================================================================== */
+
+.district-head { margin: 0 0 4rem; display: flex; justify-content: space-between; align-items: center; }
+.district-head__title { }
+.district-head__map { width: 14.5rem; min-width: 14.5rem; margin-left: 3rem; }
+
+@media @maxTablet {
+  .district-head { align-items: flex-start; }
+  .district-head__title { font-size: 1.8rem; }
+  .district-head__map { width: 6rem; min-width: 6rem; margin-left: 1rem; }
+}
+
+@media @maxMobile {
+  .district-head { margin-bottom: 1.5rem; display: block; }
+  .district-head__title { font-size: 1.4rem; }
+  .district-head__map { display: none !important; }
+}
+
+/* ==========================================================================
+   District Map
+   ========================================================================== */
+
+.district-map { display: block;
+  .st0 { fill: #ccc; stroke: @color-text; }
+}
+.district-map.central #сentral,
+.district-map.south #south .st0,
+.district-map.north-caucasian #north-caucasian,
+.district-map.volga #volga,
+.district-map.urals #urals,
+.district-map.siberia #siberia,
+.district-map.far-eastern #far-eastern,
+.district-map.north-western #north-western { fill: @color-primary-light; }
+
+/* ==========================================================================
+   District Page
+   ========================================================================== */
+
+.district-page { padding: 0 0 6rem;
+  .h1.h1_xsmall { margin: 0 0 1.5em; }
+  .h2 { margin: 0 0 1em; }
+  .h4 { color: @color-text-blue; margin: 0 0 1.5em; }
+  .text-basic + .h4 { margin-top: 2.5em; }
+  .alert { margin: 1rem 0 1.5rem; }
+}
+
+@media @maxTablet {
+  .district-page {
+    .h4 { font-size: .7rem; }
+  }
+}
+
+@media @maxMobile {
+  .district-page {
+    .h2 { font-size: 1rem; }
+    .text-basic { font-size: .7rem; }
+  }
+}
+
+/* ==========================================================================
+   Content Columns
+   ========================================================================== */
+
+.content-grid { display: flex; align-items: flex-start; position: relative;
+  .content-grid + & { margin-top: 1.5rem; }
+  &_separated,
+  .content-grid + &_separated { margin-top: 3.5rem; }
+}
+.content-grid__side { width: 17.5rem; min-width: 17.5rem; padding: 0 3rem 0 0; }
+.content-grid__center { margin-left: 17.5rem; width: 44vw; min-width: 31.5rem;
+  .content-grid__side + & { margin-left: 0; }
+}
+.content-grid__calendar { display: none; position: absolute !important; left: 0; top: -1rem; width: 100%; max-width: 66rem; z-index: 5;
+  &.is-opened { display: block; }
+}
+
+@media @maxTablet {
+  .content-grid {
+    &_separated,
+    .content-grid + &_separated { margin-top: 2.5rem; }
+  }
+  .content-grid__side { width: 9rem; min-width: 9rem; padding-right: 1.5rem; padding-top: .2rem; }
+  .content-grid__center { margin-left: 9rem; width: auto; min-width: auto; flex-grow: 1; }
+  .content-grid__calendar { max-width: 34.5rem; }
+}
+
+@media @maxMobile {
+  .content-grid { display: block; }
+  .content-grid__side { width: auto; min-width: auto; padding-right: 0; padding-top: 0; margin: 0 0 1rem; }
+  .content-grid__center { margin-left: 0; }
+  .content-grid__calendar { max-width: 16.5rem; }
+}
+
+/* ==========================================================================
+   Content Label
+   ========================================================================== */
+
+.content-label { margin: 0; font-size: .7rem; line-height: 1.4; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
+
+@media @maxTablet {
+  .content-label { font-size: .6rem; }
+}
+
+/* ==========================================================================
+   City Title
+   ========================================================================== */
+
+.city-title { display: flex; align-items: center; }
+.city-title__gerb { height: 3rem; width: 3rem; min-width: 3rem; margin: 0 1.2rem 0 0; }
+.city-title__text { color: @color-text-blue; font-size: 1.2rem; line-height: 1.25; font-weight: 800; }
+
+@media @maxTablet {
+  .city-title__gerb { width: 2.5rem; height: 2.5rem; min-width: 2.5rem; margin-right: .75rem; }
+  .city-title__text { font-size: .9rem; }
+}
+
+@media @maxMobile {
+  .city-title { width: 100%; justify-content: space-between; }
+  .city-title__gerb { order: 1; margin-right: 0; }
+  .city-title__text { font-size: 1rem; }
+}

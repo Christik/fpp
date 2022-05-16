@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Page Search
+   ========================================================================== */
+
+.page-search { position: absolute; top: 50%; right: 0; transform: translateY(-50%); z-index: 5; overflow: hidden; width: 0; transition: width .5s; }
+.page-search__in { }
+.page-search__input { display: block; width: 100%; border: none; border-bottom: solid 1px @color-text; font-size: .75rem; line-height: normal; font-weight: 500; padding: .5em 0; color: @color-text; background: #fff; }
+.page-search__submit { display: none; }
+.page-search__close { position: absolute; right: 0; top: 0; }
+
+@media @minTablet {
+  .page-search__close { display: none; }
+}
+
+@media @maxTablet {
+  .page-search { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 9; width: auto; transform: none; display: none; align-items: center; background: #fff; padding: 0 0 10vh; min-height: 100vh;
+    &.is-search-active { display: flex; }
+  }
+  .page-search__in { width: 100%; padding: 0 2rem; }
+  .page-search__input { font-size: 1rem; }
+}
+
+@media @maxMobile {
+  .page-search__in { padding: 0 1.2rem; }
+  .page-search__input { font-size: .8rem; }
+}

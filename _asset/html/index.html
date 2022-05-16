@@ -1,0 +1,770 @@
+@@include('./partials/_head.html', {
+    "title": "Федеральная пробирная палата",
+})
+<body class="page-index" xmlns="http://www.w3.org/1999/html">
+<div class="page">
+    @@include('./partials/_header.html')
+
+    <main class="page-content">
+        <div class="section-promo">
+            <div class="section-promo__slider">
+                <section class="promo-slider section-promo__slider__in">
+                    <div class="promo-slider__bg">
+                        <div class="promo-slider__bg__back sky"></div>
+                        <svg class="morphing"
+                             viewBox="0 0 1206 639"
+                             preserveAspectRatio="none">
+                            <path class="stamp-sky"
+                                  fill="#b1c1dd"
+                                  d="M0,126.21S265.72,0,594.5,0A1377.58,1377.58,0,0,1,758.79,10.07C1007.44,40,1189,126.21,1189,126.21V477.79s-170.69,81.07-407.74,113.26A1390.41,1390.41,0,0,1,594.5,604C292.75,604,0,477.79,0,477.79Z"/>
+                            <path class="stamp-grey"
+                                  fill="#3d485e"
+                                  d="M0,124.5,236.5,0h678l240,124.5v369l-240,119h-678L0,493.5Z"
+                                  opacity="0"/>
+                            <path class="stamp-blue"
+                                  fill="#355288"
+                                  d="M64.54,125.36C104.39,77.79,178.36,0,318.09,0c57,0,402.27,71.47,402.27,71.47l376.79,74.45V501.06L718.47,568.44s-360.86,68.15-393.92,68.15c-141.31,0-218.16-68.69-273.45-143.25C-19.72,397.84-18.48,224.46,64.54,125.36Z"
+                                  opacity="0"/>
+                            <path class="stamp-gold"
+                                  fill="#e3dbcb"
+                                  d="M0,0H674l82,112h449.5V530.5h-447L677.4,638.39H0Z"
+                                  opacity="0"/>
+                        </svg>
+                    </div><!--.promo-slider__bg-->
+
+                    <div class="swiper-wrapper promo-slider__wrapper">
+                        <div class="swiper-slide promo-slider__slide"
+                             data-morphing="sky">
+                            <div class="promo-slider__content">
+                                <time class="promo-slider__date">22.01.2022</time>
+                                <p class="promo-slider__title">
+                                    Общественное обсуждение проекта плана деятельности ФПП на 2022&nbsp;год и плановый период 2023 - 2027&nbsp;годов
+                                </p>
+                            </div>
+                        </div><!--.promo-slider__slide-->
+
+                        <div class="swiper-slide promo-slider__slide"
+                             data-morphing="gold">
+                            <div class="promo-slider__content">
+                                <time class="promo-slider__date">22.01.2022</time>
+                                <p class="promo-slider__title">
+                                    Открылась подача заявления на получение лицензии посредством сервиса Госуслуги
+                                </p>
+                            </div>
+                        </div><!--.promo-slider__slide-->
+
+                        <div class="swiper-slide promo-slider__slide"
+                             data-morphing="blue">
+                            <div class="promo-slider__content">
+                                <time class="promo-slider__date">22.01.2022</time>
+                                <p class="promo-slider__title">
+                                    Lorem ipsum — классический текст-«рыба»
+                                </p>
+                            </div>
+                        </div><!--.promo-slider__slide-->
+
+                        <div class="swiper-slide promo-slider__slide"
+                             data-morphing="grey">
+                            <div class="promo-slider__content">
+                                <time class="promo-slider__date">22.01.2022</time>
+                                <p class="promo-slider__title">
+                                    Является искажённым отрывком из философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э. на латинском языке, МакКлинтоку.
+                                </p>
+                            </div>
+                        </div><!--.promo-slider__slide-->
+
+                        <div class="swiper-slide promo-slider__slide"
+                             data-morphing="none">
+                            <div class="promo-slider__bg-image">
+                                <div class="lazyload promo-slider__bg-image__img"
+                                     data-sizes="auto"
+                                     data-bgset="_asset/img/promo-slider/bg.jpg 972w, _asset/img/promo-slider/bg@2x.jpg 1944w">
+                                </div>
+                            </div>
+                            <div class="promo-slider__content">
+                                <time class="promo-slider__date">22.01.2022</time>
+                                <p class="promo-slider__title">
+                                    Состоялось второе заседание Общественного совета при Федеральной пробирной палате
+                                </p>
+                            </div>
+                        </div><!--.promo-slider__slide-->
+                    </div><!--.promo-slider__wrapper-->
+
+                    <div class="promo-slider__nav">
+                        <div class="slider-progress">
+                            <div class="slider-progress__num slider-progress__num_current">01</div>
+                            <div class="slider-progress__timer"><div></div></div>
+                            <div class="slider-progress__num slider-progress__num_total">00</div>
+                        </div><!--.slider-progress-->
+
+                        <div class="slider-arrows">
+                            <button type="button"
+                                    class="slider-arrow slider-arrow_prev">
+                                <svg class="slider-arrow__svg bvi-no-styles"
+                                     viewBox="0 0 20 35">
+                                    <path class="bvi-no-styles" d="M18.8014 31.8543C19.356 32.4089 19.356 33.3079 18.8014 33.8625C18.2469 34.417 17.3478 34.417 16.7933 33.8625L18.8014 31.8543ZM1.89772 16.9588L0.893641 17.9628C0.339104 17.4083 0.339104 16.5092 0.893641 15.9547L1.89772 16.9588ZM16.7933 33.8625L0.893641 17.9628L2.90179 15.9547L18.8014 31.8543L16.7933 33.8625ZM0.893641 15.9547L16.7933 0.0550289L18.8014 2.06318L2.90179 17.9628L0.893641 15.9547Z"/>
+                                </svg>
+                                Назад
+                            </button>
+
+                            <button type="button"
+                                    class="slider-arrow slider-arrow_next">
+                                <svg class="slider-arrow__svg bvi-no-styles"
+                                     viewBox="0 0 20 35">
+                                    <path class="bvi-no-styles" d="M1.12825 31.8543C0.573711 32.4089 0.573711 33.3079 1.12825 33.8625C1.68278 34.417 2.58186 34.417 3.1364 33.8625L1.12825 31.8543ZM18.032 16.9588L19.036 17.9628C19.5906 17.4083 19.5906 16.5092 19.036 15.9547L18.032 16.9588ZM3.1364 33.8625L19.036 17.9628L17.0279 15.9547L1.12825 31.8543L3.1364 33.8625ZM19.036 15.9547L3.1364 0.0550289L1.12824 2.06318L17.0279 17.9628L19.036 15.9547Z"/>
+                                </svg>
+                                Вперед
+                            </button>
+                        </div><!--.slider-arrows-->
+                    </div><!--.promo-slider__nav-->
+                </section><!--.promo-slider-->
+            </div><!--.section-promo__slider-->
+
+            <div class="section-promo__side">
+                <section class="form-check">
+                    <ul class="form-check-nav form-check__nav">
+                        <li class="form-check-nav__item is-active">
+                            <span>Проверить<br/>ювелирное изделие</span>
+                        </li>
+                        <li class="form-check-nav__item">
+                            <span>Проверить<br/>организацию</span>
+                        </li>
+                    </ul><!--.form-check__nav-->
+
+                    <div class="form-check__body">
+                        <div class="form-check__form">
+                            <p class="form-check__title">
+                                Проверить<br/>
+                                ювелирное изделие
+                            </p>
+                            <p class="form-check__description">
+                                Получить информацию о происхождении ювелирного изделия и его характеристиках по уникальному идентификационному номеру (УИН)
+                            </p>
+                            <div class="form-check__field">
+                                <input type="text"
+                                       placeholder="Введите УИН"
+                                       class="form-field-square form-check__input">
+                                <p class="form-note">
+                                    УИН нанесен на ярлык маркированных ювелирных изделий
+                                </p>
+                            </div>
+
+                            <div class="captcha form-check__captcha">
+                                <div class="captcha-form">
+                                    <img class="captcha-form__img"
+                                         src="_asset/img/captcha.png" alt="">
+                                    <input type="text"
+                                           placeholder="Введите код"
+                                           class="form-field-square captcha-form__input">
+                                </div>
+                                <button type="button"
+                                        class="captcha-refresh">
+                                    <svg class="captcha-refresh__icon bvi-no-styles"
+                                         viewBox="0 0 20 15">
+                                        <path class="bvi-no-styles"
+                                              d="M5.98598 6.50245C5.86119 6.37245 5.65523 6.36832 5.52566 6.49311L3.25813 8.67015C3.1852 8.26821 3.14701 7.8591 3.14701 7.44783C3.14701 3.70015 6.1965 0.651091 9.94483 0.651091C11.7573 0.651091 13.462 1.35579 14.7451 2.6354C14.8727 2.76236 15.0789 2.76193 15.2056 2.63475C15.3326 2.50757 15.3322 2.30139 15.205 2.17443C13.7989 0.772411 11.9307 0 9.94483 0C5.83732 0 2.49592 3.34118 2.49592 7.44783C2.49592 7.77446 2.51805 8.09979 2.56016 8.42186L0.551107 6.49311C0.42154 6.36876 0.215795 6.37266 0.0907854 6.50245C-0.03379 6.63201 -0.0296664 6.83819 0.100118 6.96277L2.813 9.56713C2.87594 9.62768 2.95732 9.65785 3.03849 9.65785C3.11966 9.65785 3.20105 9.62768 3.26399 9.56713L5.97687 6.96277C6.10643 6.83819 6.11056 6.63201 5.98598 6.50245Z"/>
+                                        <path class="bvi-no-styles"
+                                              d="M13.8851 8.49755C14.0099 8.62755 14.2159 8.63168 14.3454 8.50689L16.613 6.32985C16.6859 6.73179 16.7241 7.1409 16.7241 7.55217C16.7241 11.2998 13.6746 14.3489 9.92626 14.3489C8.11384 14.3489 6.40907 13.6442 5.12598 12.3646C4.99837 12.2376 4.79219 12.2381 4.66545 12.3653C4.53848 12.4924 4.53892 12.6986 4.6661 12.8256C6.07224 14.2276 7.94043 15 9.92626 15C14.0338 15 17.3752 11.6588 17.3752 7.55217C17.3752 7.22554 17.353 6.90021 17.3109 6.57814L19.32 8.50689C19.4496 8.63124 19.6553 8.62734 19.7803 8.49755C19.9049 8.36799 19.9008 8.16181 19.771 8.03723L17.0581 5.43287C16.9952 5.37232 16.9138 5.34215 16.8326 5.34215C16.7514 5.34215 16.67 5.37232 16.6071 5.43287L13.8942 8.03723C13.7647 8.16181 13.7605 8.36799 13.8851 8.49755Z"/>
+                                    </svg>
+                                    Обновить код
+                                </button>
+                            </div><!--.captcha-->
+
+                            <button type="submit"
+                                    class="button-square form-check__send">
+                                Проверить
+                            </button>
+                        </div><!--.form-checkk__form-->
+
+                        <div class="form-check__form">
+                            <p class="form-check__title">
+                                Проверить<br/>
+                                организацию
+                            </p>
+                            <p class="form-check__description">
+                                Получить информацию из электронного реестра специального учета юридических лиц и индивидуальных предпринимателей, осуществляющих операции с драгоценными камнями и драгоценными металлами
+                            </p>
+                            <div class="form-check__field">
+                                <input type="text"
+                                       placeholder="Введите ОГРН или ИНН"
+                                       class="form-field-square form-check__input">
+                            </div>
+
+                            <div class="captcha form-check__captcha">
+                                <div class="captcha-form">
+                                    <img class="captcha-form__img"
+                                         src="_asset/img/captcha.png" alt="">
+                                    <input type="text"
+                                           placeholder="Введите код"
+                                           class="form-field-square captcha-form__input">
+                                </div>
+                                <button type="button"
+                                        class="captcha-refresh">
+                                    <svg class="captcha-refresh__icon bvi-no-styles"
+                                         viewBox="0 0 20 15">
+                                        <path class="bvi-no-styles"
+                                              d="M5.98598 6.50245C5.86119 6.37245 5.65523 6.36832 5.52566 6.49311L3.25813 8.67015C3.1852 8.26821 3.14701 7.8591 3.14701 7.44783C3.14701 3.70015 6.1965 0.651091 9.94483 0.651091C11.7573 0.651091 13.462 1.35579 14.7451 2.6354C14.8727 2.76236 15.0789 2.76193 15.2056 2.63475C15.3326 2.50757 15.3322 2.30139 15.205 2.17443C13.7989 0.772411 11.9307 0 9.94483 0C5.83732 0 2.49592 3.34118 2.49592 7.44783C2.49592 7.77446 2.51805 8.09979 2.56016 8.42186L0.551107 6.49311C0.42154 6.36876 0.215795 6.37266 0.0907854 6.50245C-0.03379 6.63201 -0.0296664 6.83819 0.100118 6.96277L2.813 9.56713C2.87594 9.62768 2.95732 9.65785 3.03849 9.65785C3.11966 9.65785 3.20105 9.62768 3.26399 9.56713L5.97687 6.96277C6.10643 6.83819 6.11056 6.63201 5.98598 6.50245Z"/>
+                                        <path class="bvi-no-styles"
+                                              d="M13.8851 8.49755C14.0099 8.62755 14.2159 8.63168 14.3454 8.50689L16.613 6.32985C16.6859 6.73179 16.7241 7.1409 16.7241 7.55217C16.7241 11.2998 13.6746 14.3489 9.92626 14.3489C8.11384 14.3489 6.40907 13.6442 5.12598 12.3646C4.99837 12.2376 4.79219 12.2381 4.66545 12.3653C4.53848 12.4924 4.53892 12.6986 4.6661 12.8256C6.07224 14.2276 7.94043 15 9.92626 15C14.0338 15 17.3752 11.6588 17.3752 7.55217C17.3752 7.22554 17.353 6.90021 17.3109 6.57814L19.32 8.50689C19.4496 8.63124 19.6553 8.62734 19.7803 8.49755C19.9049 8.36799 19.9008 8.16181 19.771 8.03723L17.0581 5.43287C16.9952 5.37232 16.9138 5.34215 16.8326 5.34215C16.7514 5.34215 16.67 5.37232 16.6071 5.43287L13.8942 8.03723C13.7647 8.16181 13.7605 8.36799 13.8851 8.49755Z"/>
+                                    </svg>
+                                    Обновить код
+                                </button>
+                            </div><!--.captcha-->
+
+                            <button type="submit"
+                                    class="button-square form-check__send">
+                                Проверить
+                            </button>
+                        </div><!--.form-checkk__form-->
+                    </div><!--.form-check__body-->
+                </section><!--.form-check-->
+            </div><!--.section-promo__side-->
+        </div><!--.section-promo-->
+
+         <section class="section news-promo">
+            <div class="container">
+                <div class="section-head section__head">
+                    <div class="section-head__left">
+                        <h2 class="h2">Новости Федеральной Пробирной Палаты</h2>
+                    </div><!--.section-head__left-->
+
+                    <div class="section-head__right hidden-max-mobile">
+                        <a href="#"
+                           class="button-more">
+                            <span class="button-more__text bvi-no-styles">Все новости</span>
+                            <span class="button-circle button-more__icon">
+                                <svg class="button-circle__arrow" viewBox="0 0 18 17">
+                                    <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                    <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div><!--.section-head__right-->
+                </div><!--.section-head-->
+
+                <div class="news-promo__grid">
+                    <div class="news-promo__grid__col">
+                        <article class="news-promo-preview news-promo-preview_lg">
+                            <time class="post-date news-promo-preview__date">
+                                22 сентября 2020, 22:27
+                            </time>
+                            <h3 class="post-title news-promo-preview__title">
+                                <a href="#" class="text-link">
+                                    Маркировка ювелирных изделий станет обязательной в&nbsp;России с&nbsp;1&nbsp;января
+                                </a>
+                            </h3>
+                            <p class="text-basic news-promo-preview__text hidden-max-mobile">
+                                Маркировка ювелирных изделий станет обязательной в&nbsp;России с&nbsp;1&nbsp;января 2021 года, оборот немаркированных ювелирных изделий будет запрещен с&nbsp;1&nbsp;июля, говорится в сообщении пресс-службы Минфина
+                            </p>
+                            <div class="post-num news-promo-preview__num">
+                                01
+                            </div>
+                        </article><!--.news-promo-preview-->
+                    </div><!--.news-promo__grid__col-->
+
+                    <div class="news-promo__grid__col">
+                        <article class="news-promo-preview">
+                            <time class="post-date news-promo-preview__date">
+                                22 сентября 2020, 22:27
+                            </time>
+                            <h3 class="post-title post-title_sm news-promo-preview__title">
+                                <a href="#" class="text-link">
+                                    Требования Росфинмониторинга к рынку драгоценных металлов и драгоценных камней
+                                </a>
+                            </h3>
+                            <div class="post-num news-promo-preview__num">
+                                02
+                            </div>
+                        </article><!--.news-promo-preview-->
+
+                        <article class="news-promo-preview">
+                            <time class="post-date news-promo-preview__date">
+                                22 сентября 2020, 22:27
+                            </time>
+                            <h3 class="post-title post-title_sm news-promo-preview__title">
+                                <a href="#" class="text-link">
+                                    Состоялось второе заседание Общественного совета при Федеральной пробирной палате
+                                </a>
+                            </h3>
+                            <div class="post-num news-promo-preview__num">
+                                03
+                            </div>
+                        </article><!--.news-promo-preview-->
+                    </div><!--.news-promo__grid__col-->
+                </div><!--.news-promo__grid-->
+
+                <div class="section__bottom hidden-min-mobile">
+                    <a href="#"
+                       class="button-more">
+                        <span class="button-more__text bvi-no-styles">Все новости</span>
+                        <span class="button-circle button-more__icon">
+                                <svg class="button-circle__arrow" viewBox="0 0 18 17">
+                                    <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                    <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                    </a>
+                </div><!--.section__bottom-->
+            </div><!--.container-->
+        </section><!--.section-->
+
+        <section class="banner-slider">
+            <div class="swiper-wrapper banner-slider__wrapper">
+                <div class="swiper-slide banner-slider__slide banner-slider__slide_dark banner-slider__slide_blue">
+                    <div class="banner-slider__content">
+                        <h3 class="banner-slider__title">
+                            Электронные цифровые подписи
+                        </h3>
+                        <p class="text-basic banner-slider__text">
+                            Федеральная пробирная палата при необходимости окажет содействие участникам рынка в оформлении электронной цифровой подписи
+                        </p>
+                        <p class="banner-slider__more">
+                            <a href="#">Подробнее</a>
+                        </p>
+                    </div><!--.banner-slider__content-->
+
+                    <div class="lazyload banner-slider__pic banner-slider__pic_type-1"
+                         data-sizes="auto"
+                         data-bgset="_asset/img/banners/banner-1.jpg 786w, _asset/img/banners/banner-1@2x.jpg 1562w">
+                    </div><!--.banner-slider__pic-->
+                </div><!--.banner-slider__slide-->
+
+                <div class="swiper-slide banner-slider__slide banner-slider__slide_dark banner-slider__slide_grey">
+                    <div class="banner-slider__content">
+                        <h3 class="banner-slider__title">
+                            Рекомендации по&nbsp;оформлению бирки
+                        </h3>
+                        <p class="text-basic banner-slider__text">
+                            Памятка об оформлении бирок (ярлыков) ювелирных изделий с примерами и рекомендациями
+                        </p>
+                        <p class="banner-slider__more">
+                            <a href="#">Подробнее</a>
+                        </p>
+                    </div><!--.banner-slider__content-->
+
+                    <div class="lazyload banner-slider__pic banner-slider__pic_type-2"
+                         data-sizes="auto"
+                         data-bgset="_asset/img/banners/banner-2.jpg 786w, _asset/img/banners/banner-2@2x.jpg 1562w">
+                    </div><!--.banner-slider__pic-->
+                </div><!--.banner-slider__slide-->
+
+                <div class="swiper-slide banner-slider__slide banner-slider__slide_beige">
+                    <div class="banner-slider__content">
+                        <h3 class="banner-slider__title">
+                            Есть вопрос? —<br/>
+                            Напишите нам
+                        </h3>
+                        <p class="text-basic banner-slider__text">
+                            Интернет-приёмная рассмотрит ваше электронное обращение, заполненное в соответствии с прилагаемой формой
+                        </p>
+                        <p class="banner-slider__more">
+                            <a href="#">Подробнее</a>
+                        </p>
+                    </div><!--.banner-slider__content-->
+
+                    <div class="lazyload banner-slider__pic banner-slider__pic_type-3"
+                         data-sizes="auto"
+                         data-bgset="_asset/img/banners/banner-1.jpg 786w, _asset/img/banners/banner-1@2x.jpg 1562w">
+                    </div><!--.banner-slider__pic-->
+                </div><!--.banner-slider__slide-->
+            </div><!--.banner-slider__wrapper-->
+
+            <p class="banner-slider__pages">
+                <span data-current>01</span><span class="total">/<span data-total>03</span></span>
+            </p>
+
+            <div class="slider-arrows banner-slider__arrows">
+                <button type="button"
+                        class="slider-arrow slider-arrow_prev">
+                    <svg class="slider-arrow__svg bvi-no-styles"
+                         viewBox="0 0 20 35">
+                        <path class="bvi-no-styles" d="M18.8014 31.8543C19.356 32.4089 19.356 33.3079 18.8014 33.8625C18.2469 34.417 17.3478 34.417 16.7933 33.8625L18.8014 31.8543ZM1.89772 16.9588L0.893641 17.9628C0.339104 17.4083 0.339104 16.5092 0.893641 15.9547L1.89772 16.9588ZM16.7933 33.8625L0.893641 17.9628L2.90179 15.9547L18.8014 31.8543L16.7933 33.8625ZM0.893641 15.9547L16.7933 0.0550289L18.8014 2.06318L2.90179 17.9628L0.893641 15.9547Z"/>
+                    </svg>
+                    Назад
+                </button>
+
+                <button type="button"
+                        class="slider-arrow slider-arrow_next">
+                    <svg class="slider-arrow__svg bvi-no-styles"
+                         viewBox="0 0 20 35">
+                        <path class="bvi-no-styles" d="M1.12825 31.8543C0.573711 32.4089 0.573711 33.3079 1.12825 33.8625C1.68278 34.417 2.58186 34.417 3.1364 33.8625L1.12825 31.8543ZM18.032 16.9588L19.036 17.9628C19.5906 17.4083 19.5906 16.5092 19.036 15.9547L18.032 16.9588ZM3.1364 33.8625L19.036 17.9628L17.0279 15.9547L1.12825 31.8543L3.1364 33.8625ZM19.036 15.9547L3.1364 0.0550289L1.12824 2.06318L17.0279 17.9628L19.036 15.9547Z"/>
+                    </svg>
+                    Вперед
+                </button>
+            </div><!--.slider-arrows-->
+        </section><!--.banner-slider-->
+
+        <section class="section section-activity">
+            <div class="container">
+                <div class="section-head section__head">
+                    <div class="section-head__left">
+                        <h2 class="h3">Деятельность</h2>
+                    </div>
+                </div><!--.section-head-->
+
+                <div class="activity-cards">
+                    <div class="activity-cards__item">
+                        <article class="activity-card">
+                            <div class="activity-card__content">
+                                <p class="activity-card__title">
+                                    Контрольно-надзорная деятельность
+                                </p>
+                                <ul class="activity-card__links">
+                                    <li><a href="#">Задачи и функции</a></li>
+                                    <li><a href="#">Структура</a></li>
+                                    <li><a href="#">Руководство</a></li>
+                                    <li><a href="#">Территориальные органы</a></li>
+                                </ul>
+                                <a class="activity-card__more"
+                                   href="#">
+                                    <span class="activity-card__more__text bvi-no-styles">Подробнее</span>
+                                    <span class="button-circle button-circle_white activity-card__more__icon">
+                                        <svg class="button-circle__arrow button-circle__arrow_angle"
+                                             viewBox="0 0 18 17">
+                                            <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                            <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <img class="lazyload activity-card__icon"
+                                     data-src="_asset/img/activity/icon-users-net.svg"
+                                     alt="icon">
+                            </div><!--.activity-card__content-->
+                        </article><!--.activity-card-->
+                    </div><!--.activity-cards__item-->
+
+                    <div class="activity-cards__item">
+                        <article class="activity-card">
+                            <div class="activity-card__content">
+                                <p class="activity-card__title">
+                                    Лицензионная деятельность
+                                </p>
+                                <ul class="activity-card__links">
+                                    <li><a href="#">Задачи и функции</a></li>
+                                    <li><a href="#">Структура</a></li>
+                                    <li><a href="#">Руководство</a></li>
+                                    <li><a href="#">Территориальные органы</a></li>
+                                </ul>
+                                <a class="activity-card__more"
+                                   href="#">
+                                    <span class="activity-card__more__text bvi-no-styles">Подробнее</span>
+                                    <span class="button-circle button-circle_white activity-card__more__icon">
+                                        <svg class="button-circle__arrow button-circle__arrow_angle"
+                                             viewBox="0 0 18 17">
+                                            <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                            <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <img class="lazyload activity-card__icon"
+                                     data-src="_asset/img/activity/icon-certificate.svg"
+                                     alt="icon">
+                            </div><!--.activity-card__content-->
+                        </article><!--.activity-card-->
+                    </div><!--.activity-cards__item-->
+
+                    <div class="activity-cards__item">
+                        <article class="activity-card">
+                            <div class="activity-card__content">
+                                <p class="activity-card__title">
+                                    Специальный учёт
+                                </p>
+                                <ul class="activity-card__links">
+                                    <li><a href="#">Задачи и функции</a></li>
+                                    <li><a href="#">Структура</a></li>
+                                    <li><a href="#">Руководство</a></li>
+                                    <li><a href="#">Территориальные органы</a></li>
+                                </ul>
+                                <a class="activity-card__more"
+                                   href="#">
+                                    <span class="activity-card__more__text bvi-no-styles">Подробнее</span>
+                                    <span class="button-circle button-circle_white activity-card__more__icon">
+                                        <svg class="button-circle__arrow button-circle__arrow_angle"
+                                             viewBox="0 0 18 17">
+                                            <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                            <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <img class="lazyload activity-card__icon"
+                                     data-src="_asset/img/activity/icon-page-pen.svg"
+                                     alt="icon">
+                            </div><!--.activity-card__content-->
+                        </article><!--.activity-card-->
+                    </div><!--.activity-cards__item-->
+
+                    <div class="activity-cards__item">
+                        <article class="activity-card">
+                            <div class="activity-card__content">
+                                <p class="activity-card__title">
+                                    Пробирные работы
+                                </p>
+                                <ul class="activity-card__links">
+                                    <li><a href="#">Задачи и функции</a></li>
+                                    <li><a href="#">Структура</a></li>
+                                    <li><a href="#">Руководство</a></li>
+                                    <li><a href="#">Территориальные органы</a></li>
+                                </ul>
+                                <a class="activity-card__more"
+                                   href="#">
+                                    <span class="activity-card__more__text bvi-no-styles">Подробнее</span>
+                                    <span class="button-circle button-circle_white activity-card__more__icon">
+                                        <svg class="button-circle__arrow button-circle__arrow_angle"
+                                             viewBox="0 0 18 17">
+                                            <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                            <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <img class="lazyload activity-card__icon"
+                                     data-src="_asset/img/activity/icon-ring.svg"
+                                     alt="icon">
+                            </div><!--.activity-card__content-->
+                        </article><!--.activity-card-->
+                    </div><!--.activity-cards__item-->
+
+                    <div class="activity-cards__item">
+                        <article class="activity-card">
+                            <div class="activity-card__content">
+                                <p class="activity-card__title">
+                                    Документы
+                                </p>
+                                <ul class="activity-card__links">
+                                    <li><a href="#">Задачи и функции</a></li>
+                                    <li><a href="#">Структура</a></li>
+                                    <li><a href="#">Руководство</a></li>
+                                    <li><a href="#">Территориальные органы</a></li>
+                                </ul>
+                                <a class="activity-card__more"
+                                   href="#">
+                                    <span class="activity-card__more__text bvi-no-styles">Подробнее</span>
+                                    <span class="button-circle button-circle_white activity-card__more__icon">
+                                        <svg class="button-circle__arrow button-circle__arrow_angle"
+                                             viewBox="0 0 18 17">
+                                            <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                            <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <img class="lazyload activity-card__icon"
+                                     data-src="_asset/img/activity/icon-archive.svg"
+                                     alt="icon">
+                            </div><!--.activity-card__content-->
+                        </article><!--.activity-card-->
+                    </div><!--.activity-cards__item-->
+
+                    <div class="activity-cards__item">
+                        <article class="activity-card">
+                            <div class="activity-card__content">
+                                <p class="activity-card__title">
+                                    О Федеральной пробирной палате
+                                </p>
+                                <ul class="activity-card__links">
+                                    <li><a href="#">Задачи и функции</a></li>
+                                    <li><a href="#">Структура</a></li>
+                                    <li><a href="#">Руководство</a></li>
+                                    <li><a href="#">Территориальные органы</a></li>
+                                </ul>
+                                <a class="activity-card__more"
+                                   href="#">
+                                    <span class="activity-card__more__text bvi-no-styles">Подробнее</span>
+                                    <span class="button-circle button-circle_white activity-card__more__icon">
+                                        <svg class="button-circle__arrow button-circle__arrow_angle"
+                                             viewBox="0 0 18 17">
+                                            <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                            <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <img class="lazyload activity-card__icon"
+                                     data-src="_asset/img/activity/icon-build.svg"
+                                     alt="icon">
+                            </div><!--.activity-card__content-->
+                        </article><!--.activity-card-->
+                    </div><!--.activity-cards__item-->
+
+                    <div class="activity-cards__item">
+                        <article class="activity-card">
+                            <div class="activity-card__content">
+                                <p class="activity-card__title">
+                                    Открытые данные
+                                </p>
+                                <ul class="activity-card__links">
+                                    <li><a href="#">Задачи и функции</a></li>
+                                    <li><a href="#">Структура</a></li>
+                                    <li><a href="#">Руководство</a></li>
+                                    <li><a href="#">Территориальные органы</a></li>
+                                </ul>
+                                <a class="activity-card__more"
+                                   href="#">
+                                    <span class="activity-card__more__text bvi-no-styles">Подробнее</span>
+                                    <span class="button-circle button-circle_white activity-card__more__icon">
+                                        <svg class="button-circle__arrow button-circle__arrow_angle"
+                                             viewBox="0 0 18 17">
+                                            <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                            <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <img class="lazyload activity-card__icon"
+                                     data-src="_asset/img/activity/icon-zoom.svg"
+                                     alt="icon">
+                            </div><!--.activity-card__content-->
+                        </article><!--.activity-card-->
+                    </div><!--.activity-cards__item-->
+
+                    <div class="activity-cards__item">
+                        <article class="activity-card">
+                            <div class="activity-card__content">
+                                <p class="activity-card__title">
+                                    Интернет-приёмная
+                                </p>
+                                <ul class="activity-card__links">
+                                    <li><a href="#">Задачи и функции</a></li>
+                                    <li><a href="#">Структура</a></li>
+                                    <li><a href="#">Руководство</a></li>
+                                    <li><a href="#">Территориальные органы</a></li>
+                                </ul>
+                                <a class="activity-card__more"
+                                   href="#">
+                                    <span class="activity-card__more__text bvi-no-styles">Подробнее</span>
+                                    <span class="button-circle button-circle_white activity-card__more__icon">
+                                        <svg class="button-circle__arrow button-circle__arrow_angle"
+                                             viewBox="0 0 18 17">
+                                            <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                            <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <img class="lazyload activity-card__icon"
+                                     data-src="_asset/img/activity/icon-messages.svg"
+                                     alt="icon">
+                            </div><!--.activity-card__content-->
+                        </article><!--.activity-card-->
+                    </div><!--.activity-cards__item-->
+                </div><!--.activity-cards-->
+            </div><!--.container-->
+        </section><!--.section-activity-->
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head section__head">
+                    <div class="section-head__left">
+                        <h2 class="h3">Основные документы</h2>
+                    </div><!--.section-head__left-->
+
+                    <div class="section-head__right hidden-max-mobile">
+                        <a class="button-more" href="#">
+                            <span class="button-more__text bvi-no-styles">Все документы</span>
+                            <span class="button-circle button-more__icon">
+                                <svg class="button-circle__arrow"
+                                     viewBox="0 0 18 17">
+                                    <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                    <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div><!--.section-head__right-->
+                </div><!--.section-head-->
+
+                <div class="promo-docs">
+                    <div class="promo-docs__item">
+                        <article class="promo-doc">
+                            <p class="promo-doc__sub-title">
+                                Федеральный закон
+                            </p>
+                            <p class="promo-doc__title">
+                                Соглашение об особенностях осуществления операций с драгоценными металлами и драгоценными камнями в рамках Евразийского экономического союза (заключено в г. Москве 22.11.2019)
+                            </p>
+                            <div class="promo-doc__bottom">
+                                <time class="post-date">
+                                    22 сентября 2020
+                                </time>
+                                <span class="button-circle promo-doc__icon">
+                                    <svg class="button-circle__arrow button-circle__arrow_angle"
+                                         viewBox="0 0 18 17">
+                                        <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                        <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <a class="promo-doc__link bvi-no-styles"
+                               href="#">Подробнее</a>
+                        </article><!--.promo-doc-->
+                    </div><!--.promo-docs__item-->
+
+                    <div class="promo-docs__item">
+                        <article class="promo-doc">
+                            <p class="promo-doc__sub-title">
+                                Указ Президента РФ
+                            </p>
+                            <p class="promo-doc__title">
+                                Указ Президента Российской Федерации от 28.10.2019 №529  «Об образовании Федеральной пробирной палаты»
+                            </p>
+                            <div class="promo-doc__bottom">
+                                <time class="post-date">
+                                    22 сентября 2020
+                                </time>
+                                <span class="button-circle promo-doc__icon">
+                                    <svg class="button-circle__arrow button-circle__arrow_angle"
+                                         viewBox="0 0 18 17">
+                                        <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                        <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <a class="promo-doc__link bvi-no-styles"
+                               href="#">Подробнее</a>
+                        </article><!--.promo-doc-->
+                    </div><!--.promo-docs__item-->
+
+                    <div class="promo-docs__item">
+                        <article class="promo-doc">
+                            <p class="promo-doc__sub-title">
+                                Новый документ
+                            </p>
+                            <p class="promo-doc__title">
+                                Федеральный закон от 31.07.2020 № 248-ФЗ «О государственном контроле (надзоре) и муниципальном контроле в Российской Федерации»
+                            </p>
+                            <div class="promo-doc__bottom">
+                                <time class="post-date">
+                                    22 сентября 2020
+                                </time>
+                                <span class="button-circle promo-doc__icon">
+                                    <svg class="button-circle__arrow button-circle__arrow_angle"
+                                         viewBox="0 0 18 17">
+                                        <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                        <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <a class="promo-doc__link bvi-no-styles"
+                               href="#">Подробнее</a>
+                        </article><!--.promo-doc-->
+                    </div><!--.promo-docs__item-->
+                </div><!--.promo-docs-->
+
+                <div class="section__bottom hidden-min-mobile">
+                    <button type="button"
+                            class="button-more">
+                        <span class="button-more__text bvi-no-styles">Все документы</span>
+                        <span class="button-circle button-more__icon">
+                                <svg class="button-circle__arrow" viewBox="0 0 18 17">
+                                    <path d="M16.7491 9.65012C17.12 9.65012 17.4207 9.34943 17.4207 8.97851C17.4207 8.6076 17.12 8.30691 16.7491 8.30691L16.7491 9.65012ZM5.66119e-08 9.65012L16.7491 9.65012L16.7491 8.30691L-5.66119e-08 8.30691L5.66119e-08 9.65012Z" fill="#071228"/>
+                                    <path d="M9.57031 16.5L17.0903 8.98L9.57031 1.46" stroke-width="1.34321" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                    </button>
+                </div><!--.section__bottom-->
+            </div><!--.container-->
+        </section><!--.section-->
+    </main><!--.page-content-->
+
+    @@include('./partials/_footer.html')
+</div><!--.page-->
+
+@@include('./partials/_foot.html', {
+"pageScript": '<script src="_asset/js/pages/index.js"></script>'
+})
+</body>
+</html>

@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Article Content Titles
+   ========================================================================== */
+
+.article-content {
+  h2, h3 { font-weight: 800; margin: 3em 0 1.5em; color: @color-text-blue;
+    .note { display: block; font-weight: 500; font-size: .8rem; line-height: 1.6; margin: .25em 0 0; }
+  }
+  h2 { font-size: 1.2rem; line-height: 1.25; }
+  h3 { font-size: .9rem; line-height: 1.4; }
+}
+
+@media @maxTablet {
+  .article-content {
+    h2 { font-size: .9rem; }
+    h3 { font-size: .7rem; }
+  }
+}
+
+@media @maxMobile {
+  .article-content {
+    h2 { font-size: 1rem; }
+    h3 { font-size: .7rem; }
+  }
+}
+
+/* ==========================================================================
+   Article Content Text
+   ========================================================================== */
+
+.article-content {
+  p, li { font-size: .8rem; line-height: 1.6; font-weight: 500; }
+  li { margin: 0 0 1.5em; }
+  p { margin: 0 0 2em; }
+  .loud { font-size: 1.1rem; line-height: 1.5; font-weight: 500; }
+
+  ul {
+    >li { position: relative; padding: 0 0 0 2.1rem;
+      &:before { content: ''; display: block; width: 1.2rem; height: 2px; background: @color-primary; position: absolute; left: 0; top: .75em; transform: translateY(-50%); }
+    }
+    ul, ol { margin-top: 1.5em; }
+  }
+
+  ol { list-style: none; counter-reset: myCounter;
+    >li { counter-increment: myCounter; padding: 0 0 0 2.1rem; position: relative;
+      &:before { counter-increment: li; content: counter(myCounter, decimal-leading-zero)"."; color: @color-primary; position: absolute; left: 0; font-family: @font-addl; font-size: .9rem; }
+    }
+    ul, ol { margin-top: 1.5em; }
+  }
+}
+
+@media @maxTablet {
+  .article-content {
+    p, li { font-size: .6rem; }
+    .loud { font-size: .8rem; }
+
+    ol {
+      li { padding-left: 1.7rem;
+        &:before { font-size: .8rem; }
+      }
+    }
+  }
+}
+
+@media @maxMobile {
+  .article-content {
+    p, li { font-size: .7rem; }
+
+    ol {
+      li { padding-left: 1.7rem;
+        &:before { font-size: .8rem; }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+   Article Content Links
+   ========================================================================== */
+
+.article-content {
+  a { color: @color-primary; border-bottom: solid 1px fade(@color-primary, 50%); }
+
+  a[target="_blank"] { border-bottom-color: transparent;
+    &:after { content: ''; display: inline-block; width: .5rem; height: .5rem; background: url('@{path-images}/target-blank.svg') no-repeat 50% 50%; background-size: contain; margin: 0 0 0 .5em; }
+  }
+}
+
+@media (hover: hover) {
+  .article-content {
+    a:hover { border-bottom-color: transparent; }
+    a[target="_blank"]:hover { border-bottom-color: fade(@color-primary, 50%); }
+  }
+}
+
+/* ==========================================================================
+   Article Images
+   ========================================================================== */
+
+.article-content {
+  figure:not(.landing-pic) { margin: 2rem 0;
+    img:not(.landing-pic__img) { display: block; width: 100%; height: auto; }
+  }
+  figcaption:not(.landing-pic__caption) { color: @color-text-lighter; font-weight: 500; font-size: .6rem; line-height: 1.5; margin: .75em 0 0; }
+}
+
+@media @maxTablet {
+  .article-content {
+    figure:not(.landing-pic) { margin: 1.5rem 0; }
+  }
+}
+
+@media @maxMobile {
+  .article-content {
+    figure:not(.landing-pic) { margin: 1rem 0; }
+  }
+}

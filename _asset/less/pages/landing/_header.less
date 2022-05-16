@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Landing Head
+   ========================================================================== */
+
+.landing-head { position: relative; }
+.landing-head__title { position: relative; z-index: 3; }
+.landing-head__sub-title { position: relative; z-index: 3; font-size: 1.1rem; line-height: 1.5; font-weight: 500; margin: 1.5em 0 0; }
+
+.landing-head__illustrations { position: relative; margin: 11rem 0 0 17.5rem; width: 42rem; z-index: 3; }
+
+.landing-head__photo { position: relative; z-index: 3; mix-blend-mode: multiply; }
+.landing-head__photo__img { display: block; height: auto; width: 100%; }
+.landing-head__photo__caption { text-align: right; color: @color-text-lighter; font-size: .6rem; font-weight: 500; line-height: 1.5; margin: .5em 0 0; }
+
+.landing-head__photo-small { display: block; position: absolute; right: 1.8rem; top: -13rem; z-index: 4; }
+
+@media @maxTablet {
+  .landing-head__sub-title { font-size: .9rem; }
+
+  .landing-head__illustrations { margin-top: 7rem; margin-left: 10rem; width: 22.5rem; }
+
+  .landing-head__photo-small { width: auto; height: 8.5rem; right: 1rem; top: -7rem; }
+}
+
+@media @maxMobile {
+  .landing-head { margin-bottom: 1rem; }
+  .landing-head__sub-title { font-size: .7rem; }
+
+  .landing-head__illustrations { margin-top: 10rem; margin-left: 1.2rem; width: 16.5rem; }
+  .landing-head__photo__caption { display: none; }
+  .landing-head__photo-small { height: 6.5rem; top: -5rem; }
+}
+
+/* ==========================================================================
+   Label  Metall
+   ========================================================================== */
+
+.label-metall { display: block; position: absolute; pointer-events: none; height: auto;
+  &_palladium { top: -2.5rem; right: 0; }
+  &_aurum { left: -17.5rem; bottom: 4rem; }
+  &_platinum { left: -5rem; bottom: 100%; transform: translateY(-2rem); }
+  &_argentum { left: 34rem; top: 6rem; }
+}
+
+@media @maxTablet {
+  .label-metall {
+    &_palladium { width: 7.7rem; top: -1.5rem; }
+    &_aurum { width: 14.5rem; left: -10rem; bottom: 1.8rem; }
+    &_platinum { width: 6rem; left: -3rem; transform: translateY(-1rem); }
+    &_argentum { width: 12rem; left: 17.5rem; top: 3rem; }
+  }
+}
+
+@media @maxMobile {
+  .label-metall {
+    &_palladium { top: -3rem; right: -1.2rem; }
+    &_aurum { width: 14rem; left: -5.6rem; top: -4rem; }
+    &_platinum { left: 1rem; transform: translateY(-5rem); }
+    &_argentum { left: 8.4rem; top: 8.5rem; }
+  }
+}

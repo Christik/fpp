@@ -1,0 +1,87 @@
+@@include('./partials/_head.html', {
+    "title": "Федеральная пробирная палата",
+})
+<body>
+<div class="page">
+    @@include('./partials/_header.html')
+
+    <main class="page-content">
+        <div class="container">
+            <div class="crumbs-panel page-content__top-panel">
+                <div class="crumbs-panel__left">
+                    <ul class="crumbs">
+                        <li><a class="text-link" href="#">Главная</a></li>
+                        <li><a class="text-link" href="#">Документы</a></li>
+                    </ul>
+                </div><!--.crumbs-panel__left-->
+
+                <div class="crumbs-panel__right">
+                    @@include('./components/_share.html')
+                </div><!--.crumbs-panel__right-->
+            </div><!--.crumbs-panel-->
+
+            <div class="doc-head">
+                <div class="doc-num doc-head__num">
+                    <time class="doc-num__text">24.01.2022</time>
+                    <p class="doc-num__text">N 444</p>
+                </div>
+                <h1 class="h1 h1_small doc-head__title">
+                    Постановление<br/>
+                    Об утверждении правил скупки
+                    у&nbsp;граждан ювелирных и других изделий из драгоценных металлов и драгоценных камней и лома таких изделий
+                </h1>
+            </div><!--.doc-head-->
+
+            <div class="page-inside doc-content">
+                <aside class="page-inside__side">
+                </aside><!--.page-inside__side-->
+
+                <article class="page-inside__content">
+                    <div class="page-inside__content__container">
+                        <div class="article-content">
+                            <div class="page-inside__side-note">
+                                <div class="page-inside__side-note__in">
+                                    <a class="file-link file-link_red"
+                                       href="#">
+                                        <span class="label file-link__label">Pdf</span>
+                                        <span class="file-link__text bvi-no-styles">
+                                            Скачать постановление<br/>
+                                            в формате pdf
+                                        </span>
+                                    </a>
+                                </div>
+                            </div><!--.page-inside__side-note-->
+
+                            <p>Правительство Российской Федерации постановляет:</p>
+                            <ol>
+                                <li>Утвердить прилагаемые Правила скупки у граждан ювелирных и других изделий из драгоценных металлов и драгоценных камней и лома таких изделий (в ред. Постановления Правительства РФ от 12.09.2020 N 1418)</li>
+                                <li>Признать утратившим силу Постановление Правительства Российской Федерации от 26 сентября 1994 г. N 1089 "Об утверждении Правил скупки у населения драгоценных металлов, драгоценных камней в изделиях и ломе" (Собрание законодательства Российской Федерации, 1994, N 23, ст. 2568).</li>
+                            </ol>
+                        </div><!--.article-content-->
+
+                        <div class="doc-footer">
+                            <p class="text-basic doc-footer__text">
+                                Председатель Правительства<br/>
+                                Российской Федерации<br/>
+                                М.КАСЬЯНОВ
+                            </p>
+                            <p class="text-basic doc-footer__text">
+                                Москва, Кремль<br/>
+                                7 июня 2001 года<br/>
+                                N 444
+                            </p>
+                        </div><!--.doc-footer-->
+                    </div><!--.page-inside__content__container-->
+                </article><!--.page-inside__content-->
+            </div><!--.page-inside-->
+        </div><!--.container-->
+    </main><!--.page-content-->
+
+    @@include('./partials/_footer.html')
+</div><!--.page-->
+
+@@include('./partials/_foot.html', {
+"pageScript": ''
+})
+</body>
+</html>

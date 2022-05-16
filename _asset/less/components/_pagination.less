@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+
+.pagination { display: flex; align-items: center; justify-content: space-between; }
+
+/* ==========================================================================
+   Pagination Pages
+   ========================================================================== */
+
+.pagination-pages { display: flex;
+  li {
+    &:not(:first-child) { margin-left: .5rem; }
+  }
+}
+
+.pagination-page { width: auto; min-width: 2.2rem; padding: 0 .5em; border-radius: 1.1rem;  border-color: transparent;
+  &_current { border-color: @color-text; }
+}
+
+.pagination-divider { border-color: transparent; }
+
+@media @maxMobile {
+  .pagination-pages {
+    li {
+      &:not(:first-child) { margin-left: .25rem; }
+    }
+  }
+  .pagination-page { min-width: 2.1rem; }
+  .pagination-divider { width: auto; }
+}
+
+@media (hover: hover) {
+  .pagination-page:not(.pagination-page_current):hover { border-color: @color-primary; color: @color-primary; }
+}
+
+/* ==========================================================================
+   Pagination Next
+   ========================================================================== */
+
+.pagination-next { display: flex; align-items: center; }
+.pagination-next__text { font-size: .7rem; font-weight: 500; }
+.pagination-next__icon { width: .9rem; height: .9rem; fill: none; margin: 0 0 0 1rem;
+  path {
+    &:nth-child(1) { fill: @color-text; }
+    &:nth-child(2) { stroke: @color-text; }
+  }
+}
+
+@media (hover: hover) {
+  .pagination-next:hover { color: @color-primary;
+    .pagination-next__icon path {
+      &:nth-child(1) { fill: @color-primary; }
+      &:nth-child(2) { stroke: @color-primary; }
+    }
+  }
+}

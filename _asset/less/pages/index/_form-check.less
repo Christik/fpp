@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Form Check
+   ========================================================================== */
+
+.form-check { background: #f1f1f1; position: relative; overflow: hidden; }
+.form-check__body { width: 200%; display: flex; transform: translateX(0); transition: transform .3s;
+  .form-check.is-slide & { transform: translateX(-50%); }
+}
+.form-check__form { width: 100%; padding: 1.5rem 3rem 3rem; display: flex; flex-direction: column; }
+
+@media @maxTablet {
+  .form-check__form { padding: 1.2rem 2rem 2rem; }
+}
+
+@media @maxMobile {
+  .form-check__body { height: 0; overflow: hidden;
+    &.is-opened { height: auto; }
+  }
+}
+
+/* ==========================================================================
+   Form Check Nav
+   ========================================================================== */
+
+.form-check-nav { display: flex; }
+.form-check-nav__item { width: 50%; height: 4.8rem; display: flex; align-items: center; justify-content: flex-start; font-size: .7rem; line-height: 1.2; font-weight: 700; cursor: pointer; background: fade(#97A7C3, 20%); padding: .5rem 1.7rem; white-space: nowrap;
+
+  &:first-child { padding-left: 3rem; }
+
+  span { display: block; position: relative;
+    &:before { content: ''; display: block; position: absolute; left: 0; top: 100%; height: 2px; width: 0; background-color: @color-primary; transform: translateY(.25rem); transition: width .3s; }
+  }
+  &.is-active { background-color: #f1f1f1; color: @color-primary; pointer-events: none;
+    span:before { width: 100%; }
+  }
+}
+
+//  detached
+.form-check-nav_detacked {
+  .form-check-nav__item { width: auto; height: 4rem; padding-left: 1.2rem; padding-right: 1.2rem; position: relative;
+    &:not(:first-child):before { content: ''; display: block; position: absolute; left: 0; top: 1rem; bottom: 1rem; border-left: solid 1px @color-border; }
+  }
+}
+
+@media @maxTablet {
+  .form-check-nav__item { font-size: .6rem; height: 4rem;
+    &:first-child { padding-left: 2rem; }
+  }
+}
+
+@media (hover: hover) {
+  .form-check-nav__item:hover { color: @color-primary;
+    span:before { width: 100%; }
+  }
+}
+
+/* ==========================================================================
+   Form Check Text
+   ========================================================================== */
+
+.form-check__title { font-size: 1.4rem; line-height: 1.15; font-weight: 800; }
+.form-check__description { font-size: .7rem; line-height: 1.5; font-weight: 500; margin: 0 0 1.5em;
+  .form-check__title + & { margin-top: .75em; }
+}
+
+@media @maxTablet {
+  .form-check__title { font-size: 1rem; }
+  .form-check__description { font-size: .6rem; }
+}
+
+/* ==========================================================================
+   Form Check Form
+   ========================================================================== */
+
+.form-check__field { margin-top: auto; }
+.form-check__captcha { margin-top: 1.5rem; }
+.form-check__send { display: block; width: 100%; margin: 1rem 0 0; }
+
+@media @maxTablet {
+  .form-check__captcha { margin-top: 1rem; }
+}

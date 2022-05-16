@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Error Page
+   ========================================================================== */
+
+.page-error { background: #fff; min-height: 100vh; }
+
+.page.page_error { align-items: flex-start; justify-content: center; padding: 0 3rem; }
+
+.page-error__container { position: relative; min-width: 60rem; min-height: 34.5rem; display: flex; flex-direction: column; justify-content: center; padding: 5rem 4.5rem;
+  &:before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; background: no-repeat 50% 50%; background-size: 100% 100%; }
+}
+.page-error__num { position: relative; font-family: @font-addl; font-weight: 500; font-size: 16rem; line-height: .7; }
+.page-error__text { position: relative; margin: 2rem 0 0 12.5rem; max-width: 25rem; }
+
+// 500
+.page-error_500 {
+  .page-error__container:before { background-image: url('@{path-images}/errors/bg-500.svg'); }
+}
+
+// 404
+.page-error_404 { color: #fff;
+  .page-error__container:before { background-image: url('@{path-images}/errors/bg-404.svg'); }
+}
+
+@media @maxTablet {
+  .page.page_error { padding: 0 2rem; }
+  .page-error__num { font-size: 10rem; }
+  .page-error__text { margin-left: 5rem; }
+}
+
+@media @maxMobile {
+  .page.page_error { padding: 0; }
+  .page-error__container { min-width: auto; min-height: auto; padding: 4rem 1.2rem;
+    &:before { width: 600px; left: -2rem; }
+  }
+  .page-error__num { font-size: 6rem; }
+  .page-error__text { margin-left: 0; }
+}

@@ -1,0 +1,93 @@
+@@include('./partials/_head.html', {
+    "title": "Федеральная пробирная палата",
+})
+<body>
+<div class="page">
+    @@include('./partials/_header.html')
+
+    <main class="page-content">
+        <div class="container">
+            <div class="crumbs-panel page-content__top-panel">
+                <div class="crumbs-panel__left">
+                    <ul class="crumbs">
+                        <li><a class="text-link" href="#">Главная</a></li>
+                        <li><a class="text-link" href="#">Руководство</a></li>
+                    </ul>
+                </div><!--.crumbs-panel__left-->
+
+                <div class="crumbs-panel__right">
+                    @@include('./components/_share.html')
+                </div><!--.crumbs-panel__right-->
+            </div><!--.crumbs-panel-->
+
+            <h1 class="h1 h1_small page-content__title">
+                Зубарев Юрий Иванович
+            </h1>
+
+            <div class="page-inside manager-page">
+                <div class="page-inside__side">
+                    <img class="lazyload manager-page__photo"
+                         data-sizes="auto"
+                         data-srcset="_asset/uploads/management/zubarev.jpg 280w, _asset/uploads/management/zubarev@2x.jpg 560w"
+                         width="280" height="345"
+                         alt="Зубарев Юрий Иванович">
+                </div><!--.page-inside__side-->
+
+                <article class="page-inside__content">
+                    <div class="article-content">
+                        <div class="page-inside__content__container">
+                            <p class="loud">
+                                Руководитель Федеральной пробирной палаты
+                            </p>
+                            <h3>Образование высшее</h3>
+                            <p>Московский государственный институт международных отношений (МГИМО МИД России) по специальности «Международные экономические отношения»;</p>
+                            <p>ГУ Высшая школа экономики (ГУ ВШЭ) по специальности «Юриспруденция»;</p>
+                            <h3>Карьера</h3>
+                            <dl class="text-timeline">
+                                <div class="text-timeline__item">
+                                    <dt class="text-timeline__date">1988 – 1989 гг.</dt>
+                                    <dd class="text-timeline__text">
+                                        <p>Работа в системе Министерства внешних экономических связей СССР.</p>
+                                    </dd>
+                                </div>
+                                <div class="text-timeline__item">
+                                    <dt class="text-timeline__date">1989 – 2002</dt>
+                                    <dd class="text-timeline__text">
+                                        <p>Работа в системе Министерства иностранных дел Российской Федерации.</p>
+                                    </dd>
+                                </div>
+                                <div class="text-timeline__item">
+                                    <dt class="text-timeline__date">2002 – 2013 </dt>
+                                    <dd class="text-timeline__text">
+                                        <p>Начальник Управления по связям с государственными, общественными организациями и СМИ Министерства финансов Российской Федерации; помощник Министра финансов Российской Федерации по взаимодействию с Государственной Думой, Советом Федерации и Счетной Палатой Российской Федерации.</p>
+                                    </dd>
+                                </div>
+                                <div class="text-timeline__item">
+                                    <dt class="text-timeline__date">2013 – 2020</dt>
+                                    <dd class="text-timeline__text">
+                                        <p>Статс-секретарь–заместитель Министра финансов Российской Федерации.</p>
+                                    </dd>
+                                </div>
+                                <div class="text-timeline__item">
+                                    <dt class="text-timeline__date">2020 – по н/в </dt>
+                                    <dd class="text-timeline__text">
+                                        <p>Руководитель Федеральной пробирной палаты.</p>
+                                    </dd>
+                                </div>
+                            </dl>
+                            <p>Отмечен государственными и ведомственными наградами.</p>
+                        </div><!--.page-inside__content__container-->
+                    </div><!--.article-content-->
+                </article><!--.page-inside__content-->
+            </div><!--.page-inside-->
+        </div><!--.container-->
+    </main><!--.page-content-->
+
+    @@include('./partials/_footer.html')
+</div><!--.page-->
+
+@@include('./partials/_foot.html', {
+"pageScript": ''
+})
+</body>
+</html>

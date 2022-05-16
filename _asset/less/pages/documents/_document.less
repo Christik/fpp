@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Document Head Elements
+   ========================================================================== */
+
+.doc-num { margin: 0 auto; width: 60vw; font-weight: 700; font-size: .7rem; line-height: 1.4; letter-spacing: .05em; display: flex; align-items: center;
+    &:before { content: ''; display: block; height: 2px; background: @color-text; flex-grow: 1; margin: 0 2rem; }
+}
+.doc-num__text { white-space: nowrap; display: block;
+    &:first-child { order: -1; }
+}
+
+@media @maxTablet {
+    .doc-num { width: auto; }
+}
+
+/* ==========================================================================
+   Document Head
+   ========================================================================== */
+
+.doc-head { margin: 0 0 3.5rem; }
+.doc-head__num { margin-bottom: 2.5rem; }
+.doc-head__title { text-align: center; margin: 0 auto; width: 73vw; }
+
+@media @maxTablet {
+    .doc-head { margin-bottom: 2rem; }
+    .doc-head__num { margin-bottom: 2rem; }
+    .doc-head__title { width: auto; }
+}
+
+@media @maxMobile {
+    .doc-head { padding-top: .5rem; }
+    .doc-head__num { margin-bottom: 1.2rem; }
+    .doc-head__title { text-align: left; }
+}
+
+/* ==========================================================================
+   Document Article
+   ========================================================================== */
+
+.doc-content { padding-top: 0; }
+
+.doc-sub-title { display: flex; justify-content: space-between; align-items: flex-start;
+    &_margin-bottom { margin-bottom: 3rem; }
+}
+.doc-sub-title__text { margin: 0 !important;
+    &:last-child { text-align: right; margin-left: 2em !important; }
+}
+
+@media @maxTablet and @minMobile {
+    .doc-sub-title { margin-left: -10rem; }
+}
+
+@media @maxMobile {
+    .doc-sub-title { display: block;
+        &_margin-bottom { margin-bottom: 1.5rem; }
+    }
+    .doc-sub-title__text {
+        &:last-child { text-align: left; margin-left: 0 !important; margin-top: 1em !important;  }
+    }
+}
+
+/* ==========================================================================
+   Changing Docs
+   ========================================================================== */
+
+.changing-docs { margin: 1em 0 0; }
+
+@media @maxMobile {
+    .changing-docs { background: #fff; margin-left: -1.2rem; margin-right: -1.2rem; padding: 1.2rem; }
+}
+
+/* ==========================================================================
+   Document Footer
+   ========================================================================== */
+
+.doc-footer { display: flex; justify-content: space-between; align-items: flex-start; border-top: solid 1px @color-text; padding: 1rem 0 0; margin: 3rem 0 0; }
+.doc-footer__text { margin: 0;
+    &:last-child { text-align: right; margin-left: 2em; }
+}
+
+@media @maxTablet and @minMobile {
+    .doc-footer { margin-left: -10rem; }
+}

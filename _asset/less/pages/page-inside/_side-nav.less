@@ -1,0 +1,24 @@
+/* ==========================================================================
+   Side Nav
+   ========================================================================== */
+
+.side-nav { background: #fff; padding: 1.5rem 1.7rem 1.7rem; }
+.side-nav__section {
+  &:not(:last-child) { margin-bottom: 2.5rem; }
+}
+.side-nav__title { font-size: .8rem; line-height: 1.5; font-weight: 800; margin: 0 0 1.5em; }
+.side-nav__list { font-size: .8rem; line-height: normal; font-weight: 500;
+  li:not(:last-child) { margin-bottom: 1em; }
+}
+.side-nav__list__current { font-weight: 800; color: @color-primary; display: block; position: relative; padding: 0 0 0 .75rem;
+  &:before { content: ''; display: block; width: 1.1rem; height: 2px; background: @color-primary; position: absolute; left: -.75rem; top: .65em; }
+}
+
+@media @maxTablet {
+  .side-nav { padding: 1rem; }
+  .side-nav__section {
+    &:not(:last-child) { margin-bottom: 2rem; }
+  }
+  .side-nav__title { font-size: .55rem; }
+  .side-nav__list { font-size: .55rem; }
+}

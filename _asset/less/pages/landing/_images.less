@@ -1,0 +1,139 @@
+/* ==========================================================================
+   Landing Images
+   ========================================================================== */
+
+.landing-pic { text-align: center;
+  &_left { float: left; }
+}
+.landing-pic__img { mix-blend-mode: multiply; }
+.landing-pic__caption { font-size: .7rem; line-height: 1.5; font-weight: 500; margin: 1em 0 0; color: @color-text-blue; white-space: nowrap; }
+
+// circle
+.landing-pic_circle { margin: 0 0 3rem;
+  .landing-pic__img { border-radius: 50%; }
+}
+
+@media @maxTablet {
+  .landing-pic__caption { font-size: .55rem; }
+
+  // circle
+  .landing-pic_circle { margin-bottom: 2rem;
+    .landing-pic__img { width: 7rem; height: auto; }
+    .page-inside__side-note__right & { width: 7rem; }
+  }
+
+  // side
+  .landing-pic_side { width: 7rem;
+    .landing-pic__img { width: 7rem; height: auto; }
+  }
+
+  // 100
+  .landing-pic_100 {
+    .landing-pic__img { width: 3.5rem; height: 3.5rem; }
+  }
+
+  // initial
+  .landing-pic_initial {
+    .landing-pic__img { width: 7.4rem; height: auto; }
+  }
+
+  // initial new
+  .landing-pic_initial-new {
+    .landing-pic__img { width: 11rem; height: auto; }
+  }
+
+  .landing-pic_stamp {
+    .landing-pic__img { width: 6rem; height: auto; }
+  }
+}
+
+@media @maxMobile {
+  .landing-pic__caption { white-space: normal; }
+
+  .landing-pic_left { float: none; }
+
+  // 100
+  .landing-pic_100 { display: flex; align-items: center; margin: 1rem 0;
+    .landing-pic__img { width: 2.8rem; height: 2.8rem; }
+    .landing-pic__caption { text-align: left; white-space: normal; margin: 0 0 0 .5rem; }
+  }
+
+  // initial
+  .landing-pic_initial,
+  .landing-pic_initial-new {
+    .landing-pic__img { width: 9.3rem; }
+  }
+
+  .landing-pic_stamp {
+    .landing-pic__img { width: 4.5rem; }
+  }
+
+  .landing-pic_side { width: auto;
+    .landing-pic__img { width: 13rem; }
+  }
+}
+
+
+/* ==========================================================================
+   Landing Images Grid
+   ========================================================================== */
+
+.landing-pic-grid { display: flex; justify-content: space-between; margin: 3rem 0;
+  &_cols-4 {
+    .landing-pic { width: 7rem; }
+  }
+  &_cols-3 {
+    .landing-pic { width: 8rem; margin-right: 2rem; }
+  }
+
+  &_initials {
+    .landing-pic { width: 10.4rem; }
+  }
+
+  &_initials-new {
+    .landing-pic { width: 15.7rem; }
+  }
+}
+
+@media @maxTablet {
+  .landing-pic-grid { margin: 2rem 0;
+    &_cols-4 {
+      .landing-pic { width: 5.5rem; }
+    }
+    &_cols-3 {
+      .landing-pic { width: 5.5rem; margin-right: 0; }
+    }
+
+    &_initials {
+      .landing-pic { width: 7.4rem; }
+    }
+
+    &_initials-new {
+      .landing-pic { width: 11rem; }
+    }
+  }
+}
+
+@media @maxMobile {
+  .landing-pic-grid {
+    &_cols-4 { flex-wrap: wrap; margin: 0;
+      .landing-pic { width: 50%; }
+    }
+
+    &_initials,
+    &_initials-new { margin-left: -1.2rem; margin-right: -1.2rem; justify-content: space-around;
+      .landing-pic { width: 9.3rem; }
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Landing Side Pictures
+   ========================================================================== */
+
+@media @maxMobile {
+  .landing-side-pics { display: flex; align-items: flex-start; justify-content: space-around;
+    .landing-pic { float: none; margin: 1rem 0 0; }
+  }
+}

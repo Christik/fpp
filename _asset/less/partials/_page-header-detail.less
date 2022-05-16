@@ -1,0 +1,136 @@
+/* ==========================================================================
+   Page Header Detail
+   ========================================================================== */
+
+.page-header-detail { background: #fff; padding: 4rem 0 2rem; border-bottom: solid 1px @color-border; z-index: 2; overflow: auto; }
+
+@media @maxTablet {
+  .page-header-detail { padding-top: 2rem; }
+}
+
+/* ==========================================================================
+   Page Header Detail Content
+   ========================================================================== */
+
+.page-header-detail__content { display: flex; }
+.page-header-detail__content__column { padding: 0 2rem 0 0;
+  &:nth-child(1) { width: 34%; }
+  &:nth-child(2) { width: 30%; }
+  &:nth-child(3) { width: 36%; border-left: solid 1px @color-border; padding-left: 5.5rem; padding-right: 0; }
+}
+
+@media @maxTablet {
+  .page-header-detail__content { flex-wrap: wrap; }
+  .page-header-detail__content__column {
+    &:nth-child(1) { width: 50%; }
+    &:nth-child(2) { width: 50%; padding-right: 0; }
+    &:nth-child(3) { width: 100%; border-left: none; border-top: solid 1px @color-border; border-bottom: solid 1px @color-border; padding: 1.5rem 0; margin: 1.5rem 0 0; }
+  }
+}
+
+@media @maxMobile {
+  .page-header-detail__content { display: block; }
+  .page-header-detail__content__column { width: 100% !important;
+    &:not(:first-child) { border-top: solid 1px @color-border; padding: 1.5rem 0; margin-top: 1.5rem; }
+    &:nth-child(3) { margin-top: 0; }
+  }
+}
+
+/* ==========================================================================
+   Page Group Nav
+   ========================================================================== */
+
+.page-group-nav { }
+.page-group-nav__title { font-family: @font-addl; font-size: 1rem; line-height: 1.16; font-weight: 500; margin: 0 0 1.5rem;
+  a { color: @color-text; }
+}
+.page-group-nav__title__icon { display: inline-block; vertical-align: baseline; width: .35rem; height: .55rem; fill: none; margin: 0 0 0 .25rem;
+  path { stroke: @color-text; }
+}
+.page-group-nav__list { font-size: .8rem; line-height: normal; font-weight: 500;
+  li:not(:last-child) { margin: 0 0 1.3em; }
+  a { color: @color-text; }
+}
+
+@media @maxMobile {
+  .page-group-nav__list { font-size: .7rem; }
+}
+
+@media (hover: hover) {
+  .page-group-nav__title {
+    a:hover { color: @color-secondary;
+      .page-group-nav__title__icon path { stroke: @color-secondary; }
+    }
+  }
+  .page-group-nav__list a:hover { color: @color-secondary; }
+}
+
+/* ==========================================================================
+   Site Links
+   ========================================================================== */
+
+.site-links { font-size: .8rem; line-height: normal; font-weight: 700; }
+.site-links__group {
+  &:not(:last-child) { margin-bottom: 2rem; }
+  li:not(:last-child) { margin-bottom: 1.3em; }
+  a { color: @color-text; }
+}
+
+@media @maxTablet {
+  .site-links { display: flex; flex-direction: column; flex-wrap: wrap; align-items: flex-start; height: 10rem; }
+  .site-links__group { width: 50%; }
+}
+
+@media @maxMobile {
+  .site-links { font-size: .7rem; }
+}
+
+@media (hover: hover) {
+  .site-links__group a:hover { color: @color-secondary; }
+}
+
+/* ==========================================================================
+   Page Header Detail Footer
+   ========================================================================== */
+
+.page-header-detail__footer { margin: 5.5rem 0 0; display: flex; align-items: flex-end; }
+
+.page-header-detail__copy { width: 34%; }
+
+.page-header-detail__address { width: 30%; font-size: .7rem; line-height: normal; font-weight: 500; }
+
+.page-header-detail__phone { width: 36%; padding-left: 5.5rem; }
+
+@media @maxTablet {
+  .page-header-detail__footer { margin-top: 1.5rem; align-items: flex-start; flex-wrap: wrap; }
+  .page-header-detail__copy { width: 100%; order: 1; margin-top: 1.5rem; }
+  .page-header-detail__address,
+  .page-header-detail__phone { width: 50%; }
+  .page-header-detail__phone { padding-left: 0; order: -1; }
+}
+
+@media @maxTablet {
+  .page-header-detail__address,
+  .page-header-detail__phone { width: 100%; }
+  .page-header-detail__address { margin-top: 1rem; font-size: .8rem; }
+}
+
+/* ==========================================================================
+   Site Copy
+   ========================================================================== */
+
+.site-copy { font-size: .7rem; line-height: normal; }
+
+@media @maxTablet {
+  .site-copy { font-size: .6rem; }
+}
+
+/* ==========================================================================
+   Site Phone
+   ========================================================================== */
+
+.site-phone { font-family: @font-addl; color: @color-text; font-size: 1.2rem; line-height: 1; font-weight: 500; }
+
+@media @maxTablet {
+  .site-phone { font-size: 1.4rem; }
+}

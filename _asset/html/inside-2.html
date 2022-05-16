@@ -1,0 +1,93 @@
+@@include('./partials/_head.html', {
+    "title": "Федеральная пробирная палата",
+})
+<body>
+    <div class="page">
+        @@include('./partials/_header.html')
+
+        <main class="page-content">
+            <section class="page-inside-head page-inside-head_blue">
+                <div class="container">
+                    <h1 class="h1 page-inside-head__title">
+                        Деятельность<br/>
+                        ФПП
+                    </h1>
+                    <div class="page-inside-head__content page-inside-head__content_indent page-inside-head__cols">
+                        <div class="page-inside-head__cols__item">
+                            <div class="text-basic">
+                                <ul class="list-rhombus">
+                                    <li><a class="text-link text-link_white"
+                                           href="#">Опробование и клеймение</a></li>
+                                    <li><a class="text-link text-link_white"
+                                           href="#">Контроль за ввозом и вывозом</a></li>
+                                    <li><a class="text-link text-link_white"
+                                           href="#">Аффинаж</a></li>
+                                    <li><a class="text-link text-link_white"
+                                           href="#">Ломбарды и скупка</a></li>
+                                </ul>
+                            </div>
+                        </div><!--.page-inside-head__cols__item-->
+
+                        <div class="page-inside-head__cols__item">
+                            <div class="text-basic">
+                                <ul class="list-rhombus">
+                                    <li><a class="text-link text-link_white"
+                                           href="#">Спецучёт</a></li>
+                                    <li><a class="text-link text-link_white"
+                                           href="#">Регистрация именников</a></li>
+                                    <li><a class="text-link text-link_white"
+                                           href="#">Лицензирование</a></li>
+                                    <li><a class="text-link text-link_white"
+                                           href="#">Финансовый мониторинг</a></li>
+                                </ul>
+                            </div>
+                        </div><!--.page-inside-head__cols__item-->
+                    </div><!--.page-inside-head__content-->
+                </div><!--.container-->
+            </section><!--.page-inside-head-->
+
+            <div class="container">
+                <div class="page-inside">
+                    <aside class="page-inside__side">
+                        <nav class="side-nav">
+                            <div class="side-nav__section">
+                                <p class="side-nav__title">
+                                    Содержание раздела
+                                </p>
+                                <ul class="side-nav__list">
+                                    <li><a class="text-link" href="#">О Палате</a></li>
+                                    <li><a class="text-link" href="#">Функции ФПП</a></li>
+                                    <li><a class="text-link" href="#">Задачи ФПП</a></li>
+                                    <li><a class="text-link" href="#">Направления развития </a></li>
+                                </ul>
+                            </div><!--.side-nav__section-->
+
+                            <div class="side-nav__section">
+                                <p class="side-nav__title">
+                                    Поделиться
+                                </p>
+                                @@include('./components/_share.html')
+                            </div><!--.side-nav__section-->
+                        </nav><!--.side-nav-->
+                    </aside><!--.page-inside__side-->
+
+                    <article class="page-inside__content">
+                        <div class="article-content">
+                            <div class="page-inside__content__container">
+                                <p class="loud">Федеральная пробирная палата образована на базе ФКУ «Пробирная палата России» в соответствии с указом Президента Российской Федерации от 28.10.2019 № 529. Находится в ведении Министерства финансов Российской Федерации.</p>
+                                <p>Федеральная пробирная палата осуществляет в соответствии с законодательством Российской Федерации функции по государственному контролю (надзору) за производством, использованием и обращением драгоценных металлов, использованием и обращением драгоценных камней (за исключением функций по контролю при ввозе в Российскую Федерацию из государств, не входящих в Евразийский экономический союз, и вывозе из Российской Федерации в государства, не входящие в Евразийский экономический союз, драгоценных камней).</p>
+                            </div><!--.page-inside__content__container-->
+                        </div><!--.article-content-->
+                    </article><!--.page-inside__content-->
+                </div><!--.page-inside-->
+            </div><!--.container-->
+        </main><!--.page-content-->
+
+        @@include('./partials/_footer.html')
+    </div><!--.page-->
+
+@@include('./partials/_foot.html', {
+"pageScript": '<script src="_asset/js/pages/chart.js"></script>'
+})
+</body>
+</html>

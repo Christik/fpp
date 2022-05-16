@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Page
+   ========================================================================== */
+
+.page { display: flex; flex-direction: column; width: 100%; min-height: 100vh; position: relative; overflow: hidden; }
+.page__header { position: relative; z-index: 4; }
+.page__header__detail { position: absolute; left: 0; top: 100%; width: 100%; margin: -1px 0 0; transform: translateY(-100%); transition: transform .5s;
+  &.is-active { transform: translateY(0); }
+}
+
+/* ==========================================================================
+   Page Content
+   ========================================================================== */
+
+.page-content { position: relative; }
+.page-content__top-panel { margin: 4rem 0; }
+.page-content__title { margin: 0 0 1em; }
+.page-content__pagination { margin: 4rem 0 0; }
+
+@media @maxTablet {
+  .page-content__top-panel { margin: 2.5rem 0; }
+  .page-content__pagination { margin-top: 2.5rem; }
+}
+
+@media @maxMobile {
+  .page-content__top-panel { margin: 2rem 0 2.5rem; }
+  .page-content__title { margin-bottom: 3rem; }
+  .page-content__pagination { margin-top: 2rem; }
+}

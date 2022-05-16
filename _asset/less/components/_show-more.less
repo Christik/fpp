@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Show more
+   ========================================================================== */
+
+.show-more-button { color: @color-primary; border-bottom: dashed 1px transparent; cursor: pointer; position: relative;
+  &:after { content: ''; display: block; width: .55rem; height: .35rem; background: url('@{path-images}/show-more-arrow.svg') no-repeat 50% 50%; background-size: 100% 100%; position: absolute; left: 100%; top: 50%; transform: translate(.25rem,-30%) rotate(0); }
+
+  &.is-opened {
+    &:after { transform: translate(.25rem,-30%) rotate(180deg); }
+  }
+}
+
+.show-more-content { display: none !important;
+  &.is-opened { display: block !important; }
+  &.content-grid.is-opened { display: flex !important; }
+}
+
+@media @maxMobile {
+  .show-more-content {
+    &.content-grid.is-opened { display: block !important; }
+  }
+}
+
+@media (hover: hover) {
+  .show-more-button:hover {
+    border-bottom-color: @color-primary;
+  }
+}

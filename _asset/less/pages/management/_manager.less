@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Manager Page
+   ========================================================================== */
+
+.manager-page { padding-top: 2rem; }
+.manager-page__photo { display: block; height: auto; max-width: 100%; }
+
+@media @maxTablet {
+  .manager-page { padding-top: .5rem; }
+}
+
+@media @maxMobile {
+  .manager-page { display: block;
+    .page-inside__side { display: block; width: auto; }
+  }
+  .manager-page__photo { width: auto; height: 16rem; margin: 0 0 1.2rem; }
+}
+
+/* ==========================================================================
+   Text Timeline
+   ========================================================================== */
+
+.text-timeline { }
+.text-timeline__item { }
+.text-timeline__date { color: @color-primary; font-family: @font-addl; font-size: .9rem; line-height: 1.5; font-weight: 500; }
+.text-timeline__text { margin: 0;
+  p, li { font-size: .8rem; line-height: 1.6; font-weight: 500; }
+  p { margin: 0 0 2em; }
+}
+
+@media @maxTablet {
+  .text-timeline__date { font-size: .7rem; }
+  .text-timeline__text {
+    p, li { font-size: .6rem;  }
+  }
+}
+
+@media @maxMobile {
+  .text-timeline__text {
+    p, li { font-size: .7rem;  }
+  }
+}
+

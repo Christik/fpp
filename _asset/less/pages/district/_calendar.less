@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Schedule Calendar
+   ========================================================================== */
+
+.schedule-calendar { background: #fff; border-radius: 1rem; border: solid 1px @color-border-blue; padding: 3rem; position: relative; }
+.schedule-calendar__title { color: @color-text-blue; margin: 0 1.5rem 2em 0; }
+.schedule-calendar__close { position: absolute; top: 2.8rem; right: 2.8rem; }
+
+@media @maxTablet {
+  .schedule-calendar { padding: 2rem; }
+  .schedule-calendar__close { right: 1.8rem; top: 1.8rem; }
+}
+
+@media @maxMobile {
+  .schedule-calendar { padding: 1.2rem; }
+  .schedule-calendar__title { font-size: .7rem; }
+  .schedule-calendar__close { right: 1rem; top: 1rem; }
+}
+
+/* ==========================================================================
+   Calendar Month
+   ========================================================================== */
+
+.calend-month { text-align: center; }
+.calend-month__title { font-size: .9rem; line-height: 1.4; font-weight: 700; text-transform: capitalize; margin: 0 0 1.5em; }
+
+@media @maxTablet {
+  .calend-month__title { margin-bottom: 1rem; }
+}
+
+@media @maxMobile {
+  .calend-month__title { font-size: .7rem; }
+}
+
+/* ==========================================================================
+   Calendar Month Grid
+   ========================================================================== */
+
+.calend-month-grid { display: flex; flex-wrap: wrap; margin: 0 auto; }
+.calend-month-grid__item { width: 14.28%; line-height: 2.2rem; text-align: center; margin: 2px 0 0; }
+.calend-month-grid__label { font-size: .8em; font-weight: 500; color: @color-text-lighter; }
+.calend-month-grid__day { font-size: .8em; font-weight: 500;
+  &.event { color: #fff; background: @color-primary; }
+  &.last-month,
+  &.next-month { color: transparent; background: none; }
+}
+
+@media @maxTablet {
+  .calend-month-grid__item { line-height: 2rem; }
+}
+
+/* ==========================================================================
+   Calendar Months
+   ========================================================================== */
+
+.calend-months { display: flex; justify-content: space-between; position: relative;
+  .calend-month { width: 15.4rem; }
+}
+.calend-months__divider { border-left: solid 1px @color-border; width: 0;
+  &:first-of-type { display: none; }
+}
+
+@media @maxTablet {
+  .calend-months {
+    .calend-month { width: 14rem; }
+    .calend-month:nth-of-type(6),
+    .calend-months__divider:nth-of-type(5) { display: none; }
+  }
+}
+
+@media @maxMobile {
+  .calend-months {
+    .calend-month { width: 14rem; }
+    .calend-month:nth-of-type(4),
+    .calend-months__divider { display: none; }
+  }
+}
+
+/* ==========================================================================
+   Calendar Nav
+   ========================================================================== */
+
+.schedule-calendar__nav { position: absolute; top: 0; border: none; background: none; height: 1.26rem; display: flex; align-items: center;
+  svg { display: block; width: .9rem; height: .9rem; fill: none;
+    path {
+      &:nth-child(1) { fill: @color-text; }
+      &:nth-child(2) { stroke: @color-text; }
+    }
+  }
+
+  &_prev { left: 0; transform: scaleX(-1); }
+  &_next { right: 0; }
+}
+
+@media (hover: hover) {
+  .schedule-calendar__nav:hover {
+    svg path {
+      &:nth-child(1) { fill: @color-primary; }
+      &:nth-child(2) { stroke: @color-primary; }
+    }
+  }
+}

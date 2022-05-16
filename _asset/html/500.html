@@ -1,0 +1,24 @@
+@@include('./partials/_head.html', {
+    "title": "Федеральная пробирная палата",
+})
+<body class="page-error page-error_500">
+<div class="page page_error">
+    <div class="page-error__container">
+        <div class="page-error__num">
+            500
+        </div>
+        <div class="text-basic page-error__text">
+            <p>Ошибка сервера.</p>
+            <p>
+                На сервере произошла непредвиденная ошибка.<br/>
+                Попробуйте вернуться на <a class="text-link-border text-link-border_black" href="#">главную страницу</a>.
+            </p>
+        </div>
+    </div><!--.page-error__container-->
+</div><!--.page-->
+
+@@include('./partials/_foot.html', {
+"pageScript": ''
+})
+</body>
+</html>

@@ -1,0 +1,29 @@
+/* ==========================================================================
+   File Link
+   ========================================================================== */
+
+.file-link { display: block; border: none !important; color: @color-text !important; }
+.file-link__label { }
+.file-link__text { display: block; font-size: .7rem; line-height: 1.5; font-weight: 500; margin: 1em 0 0; }
+
+@media @maxTablet {
+  .file-link__text { font-size: .5rem; }
+}
+
+@media @maxMobile {
+  .file-link__text { font-size: .7rem; }
+}
+
+@media (hover: hover) {
+  .file-link {
+    &:hover {
+      .file-link__label { color: #fff;
+        &:before { display: none; }
+      }
+    }
+    &_red:hover .file-link__label { background-color: @color-red; }
+    &_blue:hover .file-link__label { background-color: @color-blue; }
+    &_green:hover .file-link__label { background-color: @color-green; }
+    &_orange:hover .file-link__label { background-color: @color-orange; }
+  }
+}

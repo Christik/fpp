@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Page Header Detail
+   ========================================================================== */
+
+.page-header-detail { padding: 30px 0; border-bottom: solid 1px #000; }
+
+/* ==========================================================================
+   Page Header Detail Content
+   ========================================================================== */
+
+.page-header-detail__content { display: flex; }
+.page-header-detail__content__column { flex-grow: 1; }
+
+@media @maxTabletBvi {
+  .page-header-detail__content { display: block; }
+  .page-header-detail__content__column + .page-header-detail__content__column { margin-top: 2em; }
+}
+
+/* ==========================================================================
+   Page Group Nav
+   ========================================================================== */
+
+.page-group-nav { }
+.page-group-nav__title { margin: 0 0 1em; font-weight: 700;
+  a { text-decoration: none; padding: .25em; }
+}
+.page-group-nav__title__icon { display: inline-block; vertical-align: baseline; width: .35rem; height: .55rem; fill: none; margin: 0 0 0 .25rem;
+  path { stroke: @bvi-white;
+    body .bvi-body[data-bvi-theme=black] & { stroke: @bvi-black; }
+    body .bvi-body[data-bvi-theme=green] & { stroke: @bvi-green; }
+    body .bvi-body[data-bvi-theme=brown] & { stroke: @bvi-brown; }
+    body .bvi-body[data-bvi-theme=blue] & { stroke: @bvi-blue; }
+  }
+}
+.page-group-nav__list {
+  li { margin: .5em 0; }
+  a { text-decoration: none; padding: .25em; }
+}
+
+
+/* ==========================================================================
+   Site Links
+   ========================================================================== */
+
+.site-links { font-weight: 700; }
+.site-links__group {
+  &:not(:first-child) { margin-top: 1.5em; }
+  li {
+    &:not(:first-child) { margin-top: .5em; }
+  }
+  a { text-decoration: none; padding: .25em; }
+}
+
+
+/* ==========================================================================
+   Page Header Detail Footer
+   ========================================================================== */
+
+.page-header-detail__footer { display: none; }

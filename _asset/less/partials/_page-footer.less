@@ -1,0 +1,189 @@
+/* ==========================================================================
+   Page Footer
+   ========================================================================== */
+
+.page-footer { margin-top: auto; background: @color-primary; color: #fff; padding: 3rem 0 2.5rem; }
+.page-footer__top,
+.page-footer__bottom { display: flex; }
+.page-footer__bottom { margin: 3rem 0 0; align-items: center; }
+.page-footer__left { width: 18rem; min-width: 18rem; display: flex; flex-direction: column; padding: 0 5rem 0 0; }
+.page-footer__right { flex-grow: 1; }
+
+@media @maxTablet {
+  .page-footer__left { width: 12rem; min-width: 12rem; padding-right: 2rem; }
+  .page-footer__bottom {
+    .page-footer__left { width: auto; min-width: auto; padding-right: 0; }
+  }
+}
+
+@media @maxMobile {
+  .page-footer { padding: 0; }
+  .page-footer__top,
+  .page-footer__bottom { display: block; }
+  .page-footer__top { padding-top: 2rem; }
+  .page-footer__bottom { margin-top: 1rem; }
+  .page-footer__left { width: auto; min-width: auto; padding-right: 0; }
+  .page-footer__bottom { border-top: solid 1px fade(#fff, 10%); }
+}
+
+/* ==========================================================================
+   Page Footer Logo
+   ========================================================================== */
+
+.page-footer__logo { margin: 0 0 1rem;
+  .page-logo__text { color: inherit; }
+}
+
+@media @maxMobile {
+  .page-footer__logo { display: flex; margin: 0 0 2rem;
+    .page-logo__img { width: 3.6rem; height: 3.6rem; min-width: 3.6rem; margin: 0 1rem 0 0; }
+    .page-logo__sub-title { display: block; }
+  }
+}
+
+/* ==========================================================================
+   Page Footer Contacts
+   ========================================================================== */
+
+.page-footer__phone { margin: auto 0 0;
+  .site-phone { color: inherit; }
+}
+.page-footer__mail,
+.page-footer__bvi,
+.page-footer__address { font-family: @font-addl; font-size: .75rem; line-height: 1.5; }
+.page-footer__mail,
+.page-footer__bvi { margin: 1em 0;
+  a { /*color: #fff; border-bottom:  solid 1px fade(#fff, 50%);*/ }
+}
+.page-footer__bvi { margin-bottom: 0; }
+
+@media @maxTablet {
+  .page-footer__phone {
+    .site-phone { font-size: 1.2rem; }
+  }
+}
+
+/* ==========================================================================
+   Page Footer Mobile Contacts
+   ========================================================================== */
+
+.page-footer__contacts-mobile { padding: 2rem 0 1rem; border-top: solid 1px fade(#fff, 30%); }
+
+/* ==========================================================================
+   Page Footer Nav
+   ========================================================================== */
+
+.page-footer__nav { display: flex;
+  .page-group-nav__title a { color: #fff; }
+  .page-group-nav__title__icon path { stroke: #fff; }
+  .page-group-nav__list { font-size: .7rem;
+    a { color: fade(#fff, 50%); }
+  }
+  .site-links { font-size: .7rem; }
+  .site-links__group a { color: #fff; }
+}
+.page-footer__nav__col {
+  &:nth-child(1) { width: 35%; padding-right: 2rem; }
+  &:nth-child(2) { width: 34%; padding-right: 2rem; }
+  &:nth-child(3) { width: 31%; border-left: solid 1px fade(#fff, 10%); padding-left: 3rem; }
+}
+
+@media @maxTablet {
+  .page-footer__nav { flex-wrap: wrap;
+    .page-group-nav__list { font-size: .6rem; }
+    .site-links__group { width: 40%;
+      &:nth-child(1) { width: 60%; }
+    }
+  }
+  .page-footer__nav__col {
+    &:nth-child(1) { width: 60%; padding-right: .5rem; }
+    &:nth-child(2) { width: 40%; padding-right: 0; }
+    &:nth-child(3) { width: 100%; padding: 2rem 0 0; margin: 2rem 0 0; border-left: none; border-top: solid 1px fade(#fff, 10%); }
+  }
+}
+
+@media (hover: hover) {
+  .page-footer__nav {
+    .page-group-nav__title a:hover { color: @color-secondary; }
+    .page-group-nav__list a:hover { color: #fff; }
+    .site-links__group a:hover { color: @color-secondary; }
+  }
+}
+
+/* ==========================================================================
+   Page Footer Nav Mobile
+   ========================================================================== */
+
+@media @maxMobile {
+  .page-footer__nav { margin-left: -1.2rem; margin-right: -1.2rem;
+    .page-group-nav__title { font-size: .9rem; white-space: nowrap; margin: 0;
+      a { display: block; line-height: 4rem; border: solid 1px fade(#fff, 30%); border-right: none; padding: 0 1.2rem; }
+
+      &.is-opened { background-color: fade(#fff, 10%); }
+    }
+    .page-group-nav__title__icon { transform: rotate(90deg); }
+    .page-group-nav__list { display: none; font-size: .7rem; padding: 1.5rem 1.2rem 2rem; width: 200%; border-bottom: solid 1px fade(#fff, 30%);
+      a { color: #fff; }
+    }
+  }
+  .page-footer__nav__col:nth-child(1) .page-group-nav__title a { border-left: none; }
+
+  // is opened
+  .page-footer__nav {
+    .page-group-nav__title.is-opened {
+      .page-group-nav__title__icon { transform: rotate(-90deg); }
+      & + .page-group-nav__list { display: block; }
+    }
+  }
+
+  .page-footer__nav__col {
+    &:nth-child(1),
+    &:nth-child(2) { width: 50%; padding-left: 0; padding-right: 0; }
+    &:nth-child(2) {
+      .page-group-nav__list { transform: translateX(-50%); }
+    }
+    &:nth-child(3) { padding-left: 1.2rem; padding-right: 1.2rem; padding-bottom: 1.5rem; border-top: none; margin-top: 0; }
+  }
+}
+
+/* ==========================================================================
+   Page Footer Copy
+   ========================================================================== */
+
+.page-footer__copy { font-size: .55rem; }
+
+@media @maxMobile {
+  .page-footer__copy { padding: 1rem 0; }
+}
+
+/* ==========================================================================
+   Page Footer Partners
+   ========================================================================== */
+
+.page-footer__partners { }
+
+@media @minTablet {
+  .page-footer__partners { display: flex; justify-content: space-between; align-items: center; }
+}
+
+@media @maxTablet {
+  .page-footer__partners { margin: 2rem 0 0;
+    li:not(:first-child) { margin-top: .75rem; }
+  }
+}
+
+@media @maxMobile {
+  .page-footer__partners { display: none; }
+}
+
+/* ==========================================================================
+   Gos Partner
+   ========================================================================== */
+
+.gos-partner { display: flex; align-items: center; }
+.gos-partner__logo { width: 2rem; min-width: 2rem; height: 2rem; }
+.gos-partner__text { font-size: .55rem; line-height: normal; font-weight: 700; margin: 0 0 0 1em; }
+
+@media @maxTablet {
+  .gos-partner__logo { width: 1.6rem; min-width: 1.6rem; height: 1.6rem; }
+}

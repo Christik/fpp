@@ -1,0 +1,152 @@
+/* ==========================================================================
+/* ==========================================================================
+/* ==========================================================================
+
+   Forms
+
+   ==========================================================================
+   ==========================================================================
+   ========================================================================== */
+
+[placeholder]::-webkit-input-placeholder { color: fade(@bvi-white, 70%); }
+[placeholder]::-moz-placeholder { color: fade(@bvi-white, 70%); opacity: 1 !important; }
+[placeholder]:-moz-placeholder { color: fade(@bvi-white, 70%); opacity: 1 !important; }
+[placeholder]::-moz-placeholder { color: fade(@bvi-white, 70%); }
+[placeholder]:-ms-input-placeholder { color: fade(@bvi-white, 70%); }
+
+body .bvi-body[data-bvi-theme=black] {
+  [placeholder]::-webkit-input-placeholder { color: fade(@bvi-black, 70%); }
+  [placeholder]::-moz-placeholder { color: fade(@bvi-black, 70%); }
+  [placeholder]:-moz-placeholder { color: fade(@bvi-black, 70%); }
+  [placeholder]::-moz-placeholder { color: fade(@bvi-black, 70%); }
+  [placeholder]:-ms-input-placeholder { color: fade(@bvi-black, 70%); }
+}
+body .bvi-body[data-bvi-theme=green] {
+  [placeholder]::-webkit-input-placeholder { color: fade(@bvi-green, 70%); }
+  [placeholder]::-moz-placeholder { color: fade(@bvi-green, 70%); }
+  [placeholder]:-moz-placeholder { color: fade(@bvi-green, 70%); }
+  [placeholder]::-moz-placeholder { color: fade(@bvi-green, 70%); }
+  [placeholder]:-ms-input-placeholder { color: fade(@bvi-green, 70%); }
+}
+body .bvi-body[data-bvi-theme=brown] {
+  [placeholder]::-webkit-input-placeholder { color: fade(@bvi-brown, 70%); }
+  [placeholder]::-moz-placeholder { color: fade(@bvi-brown, 70%); }
+  [placeholder]:-moz-placeholder { color: fade(@bvi-brown, 70%); }
+  [placeholder]::-moz-placeholder { color: fade(@bvi-brown, 70%); }
+  [placeholder]:-ms-input-placeholder { color: fade(@bvi-brown, 70%); }
+}
+body .bvi-body[data-bvi-theme=blue] {
+  [placeholder]::-webkit-input-placeholder { color: fade(@bvi-blue, 70%); }
+  [placeholder]::-moz-placeholder { color: fade(@bvi-blue, 70%); }
+  [placeholder]:-moz-placeholder { color: fade(@bvi-blue, 70%); }
+  [placeholder]::-moz-placeholder { color: fade(@bvi-blue, 70%); }
+  [placeholder]:-ms-input-placeholder { color: fade(@bvi-blue, 70%); }
+}
+
+
+/* ==========================================================================
+   Group
+   ========================================================================== */
+
+.form-group { margin: 0 0 1.5em; }
+
+
+/* ==========================================================================
+   Label
+   ========================================================================== */
+
+.form-label { display: block; font-weight: 700; margin: 0 0 .5em; }
+
+
+/* ==========================================================================
+   Input
+   ========================================================================== */
+
+input:not([type=checkbox]), textarea { border: solid 2px #000; padding: .5em 1em; display: block; width: 100%; }
+textarea { min-height: 150px; }
+
+/* ==========================================================================
+   Select
+   ========================================================================== */
+
+select { border: solid 2px #000; padding: .5em 1em; display: block; width: 100%; }
+
+/* ==========================================================================
+   Error Note
+   ========================================================================== */
+
+div.form-error { margin: .25em 0 0; font-weight: 700; }
+
+/* ==========================================================================
+   Form Button
+   ========================================================================== */
+
+.form-note {
+  .form-field-square + &,
+  .form-field + & { margin-top: .5em; }
+  .dropzone + & { margin-top: 1em; }
+}
+
+/* ==========================================================================
+   Captcha
+   ========================================================================== */
+
+.captcha { }
+.captcha-form { }
+.captcha-form__img { height: auto; width: 100%; max-width: 400px; }
+.captcha-form__input { margin: .5em 0 0; }
+
+.captcha-refresh { width: 100%; display: flex; align-items: center; justify-content: center;
+  .captcha-form + & { margin-top: .75rem; }
+}
+.captcha-refresh__icon { display: block; width: 1.5em; height: 1.5em; fill: none; margin: 0 .5em 0 0;
+  path { fill: @bvi-white-bg;
+    body .bvi-body[data-bvi-theme=black] & { fill: @bvi-black-bg; }
+    body .bvi-body[data-bvi-theme=green] & { fill: @bvi-green-bg; }
+    body .bvi-body[data-bvi-theme=brown] & { fill: @bvi-brown-bg; }
+    body .bvi-body[data-bvi-theme=blue] & { fill: @bvi-blue-bg; }
+  }
+}
+
+/* ==========================================================================
+   Form Columns
+   ========================================================================== */
+
+.form-cols { display: flex; flex-wrap: wrap; margin: 0 -2em 0 0; }
+.form-cols__col { width: 50%; padding: 0 2em 0 0; }
+
+@media @maxMobile {
+  .form-cols { display: block; margin-right: 0; }
+  .form-cols__col { width: auto; padding: 0; }
+}
+
+/* ==========================================================================
+   Form Row
+   ========================================================================== */
+
+.form-row { display: flex; align-items: center; }
+.form-row__field { flex-grow: 1; margin: 0 1em 0 0; }
+
+/* ==========================================================================
+   Dropzone
+   ========================================================================== */
+
+.dropzone { border: dashed 1px #000; border-radius: 20px; min-height: auto; padding: 20px;
+  .dz-message { margin: 0 auto; min-height: 80px; display: flex; align-items: center; justify-content: center; text-align: center; }
+  .dz-preview .dz-image { z-index: 3; }
+}
+
+/* ==========================================================================
+   Checkbox
+   ========================================================================== */
+
+.checkbox { position: relative; }
+.checkbox__input { position: absolute; left: 0; top: .2em; }
+.checkbox__label { display: block; padding: 0 0 0 1.5em; cursor: pointer; }
+
+
+
+
+
+
+

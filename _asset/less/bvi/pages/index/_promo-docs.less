@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Promo Document Preview
+   ========================================================================== */
+
+.promo-doc { display: flex; flex-direction: column; position: relative; border: solid 1px #000; padding: 1.5rem; height: 100%; min-height: 300px; }
+.promo-doc__sub-title { margin: 0 0 1em; }
+.promo-doc__title { font-weight: 700; margin: 0 0 1em; }
+.promo-doc__bottom { margin: auto 0 0; }
+.promo-doc__icon { display: none; }
+.promo-doc__link { display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; text-indent: -1000px; }
+
+/* ==========================================================================
+   Promo Documents
+   ========================================================================== */
+
+.promo-docs { display: flex; margin: 0 -40px 0 0; }
+.promo-docs__item { padding: 0 40px 0 0; width: 33.333333%; }
+
+@media @maxTabletBvi {
+  .promo-docs { display: block; margin: 0; }
+  .promo-docs__item { padding: 0 0 30px; width: auto; }
+}
+

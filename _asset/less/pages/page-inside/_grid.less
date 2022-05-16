@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Page Inside Grid
+   ========================================================================== */
+
+.page-inside { display: flex; align-items: flex-start; padding: 5rem 0; width: 100%;
+  &_no-padding { padding: 0 !important; }
+  &_no-padding-top { padding-top: 0 !important; }
+}
+.page-inside__side { width: 17.5rem; min-width: 17.5rem; position: relative; padding: 0 3.5rem 0 0; }
+.page-inside__content { flex-grow: 1; }
+.page-inside__content__container { margin-right: 17.5rem; }
+.page-inside__content__full { margin-left: -17.5rem; }
+.page-inside__content__right-width { }
+
+.page-inside__side-note { position: relative; height: 0;
+  &.over-landing-h2 { margin-top: 3.5rem; }
+}
+.page-inside__side-note__in { position: absolute; top: 0; left: -17.5rem; width: 14rem;
+  .page-inside__side-note.direction-reverse & { top: auto; bottom: 0; }
+}
+.page-inside__side-note__right { position: absolute; left: 100%; top: 0; padding: 0 3rem;
+  .page-inside__side-note.direction-reverse & { top: auto; bottom: 0; }
+}
+
+@media @maxTablet {
+  .page-inside { padding: 3rem 0; }
+  .page-inside__side { width: 10rem; min-width: 10rem; padding-right: 1.2rem; }
+  .page-inside__content__full { margin-left: -10rem; }
+  .page-inside__content__container { margin-right: 1rem; }
+  .page-inside__content__right-width { margin-left: -10rem; }
+
+  .page-inside__side-note__in { width: 8.8rem; left: -10rem; }
+
+  .page-inside__side-note__right { left: auto; right: 100%; padding: 0; width: 10rem; }
+}
+
+@media @maxMobile {
+  .page-inside { display: block; padding: 2rem 0; }
+  .page-inside__side { display: none; }
+  .page-inside__content__full { margin-left: 0; }
+  .page-inside__content__container { width: auto; min-width: auto; margin-right: 0; }
+  .page-inside__content__right-width { margin-left: 0; }
+
+  .page-inside__side-note { height: auto; margin: 0 0 1.5rem;
+    &.over-landing-h2 { margin-bottom: 1rem; }
+  }
+  .page-inside__side-note__in { position: static; top: auto; left: auto; width: auto; }
+}
+
+/* ==========================================================================
+   Page Inside Center
+   ========================================================================== */
+
+.page-inside-center { min-width: 34rem; width: 47vw; margin: 0 0 0 17.5rem; position: relative; padding: 0 0 7rem; }
+
+@media @maxTablet {
+  .page-inside-center { min-width: auto; width: auto; margin-left: 0; padding-bottom: 3.5rem; }
+}
+
+@media @maxMobile {
+
+}

@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Feedback
+   ========================================================================== */
+
+.page-feedback { padding: 0 0 10rem; }
+.page-feedback__container { min-width:  36rem; margin: 0 auto; width: 50%; }
+.page-feedback__text { margin-bottom: 4rem; }
+
+@media @maxTablet {
+  .page-feedback { padding-bottom: 5rem; }
+  .page-feedback__container { min-width: auto; width: auto; }
+  .page-feedback__text { margin-bottom: 2.5rem; }
+}
+
+/* ==========================================================================
+   Box white
+   ========================================================================== */
+
+.box-white { background: #fff; border-radius: 3rem; padding: 4.5rem 5rem; position: relative; margin: 0 auto; width: 46rem; }
+
+@media @maxTablet {
+  .box-white { border-radius: 2rem; padding: 2rem; width: auto; }
+}
+
+@media @maxMobile {
+  .box-white { border-radius: 0; margin-right: -1.2rem; margin-left: -1.2rem; padding: 2rem 1.2rem; }
+}
+
+/* ==========================================================================
+   Box white modal
+   ========================================================================== */
+
+.box-white__modal { display: none; background: inherit; border-radius: inherit; padding: inherit; padding-top: 6rem; position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; z-index: 3;
+  &.is-opened { display: block; }
+}
+.box-white__modal__title { margin: 0 0 2.5em; color: @color-text-blue; }
+.box-white__modal__close { position: absolute; right: 2.5rem; top: 2.5rem; }
+
+/* ==========================================================================
+   Feedback Form
+   ========================================================================== */
+
+.form-feedback { }
+.form-feedback__head { display: flex; justify-content: space-between; align-items: center; color: @color-text-blue; margin: 0 0 2rem; }
+.form-feedback__sub-title { color: @color-text-blue; margin: 1.5rem 0; }
+.form-feedback__agreement { margin: 2.5rem 0 2rem; }
+.form-feedback__footer { display: flex; align-items: flex-start; justify-content: space-between; }
+.form-feedback__footer__captcha { width: 17rem; }
+
+@media @maxMobile {
+  .form-feedback__head { display: block; }
+  .form-feedback__attention { margin: 1.5rem 0; }
+  .form-feedback__footer { display: block; }
+  .form-feedback__footer__captcha { width: 16rem; }
+  .form-feedback__submit { width: 100%; margin: 1.5rem 0 0; }
+}
