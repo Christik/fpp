@@ -1,5 +1,5 @@
 @@include('./partials/_head.html', {
-    "title": "Федеральная пробирная палата",
+"title": "Федеральная пробирная палата",
 })
 <body>
 <div class="page">
@@ -11,7 +11,7 @@
                 <div class="crumbs-panel__left">
                     <ul class="crumbs">
                         <li><a class="text-link" href="#">Главная</a></li>
-                        <li><a class="text-link" href="#">Проверить ювелирное изделие</a></li>
+                        <li><a class="text-link" href="#">Проверка ювелирного изделия</a></li>
                     </ul>
                 </div><!--.crumbs-panel__left-->
 
@@ -21,147 +21,257 @@
             </div><!--.crumbs-panel-->
 
             <h1 class="h1 page-content__title">
-                Проверить<br/>
-                ювелирное изделие
+                Проверка<br/>
+                ювелирного изделия
             </h1>
 
-            <div class="page-inside page-inside_no-padding-top check-org">
-                <aside class="page-inside__side">
-                    <p class="text-basic">
-                        <a href="#"
-                           class="text-link text-link_arrow">Проверить организацию</a>
-                    </p>
-                </aside><!--.page-inside__side-->
+            <div class="page-check">
+                <article class="article-content page-check__description">
+                    <p class="loud">По уникальному идентификационному номеру (УИН) вы можете узнать всю информацию о ювелирном изделии: производителя и продавца изделия, страну происхождения драгоценного металла и драгоценных камней, состав драгоценного металла и вставок драгоценных камней</p>
+                </article><!--.page-check__description-->
 
-                <article class="page-inside__content">
-                    <div class="page-inside__content__container">
-                        <div class="article-content check-org__text">
-                            <p class="loud">Получить информацию о происхождении ювелирного изделия и его характеристиках по уникальному идентификационному номеру (УИН)</p>
-                        </div><!--.article-content-->
-
-                        <form class="form-check-org">
-                            <div class="form-row">
-                                <input type="text"
-                                       class="form-field form-row__field"
-                                       placeholder="Введите УИН">
-                                <button type="submit" class="button">
-                                    Проверить
-                                </button>
-                            </div><!--.form-row-->
-                        </form>
-                    </div><!--.page-inside__content__container-->
-                </article><!--.page-inside__content-->
-            </div><!--.page-inside-->
-
-            <section class="page-inside tabs check-org-result">
-                <aside class="page-inside__side check-org-result__side">
-                    <nav class="side-nav">
-                        <div class="side-nav__section">
-                            <ul class="side-nav__list">
-                                <li>
-                                    <a class="text-link side-nav__list__current"
-                                       href="#"
-                                       data-tabs-link="main">Основная информация</a>
-                                </li>
-                                <li>
-                                    <a class="text-link"
-                                       href="#"
-                                       data-tabs-link="metall">Информация о металле</a>
-                                </li>
-                                <li>
-                                    <a class="text-link"
-                                       href="#"
-                                       data-tabs-link="inserts">Информация о вставках</a>
-                                </li>
-                            </ul>
-                        </div><!--.side-nav__section-->
-                    </nav><!--.side-nav-->
-                </aside><!--.page-inside__side-->
-
-                <div class="page-inside__content">
-                    <div class="page-inside__content__container">
-                        <div class="check-org-result__head">
-                            <h2 class="h3">Результат проверки: 1027700201902</h2>
-                        </div>
-
-                        <div class="tabs__content is-opened" data-tabs-content="main">
-                            <div class="check-org-result__list">
-                                <div class="check-org-result__item">
-                                    <p class="check-org-result__label">
-                                        Изображение
-                                    </p>
-                                    <img class="lazyload check-org-result__preview"
-                                         data-sizes="auto"
-                                         data-srcset="_asset/uploads/check-uin-preview.jpg 195w, _asset/uploads/check-uin-preview@2x.jpg 390w"
-                                         width="195" height="195"
-                                         alt="Кольцо с драгоценными вставками">
+                <div class="page-check__content">
+                    <div class="check-tabs">
+                        <ul class="check-tabs__nav">
+                            <li class="check-tabs__nav__item">
+                                <div class="check-tabs__nav__link">
+                                    <span>
+                                        Проверить<br/>
+                                        ювелирное изделие
+                                    </span>
                                 </div>
-                                <div class="check-org-result__item">
-                                    <p class="check-org-result__label">
-                                        УИН
-                                    </p>
-                                    <p class="check-org-result__value">
-                                        6432012345678901
-                                    </p>
-                                </div>
-                                <div class="check-org-result__item">
-                                    <p class="check-org-result__label">
-                                        Наименование
-                                    </p>
-                                    <p class="check-org-result__value">
-                                        Кольцо
-                                    </p>
-                                </div>
-                                <div class="check-org-result__item">
-                                    <p class="check-org-result__label">
-                                        Описание
-                                    </p>
-                                    <p class="check-org-result__value">
-                                        Кольцо с драгоценными вставками
-                                    </p>
-                                </div>
-                                <div class="check-org-result__item">
-                                    <p class="check-org-result__label">
-                                        Производитель
-                                    </p>
-                                    <p class="check-org-result__value">
-                                        ООО “Лакса Трейдинг”
-                                    </p>
-                                </div>
-                                <div class="check-org-result__item">
-                                    <p class="check-org-result__label">
-                                        Цена
-                                    </p>
-                                    <p class="check-org-result__value">
-                                        1 000 000 рублей
-                                    </p>
-                                </div>
-                                <div class="check-org-result__item">
-                                    <p class="check-org-result__label">
-                                        Базовый материал
-                                    </p>
-                                    <p class="check-org-result__value">
-                                        Белое золото
-                                    </p>
-                                </div>
-                            </div><!--.check-org-result__list-->
-                        </div><!--.tabs__content-->
+                            </li>
+                            <li class="check-tabs__nav__item">
+                                <a class="check-tabs__nav__link"
+                                   href="#">
+                                    <span>
+                                        Проверить<br/>
+                                        организацию
+                                    </span>
+                                </a>
+                            </li>
+                        </ul><!--.check-tabs__nav-->
 
-                        <div class="tabs__content" data-tabs-content="metall">
-                            Информация о металле
-                        </div><!--.tabs__content-->
+                        <div class="check-tabs__body">
+                            <form class="check-form">
+                                <p class="text-basic check-form__title">Введите УИН</p>
+                                <p class="text-basic check-form__text">
+                                    Уникальный идентификационном номер (УИН) расположен на бирке ювелирного изделия
+                                </p>
+                                <div class="form-row">
+                                    <input type="text"
+                                           class="form-field form-row__field"
+                                           placeholder="Введите УИН">
+                                    <button type="submit"
+                                            class="button form-row__button"
+                                            disabled>
+                                        Проверить изделие
+                                    </button>
+                                </div><!--.form-row-->
 
-                        <div class="tabs__content" data-tabs-content="inserts">
-                            Информация о вставках
-                        </div><!--.tabs__content-->
+                                <div class="captcha check-form__captcha">
+                                    <div class="captcha-form">
+                                        <img class="captcha-form__img"
+                                             src="_asset/img/captcha.png" alt="">
+                                        <input type="text"
+                                               placeholder="Введите код"
+                                               class="form-field captcha-form__input">
+                                    </div>
+                                    <button type="button"
+                                            class="captcha-refresh">
+                                        <svg class="captcha-refresh__icon bvi-no-styles"
+                                             viewBox="0 0 20 15">
+                                            <path class="bvi-no-styles" d="M5.98598 6.50245C5.86119 6.37245 5.65523 6.36832 5.52566 6.49311L3.25813 8.67015C3.1852 8.26821 3.14701 7.8591 3.14701 7.44783C3.14701 3.70015 6.1965 0.651091 9.94483 0.651091C11.7573 0.651091 13.462 1.35579 14.7451 2.6354C14.8727 2.76236 15.0789 2.76193 15.2056 2.63475C15.3326 2.50757 15.3322 2.30139 15.205 2.17443C13.7989 0.772411 11.9307 0 9.94483 0C5.83732 0 2.49592 3.34118 2.49592 7.44783C2.49592 7.77446 2.51805 8.09979 2.56016 8.42186L0.551107 6.49311C0.42154 6.36876 0.215795 6.37266 0.0907854 6.50245C-0.03379 6.63201 -0.0296664 6.83819 0.100118 6.96277L2.813 9.56713C2.87594 9.62768 2.95732 9.65785 3.03849 9.65785C3.11966 9.65785 3.20105 9.62768 3.26399 9.56713L5.97687 6.96277C6.10643 6.83819 6.11056 6.63201 5.98598 6.50245Z"/>
+                                            <path class="bvi-no-styles" d="M13.8851 8.49755C14.0099 8.62755 14.2159 8.63168 14.3454 8.50689L16.613 6.32985C16.6859 6.73179 16.7241 7.1409 16.7241 7.55217C16.7241 11.2998 13.6746 14.3489 9.92626 14.3489C8.11384 14.3489 6.40907 13.6442 5.12598 12.3646C4.99837 12.2376 4.79219 12.2381 4.66545 12.3653C4.53848 12.4924 4.53892 12.6986 4.6661 12.8256C6.07224 14.2276 7.94043 15 9.92626 15C14.0338 15 17.3752 11.6588 17.3752 7.55217C17.3752 7.22554 17.353 6.90021 17.3109 6.57814L19.32 8.50689C19.4496 8.63124 19.6553 8.62734 19.7803 8.49755C19.9049 8.36799 19.9008 8.16181 19.771 8.03723L17.0581 5.43287C16.9952 5.37232 16.9138 5.34215 16.8326 5.34215C16.7514 5.34215 16.67 5.37232 16.6071 5.43287L13.8942 8.03723C13.7647 8.16181 13.7605 8.36799 13.8851 8.49755Z"/>
+                                        </svg>
+                                        Обновить код
+                                    </button>
+                                </div><!--.captcha-->
+                            </form><!--.check-form-->
 
-                        <button type="button"
-                                class="button check-org-result__button">
-                            Сообщить об ошибке
-                        </button>
-                    </div><!--.page-inside__content__container-->
-                </div><!--.page-inside__content-->
-            </section><!--.page-inside-->
+                            <div class="check-result">
+                                <p class="check-result__title">
+                                    Результат проверки:
+                                    <span class="nowrap">6432 0123 4567 8901</span>
+                                </p>
+
+                                <div class="tabs">
+                                    <ul class="check-result__tabs-nav">
+                                        <li>
+                                            <a class="is-current"
+                                               href="#"
+                                               data-tabs-link="general">
+                                                Основная информация
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                               data-tabs-link="metall">
+                                                Информация о металле
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                               data-tabs-link="inserts">
+                                                Информация о вставках
+                                            </a>
+                                        </li>
+                                    </ul><!--.check-result__tabs-nav-->
+
+                                    <div class="check-result__nav-mobile">
+                                        <select class="custom-select faq-select">
+                                            <option value="general" selected>Основная информация</option>
+                                            <option value="metall">Информация о металле</option>
+                                            <option value="inserts">Информация о вставках</option>
+                                        </select>
+                                    </div><!--.check-result__nav-mobile-->
+
+                                    <div class="tabs__content is-opened"
+                                         data-tabs-content="general">
+                                        <div class="check-result-rows">
+                                            <div class="check-result-row">
+                                                <p class="check-result-row__label">
+                                                    Изображение
+                                                </p>
+                                                <img class="lazyload check-result-preview"
+                                                     data-sizes="auto"
+                                                     data-srcset="_asset/uploads/check-uin-preview.jpg 195w, _asset/uploads/check-uin-preview@2x.jpg 390w"
+                                                     width="195" height="195"
+                                                     alt="">
+                                            </div>
+                                            <div class="check-result-row">
+                                                <p class="check-result-row__label">
+                                                    УИН
+                                                </p>
+                                                <p class="check-result-row__value">
+                                                    6432012345678901
+                                                </p>
+                                            </div>
+                                            <div class="check-result-row">
+                                                <p class="check-result-row__label">
+                                                    Наименование
+                                                </p>
+                                                <p class="check-result-row__value">
+                                                    Кольцо
+                                                </p>
+                                            </div>
+                                            <div class="check-result-row">
+                                                <p class="check-result-row__label">
+                                                    Описание
+                                                </p>
+                                                <p class="check-result-row__value">
+                                                    Кольцо с драгоценными вставками
+                                                </p>
+                                            </div>
+                                            <div class="check-result-row">
+                                                <p class="check-result-row__label">
+                                                    Производитель
+                                                </p>
+                                                <p class="check-result-row__value">
+                                                    ООО “Лакса Трейдинг”
+                                                </p>
+                                            </div>
+                                            <div class="check-result-row">
+                                                <p class="check-result-row__label">
+                                                    Цена
+                                                </p>
+                                                <p class="check-result-row__value">
+                                                    1 000 000 рублей
+                                                </p>
+                                            </div>
+                                            <div class="check-result-row">
+                                                <p class="check-result-row__label">
+                                                    Базовый материал
+                                                </p>
+                                                <p class="check-result-row__value">
+                                                    Белое золото
+                                                </p>
+                                            </div>
+                                        </div><!--.check-result-rows-->
+                                    </div><!--.tabs__content-->
+
+                                    <div class="tabs__content"
+                                         data-tabs-content="metall">
+                                        <div class="check-result-rows">
+                                            <div class="check-result-row">
+                                                <p class="check-result-row__label">
+                                                    Базовый металл
+                                                </p>
+                                                <p class="check-result-row__value">
+                                                    Белое золото
+                                                </p>
+                                            </div>
+                                            <div class="check-result-row">
+                                                <p class="check-result-row__label">
+                                                    Проба
+                                                </p>
+                                                <p class="check-result-row__value">
+                                                    585
+                                                </p>
+                                            </div>
+                                            <div class="check-result-row">
+                                                <p class="check-result-row__label">
+                                                    Страна происхождения
+                                                </p>
+                                                <p class="check-result-row__value">
+                                                    —
+                                                </p>
+                                            </div>
+                                            <div class="check-result-row">
+                                                <p class="check-result-row__label">
+                                                    Состав металла
+                                                </p>
+                                                <p class="check-result-row__value">
+                                                    Золото: 58,5%<br/>
+                                                    Серебро: 25%<br/>
+                                                    Палладий: 16,5%
+                                                </p>
+                                            </div>
+                                        </div><!--.check-result-rows-->
+                                    </div><!--.tabs__content-->
+
+                                    <div class="tabs__content"
+                                         data-tabs-content="inserts">
+                                        <div class="check-result-rows">
+                                            <div class="check-result-row">
+                                                <p class="check-result-row__value">
+                                                    Сапфир
+                                                </p>
+                                                <p class="check-result-row__label">
+                                                    Количество: 1<br/>
+                                                    Вес: 0,236<br/>
+                                                    Единица измерения: карат<br/>
+                                                    Огранка:<br/>
+                                                    Качество: 2<br/>
+                                                    Цвет: синий<br/>
+                                                    Страна происхождения: Австралия
+                                                </p>
+                                            </div>
+                                            <div class="check-result-row">
+                                                <p class="check-result-row__value">
+                                                    Бриллиант
+                                                </p>
+                                                <p class="check-result-row__label">
+                                                    Количество: 1<br/>
+                                                    Вес: 0,009<br/>
+                                                    Единица измерения: карат<br/>
+                                                    Огранка: А<br/>
+                                                    Качество: 2<br/>
+                                                    Цвет: синий<br/>
+                                                    Страна происхождения: Австралия
+                                                </p>
+                                            </div>
+                                        </div><!--.check-result-rows-->
+                                    </div><!--.tabs__content-->
+                                </div><!--.tabs-->
+
+                                <a href="#"
+                                   class="button check-result__report">Сообщить об ошибке</a>
+                            </div><!--.check-result-->
+                        </div><!--.check-tabs__body-->
+                    </div><!--.check-tabs-->
+                </div><!--.page-check__content-->
+            </div><!--.page-check-->
         </div><!--.container-->
     </main><!--.page-content-->
 

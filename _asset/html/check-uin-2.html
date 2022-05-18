@@ -1,5 +1,5 @@
 @@include('./partials/_head.html', {
-"title": "Федеральная пробирная палата",
+    "title": "Федеральная пробирная палата",
 })
 <body>
 <div class="page">
@@ -11,7 +11,7 @@
                 <div class="crumbs-panel__left">
                     <ul class="crumbs">
                         <li><a class="text-link" href="#">Главная</a></li>
-                        <li><a class="text-link" href="#">Проверка организации</a></li>
+                        <li><a class="text-link" href="#">Проверка ювелирного изделия</a></li>
                     </ul>
                 </div><!--.crumbs-panel__left-->
 
@@ -22,50 +22,50 @@
 
             <h1 class="h1 page-content__title">
                 Проверка<br/>
-                организации
+                ювелирного изделия
             </h1>
 
             <div class="page-check">
                 <article class="article-content page-check__description">
-                    <p class="loud">Получить информацию из электронного реестра специального учета юридических лиц и индивидуальных предпринимателей, осуществляющих операции с драгоценными камнями и драгоценными металлами</p>
+                    <p class="loud">По уникальному идентификационному номеру (УИН) вы можете узнать всю информацию о ювелирном изделии: производителя и продавца изделия, страну происхождения драгоценного металла и драгоценных камней, состав драгоценного металла и вставок драгоценных камней</p>
                 </article><!--.page-check__description-->
 
                 <div class="page-check__content">
                     <div class="check-tabs">
                         <ul class="check-tabs__nav">
                             <li class="check-tabs__nav__item">
-                                <a class="check-tabs__nav__link"
-                                   href="#">
+                                <div class="check-tabs__nav__link">
                                     <span>
                                         Проверить<br/>
                                         ювелирное изделие
                                     </span>
-                                </a>
+                                </div>
                             </li>
                             <li class="check-tabs__nav__item">
-                                <div class="check-tabs__nav__link">
+                                <a class="check-tabs__nav__link"
+                                     href="#">
                                     <span>
                                         Проверить<br/>
                                         организацию
                                     </span>
-                                </div>
+                                </a>
                             </li>
                         </ul><!--.check-tabs__nav-->
 
                         <div class="check-tabs__body">
                             <form class="check-form">
-                                <p class="text-basic check-form__title">Введите ОГРН / ИНН</p>
+                                <p class="text-basic check-form__title">Введите УИН</p>
                                 <p class="text-basic check-form__text">
-                                    Государственный регистрационный номер юридического лица или идентификационный номер налогоплательщика
+                                    Уникальный идентификационном номер (УИН) расположен на бирке ювелирного изделия
                                 </p>
                                 <div class="form-row">
                                     <input type="text"
                                            class="form-field form-row__field"
-                                           placeholder="Введите ОГРН или ИНН">
+                                           placeholder="Введите УИН"
+                                           value="1234 4356 4966 2747 ">
                                     <button type="submit"
-                                            class="button form-row__button"
-                                            disabled>
-                                        Проверить организацию
+                                            class="button form-row__button">
+                                        Проверить изделие
                                     </button>
                                 </div><!--.form-row-->
 
@@ -75,6 +75,7 @@
                                              src="_asset/img/captcha.png" alt="">
                                         <input type="text"
                                                placeholder="Введите код"
+                                               value="x5u36x"
                                                class="form-field captcha-form__input">
                                     </div>
                                     <button type="button"
@@ -88,58 +89,6 @@
                                     </button>
                                 </div><!--.captcha-->
                             </form><!--.check-form-->
-
-                            <div class="check-result">
-                                <p class="check-result__title">
-                                    Результат проверки: 1027700201902
-                                </p>
-
-                                <div class="check-result-rows">
-                                    <div class="check-result-row">
-                                        <p class="check-result-row__label">
-                                            Наименование
-                                        </p>
-                                        <p class="check-result-row__value">
-                                            Акционерное общество Московкий ювелирный завод
-                                        </p>
-                                    </div>
-                                    <div class="check-result-row">
-                                        <p class="check-result-row__label">
-                                            Статус
-                                        </p>
-                                        <p class="check-result-row__value">
-                                            Организация зарегистрирована, состоит на специальном учёте в ГИИС ДИМК
-                                        </p>
-                                    </div>
-                                    <div class="check-result-row">
-                                        <p class="check-result-row__label">
-                                            Номер постановки на спецучет
-                                        </p>
-                                        <p class="check-result-row__value">
-                                            ЮЛ77010041194
-                                        </p>
-                                    </div>
-                                    <div class="check-result-row">
-                                        <p class="check-result-row__label">
-                                            Дата постановки на спецучет
-                                        </p>
-                                        <p class="check-result-row__value">
-                                            2021-08-20
-                                        </p>
-                                    </div>
-                                    <div class="check-result-row">
-                                        <p class="check-result-row__label">
-                                            Дата и время проверки
-                                        </p>
-                                        <p class="check-result-row__value">
-                                            2022-04-18 19:01:07
-                                        </p>
-                                    </div>
-                                </div><!--.check-result-rows-->
-
-                                <a href="#"
-                                   class="button check-result__report">Сообщить об ошибке</a>
-                            </div><!--.check-result-->
                         </div><!--.check-tabs__body-->
                     </div><!--.check-tabs-->
                 </div><!--.page-check__content-->

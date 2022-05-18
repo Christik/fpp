@@ -112,8 +112,14 @@ div.form-error { color: @color-red; margin: .25em 0 0; font-size: .8rem; font-we
    Form Row
    ========================================================================== */
 
-.form-row { display: flex; align-items: center; }
-.form-row__field { flex-grow: 1; margin: 0 1.5rem 0 0; }
+.form-row { display: flex; align-items: center; position: relative; }
+.form-row__field { flex-grow: 1; margin: 0 1rem 0 0; }
+
+@media @maxMobile {
+  .form-row { display: block; }
+  .form-row__field { margin: 0 0 1.2rem; }
+  .form-row__button { width: 100%; }
+}
 
 /* ==========================================================================
    Dropzone

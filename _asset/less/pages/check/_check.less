@@ -1,29 +1,183 @@
 /* ==========================================================================
-   Check Organisation
+   Page Check
    ========================================================================== */
 
-.check-org { }
-.check-org__text { margin: 0 0 2rem; }
+.page-check { }
+.page-check__description { margin: 0 0 5rem 17.5rem; max-width: 50vw; }
+.page-check__content { margin: 0 8rem 10rem 12.5rem; }
 
-/* ==========================================================================
-   Check Organisation Form
-   ========================================================================== */
-
-.form-check-org { }
-.form-check-org__captcha { width: 17rem; margin: 1.5rem 0 0; }
-
-/* ==========================================================================
-   Check Organisation Result
-   ========================================================================== */
-
-.check-org-result { padding-top: 0; }
-.check-org-result__side { padding-top: 4.5rem; }
-.check-org-result__head { min-height: 4.5rem; padding: 0 0 1.5rem; color: @color-text-blue; }
-.check-org-result__list { }
-.check-org-result__item { padding: 1rem 0; border-top: solid 1px @color-border;
-  &:first-child { padding-top: 0; border-top: none; }
+@media @maxTablet {
+  .page-check__description { margin: -1rem 0 2.5rem; max-width: none; }
+  .page-check__content { margin: 0 0 7rem; }
 }
-.check-org-result__label { font-size: .8rem; line-height: 1.5; font-weight: 500; margin: 0 0 .25em; }
-.check-org-result__value { font-size: .9rem; line-height: 1.5; font-weight: 800; }
-.check-org-result__preview { display: block; margin: .5rem 0 1rem; }
-.check-org-result__button { margin-top: 2.5rem; }
+
+@media @maxMobile {
+  .page-check__content { margin: 0 -1.2rem; }
+}
+
+/* ==========================================================================
+   Check Tabs
+   ========================================================================== */
+
+.check-tabs { background: #fff; border-radius: 3rem; position: relative; overflow: hidden; }
+.check-tabs__nav { }
+.check-tabs__body { padding: 2.5rem 5rem 3.5rem; }
+
+@media @maxTablet {
+  .check-tabs { border-radius: 2rem; }
+  .check-tabs__body { padding: 1.5rem 3rem 3rem; }
+}
+
+@media @maxMobile {
+  .check-tabs { border-radius: 0; }
+  .check-tabs__body { padding: 2.5rem 1.2rem 5rem; }
+}
+
+/* ==========================================================================
+   Check Tabs Nav
+   ========================================================================== */
+
+.check-tabs__nav { display: flex; border-top-left-radius: inherit; border-top-right-radius:  inherit; }
+.check-tabs__nav__item { width: 50%;
+  &:first-child { border-top-left-radius: inherit; }
+  &:last-child { border-top-right-radius: inherit; }
+}
+.check-tabs__nav__link { height: 7.3rem; display: flex; align-items: center; padding: 0 2rem; border-top-left-radius: inherit; border-top-right-radius: inherit; font-size: 1.2rem; font-weight: 800; line-height: 1.25;
+  .check-tabs__nav__item:first-child & { padding-left: 5rem; }
+
+  span { position: relative; display: inline-block;
+    &:before { content: ''; display: block; position: absolute; left: 0; top: 100%; width: 100%; height: 3px; background: @color-primary; transform: translateY(.2em); }
+  }
+}
+a.check-tabs__nav__link { background: #DFE2E8;
+  span:before { width: 0; }
+}
+div.check-tabs__nav__link { cursor: default; color: @color-primary; }
+
+@media @maxTablet {
+  .check-tabs__nav__link { height: 6.5rem; font-size: .9rem; padding: 1rem 1.5rem 0;
+    .check-tabs__nav__item:first-child & { padding-left: 3rem; }
+
+    span:before { height: 2px; }
+  }
+}
+
+@media @maxMobile {
+  .check-tabs__nav__link { height: 5rem; padding: 0 .5rem 0 1.2rem; font-size: .7rem;
+    .check-tabs__nav__item:first-child & { padding-left: 1.2rem; }
+  }
+}
+
+@media @maxMobileOld {
+  .check-tabs__nav__link { padding: 0 1.2rem; }
+}
+
+@media (hover: hover) {
+  a.check-tabs__nav__link { transition: color .3s;
+    span:before { transition: width .3s; }
+
+    &:hover { color: @color-primary;
+      span:before { width: 100%; }
+    }
+  }
+}
+
+/* ==========================================================================
+   Check Form
+   ========================================================================== */
+
+.check-form { }
+.check-form__title { font-size: .9rem; font-weight: 700; margin: 0 0 .5em; }
+.check-form__text { max-width: 23rem; margin: 0 0 1.75em; }
+.check-form__captcha { max-width: 17.5rem; margin: 1.5rem 0 0; }
+
+@media @maxTablet {
+  .check-form__title { font-size: .7rem; margin-bottom: .75em; }
+  .check-form__text { margin-bottom: 2.5em; }
+}
+
+@media @maxMobile {
+  .check-form__text { font-size: .7rem; }
+  .check-form__captcha { margin-top: 1.2rem; padding-bottom: 4.2rem; }
+
+  .check-form {
+    .form-row__button { position: absolute; left: 0; top: 9.7rem; }
+  }
+}
+
+@media @maxMobileOld {
+  .check-form__captcha {
+    .captcha-form__input { padding-left: .5rem; padding-right: .5rem; }
+  }
+}
+
+/* ==========================================================================
+   Check Result
+   ========================================================================== */
+
+.check-result { border-top: solid 1px @color-border; margin: 3rem 0 0; padding: 2.5rem 0 0; }
+.check-result__title { font-weight: 800; font-size: 1.2rem; line-height: 1.25; margin: 0 0 1.5em; }
+.check-result__report { margin-top: 2.5rem; }
+.check-result__nav-mobile { margin: 0 0 1.5rem; }
+
+@media @minMobile {
+  .check-result__nav-mobile { display: none; }
+}
+@media @maxTablet {
+  .check-result__title { font-size: .9rem; margin-bottom: 2em; }
+  .check-result__report { margin-top: 2rem; }
+}
+
+@media @maxMobile {
+  .check-result__title { font-size: 1rem; line-height: 1.5; margin-bottom: 1.5em; }
+}
+
+/* ==========================================================================
+   Check Result Tabs Nav
+   ========================================================================== */
+
+.check-result__tabs-nav { font-size: .8rem; line-height: 1.25; font-weight: 800; display: flex; justify-content: space-between; margin: 0 0 2em;
+  a { color: @color-text;
+    &.is-current { pointer-events: none; color: @color-primary; border-bottom: solid 2px @color-primary; }
+  }
+}
+
+@media @maxTablet {
+  .check-result__tabs-nav { font-size: .7rem; margin-bottom: 3em; }
+}
+
+@media @maxMobile {
+  .check-result__tabs-nav { display: none; }
+}
+
+@media (hover: hover) {
+  .check-result__tabs-nav a:hover { color: @color-primary; }
+}
+
+/* ==========================================================================
+   Check Result Rows
+   ========================================================================== */
+
+.check-result-row { padding: .75rem 0;
+  &:first-child { padding-top: 0; }
+  &:not(:first-child) { border-top: solid 1px @color-border; }
+}
+.check-result-row__label { font-size: .7rem; line-height: 1.8; font-weight: 500; margin: 0 0 .25em; }
+.check-result-row__value { font-size: .8rem; font-weight: 800; line-height: 1.5;
+  + .check-result-row__label { margin-top: 1em; }
+}
+
+@media @maxTablet {
+  .check-result-row__label { font-size: .65rem; }
+  .check-result-row__value { font-size: .7rem; }
+}
+
+@media @maxMobile {
+  .check-result-row__label { font-size: .7rem; }
+}
+
+/* ==========================================================================
+   Check Result Preview
+   ========================================================================== */
+
+.check-result-preview { border: solid 1px @color-border; margin: .5rem 0; }

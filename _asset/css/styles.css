@@ -1314,12 +1314,24 @@ div.form-error {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .form-row__field {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin: 0 1.5rem 0 0;
+  margin: 0 1rem 0 0;
+}
+@media (max-width: 767px) {
+  .form-row {
+    display: block;
+  }
+  .form-row__field {
+    margin: 0 0 1.2rem;
+  }
+  .form-row__button {
+    width: 100%;
+  }
 }
 /* ==========================================================================
    Dropzone
@@ -5465,14 +5477,16 @@ hr {
 .side-nav__list li:not(:last-child) {
   margin-bottom: 1em;
 }
-.side-nav__list__current {
+.side-nav__list__current,
+.side-nav__list .is-current {
   font-weight: 800;
   color: #153270;
   display: block;
   position: relative;
   padding: 0 0 0 0.75rem;
 }
-.side-nav__list__current:before {
+.side-nav__list__current:before,
+.side-nav__list .is-current:before {
   content: '';
   display: block;
   width: 1.1rem;
@@ -7445,57 +7459,337 @@ hr {
   }
 }
 /* ==========================================================================
-   Check Organisation
+   Page Check
    ========================================================================== */
-.check-org__text {
-  margin: 0 0 2rem;
+.page-check__description {
+  margin: 0 0 5rem 17.5rem;
+  max-width: 50vw;
+}
+.page-check__content {
+  margin: 0 8rem 10rem 12.5rem;
+}
+@media (max-width: 1239px) {
+  .page-check__description {
+    margin: -1rem 0 2.5rem;
+    max-width: none;
+  }
+  .page-check__content {
+    margin: 0 0 7rem;
+  }
+}
+@media (max-width: 767px) {
+  .page-check__content {
+    margin: 0 -1.2rem;
+  }
 }
 /* ==========================================================================
-   Check Organisation Form
+   Check Tabs
    ========================================================================== */
-.form-check-org__captcha {
-  width: 17rem;
+.check-tabs {
+  background: #fff;
+  border-radius: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.check-tabs__body {
+  padding: 2.5rem 5rem 3.5rem;
+}
+@media (max-width: 1239px) {
+  .check-tabs {
+    border-radius: 2rem;
+  }
+  .check-tabs__body {
+    padding: 1.5rem 3rem 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .check-tabs {
+    border-radius: 0;
+  }
+  .check-tabs__body {
+    padding: 2.5rem 1.2rem 5rem;
+  }
+}
+/* ==========================================================================
+   Check Tabs Nav
+   ========================================================================== */
+.check-tabs__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.check-tabs__nav__item {
+  width: 50%;
+}
+.check-tabs__nav__item:first-child {
+  border-top-left-radius: inherit;
+}
+.check-tabs__nav__item:last-child {
+  border-top-right-radius: inherit;
+}
+.check-tabs__nav__link {
+  height: 7.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+.check-tabs__nav__item:first-child .check-tabs__nav__link {
+  padding-left: 5rem;
+}
+.check-tabs__nav__link span {
+  position: relative;
+  display: inline-block;
+}
+.check-tabs__nav__link span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 3px;
+  background: #153270;
+  -webkit-transform: translateY(0.2em);
+      -ms-transform: translateY(0.2em);
+          transform: translateY(0.2em);
+}
+a.check-tabs__nav__link {
+  background: #DFE2E8;
+}
+a.check-tabs__nav__link span:before {
+  width: 0;
+}
+div.check-tabs__nav__link {
+  cursor: default;
+  color: #153270;
+}
+@media (max-width: 1239px) {
+  .check-tabs__nav__link {
+    height: 6.5rem;
+    font-size: 0.9rem;
+    padding: 1rem 1.5rem 0;
+  }
+  .check-tabs__nav__item:first-child .check-tabs__nav__link {
+    padding-left: 3rem;
+  }
+  .check-tabs__nav__link span:before {
+    height: 2px;
+  }
+}
+@media (max-width: 767px) {
+  .check-tabs__nav__link {
+    height: 5rem;
+    padding: 0 0.5rem 0 1.2rem;
+    font-size: 0.7rem;
+  }
+  .check-tabs__nav__item:first-child .check-tabs__nav__link {
+    padding-left: 1.2rem;
+  }
+}
+@media (max-width: 370px) {
+  .check-tabs__nav__link {
+    padding: 0 1.2rem;
+  }
+}
+@media (hover: hover) {
+  a.check-tabs__nav__link {
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+  }
+  a.check-tabs__nav__link span:before {
+    -webkit-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+  }
+  a.check-tabs__nav__link:hover {
+    color: #153270;
+  }
+  a.check-tabs__nav__link:hover span:before {
+    width: 100%;
+  }
+}
+/* ==========================================================================
+   Check Form
+   ========================================================================== */
+.check-form__title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0 0 0.5em;
+}
+.check-form__text {
+  max-width: 23rem;
+  margin: 0 0 1.75em;
+}
+.check-form__captcha {
+  max-width: 17.5rem;
   margin: 1.5rem 0 0;
 }
+@media (max-width: 1239px) {
+  .check-form__title {
+    font-size: 0.7rem;
+    margin-bottom: 0.75em;
+  }
+  .check-form__text {
+    margin-bottom: 2.5em;
+  }
+}
+@media (max-width: 767px) {
+  .check-form__text {
+    font-size: 0.7rem;
+  }
+  .check-form__captcha {
+    margin-top: 1.2rem;
+    padding-bottom: 4.2rem;
+  }
+  .check-form .form-row__button {
+    position: absolute;
+    left: 0;
+    top: 9.7rem;
+  }
+}
+@media (max-width: 370px) {
+  .check-form__captcha .captcha-form__input {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
 /* ==========================================================================
-   Check Organisation Result
+   Check Result
    ========================================================================== */
-.check-org-result {
+.check-result {
+  border-top: solid 1px rgba(0, 0, 0, 0.15);
+  margin: 3rem 0 0;
+  padding: 2.5rem 0 0;
+}
+.check-result__title {
+  font-weight: 800;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  margin: 0 0 1.5em;
+}
+.check-result__report {
+  margin-top: 2.5rem;
+}
+.check-result__nav-mobile {
+  margin: 0 0 1.5rem;
+}
+@media (min-width: 768px) {
+  .check-result__nav-mobile {
+    display: none;
+  }
+}
+@media (max-width: 1239px) {
+  .check-result__title {
+    font-size: 0.9rem;
+    margin-bottom: 2em;
+  }
+  .check-result__report {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .check-result__title {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+  }
+}
+/* ==========================================================================
+   Check Result Tabs Nav
+   ========================================================================== */
+.check-result__tabs-nav {
+  font-size: 0.8rem;
+  line-height: 1.25;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 2em;
+}
+.check-result__tabs-nav a {
+  color: #071228;
+}
+.check-result__tabs-nav a.is-current {
+  pointer-events: none;
+  color: #153270;
+  border-bottom: solid 2px #153270;
+}
+@media (max-width: 1239px) {
+  .check-result__tabs-nav {
+    font-size: 0.7rem;
+    margin-bottom: 3em;
+  }
+}
+@media (max-width: 767px) {
+  .check-result__tabs-nav {
+    display: none;
+  }
+}
+@media (hover: hover) {
+  .check-result__tabs-nav a:hover {
+    color: #153270;
+  }
+}
+/* ==========================================================================
+   Check Result Rows
+   ========================================================================== */
+.check-result-row {
+  padding: 0.75rem 0;
+}
+.check-result-row:first-child {
   padding-top: 0;
 }
-.check-org-result__side {
-  padding-top: 4.5rem;
-}
-.check-org-result__head {
-  min-height: 4.5rem;
-  padding: 0 0 1.5rem;
-  color: #273045;
-}
-.check-org-result__item {
-  padding: 1rem 0;
+.check-result-row:not(:first-child) {
   border-top: solid 1px rgba(0, 0, 0, 0.15);
 }
-.check-org-result__item:first-child {
-  padding-top: 0;
-  border-top: none;
-}
-.check-org-result__label {
-  font-size: 0.8rem;
-  line-height: 1.5;
+.check-result-row__label {
+  font-size: 0.7rem;
+  line-height: 1.8;
   font-weight: 500;
   margin: 0 0 0.25em;
 }
-.check-org-result__value {
-  font-size: 0.9rem;
-  line-height: 1.5;
+.check-result-row__value {
+  font-size: 0.8rem;
   font-weight: 800;
+  line-height: 1.5;
 }
-.check-org-result__preview {
-  display: block;
-  margin: 0.5rem 0 1rem;
+.check-result-row__value + .check-result-row__label {
+  margin-top: 1em;
 }
-.check-org-result__button {
-  margin-top: 2.5rem;
+@media (max-width: 1239px) {
+  .check-result-row__label {
+    font-size: 0.65rem;
+  }
+  .check-result-row__value {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 767px) {
+  .check-result-row__label {
+    font-size: 0.7rem;
+  }
+}
+/* ==========================================================================
+   Check Result Preview
+   ========================================================================== */
+.check-result-preview {
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  margin: 0.5rem 0;
 }
 /* ==========================================================================
    Landing Head

@@ -316,11 +316,11 @@ $(document).ready(function(){
     });
 
     function changeFaqTab(tabName, parent) {
-        const currentLink = parent.querySelector('[data-tabs-link].side-nav__list__current');
-        currentLink.classList.remove('side-nav__list__current');
+        const currentLink = parent.querySelector('[data-tabs-link].is-current');
+        currentLink.classList.remove('is-current');
 
         const newLink = parent.querySelector('[data-tabs-link="' + tabName + '"]');
-        newLink.classList.add('side-nav__list__current');
+        newLink.classList.add('is-current');
 
         const currentCountent = parent.querySelector('.tabs__content.is-opened');
         currentCountent.classList.remove('is-opened');
