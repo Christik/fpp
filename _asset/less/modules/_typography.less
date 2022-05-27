@@ -52,25 +52,42 @@ a { color: @color-link; text-decoration: none; cursor: pointer; outline: none !i
    Links Border
    ========================================================================== */
 
-.text-link-border { position: relative;
-  &:before, &:after { content: ''; height: 1px; position: absolute; bottom: -.1em; left: 0; width: 100%; background-color: @color-text; }
-  &:before { transform: scaleX(0); transform-origin: bottom left; transition: transform .3s .3s ease-out; }
-  &:after { transform: scaleX(1); transform-origin: bottom left; transition: transform .3s ease-out; }
-
+.text-link-border {
   &_black { color: @color-text; }
-  &_white { color: #fff;
-    &:before, &:after { background-color: fade(#fff, 80%); }
+  &_white { color: #fff; }
+}
+
+@media @minTablet {
+  .text-link-border { position: relative;
+    &:before, &:after { content: ''; height: 1px; position: absolute; bottom: -.1em; left: 0; width: 100%; background-color: @color-text; }
+    &:before { transform: scaleX(0); transform-origin: bottom left; transition: transform .3s .3s ease-out; }
+    &:after { transform: scaleX(1); transform-origin: bottom left; transition: transform .3s ease-out; }
+
+    &_white {
+      &:before, &:after { background-color: fade(#fff, 80%); }
+    }
+  }
+
+  @media (hover: hover) {
+    .text-link-border {
+      &:hover { color: #333;
+        &:before { transform: scaleX(1); transform-origin: bottom left; }
+        &:after { transform: scaleX(0); transform-origin: bottom right; }
+      }
+
+      &_white:hover { color: fade(#fff, 80%); }
+    }
   }
 }
 
-@media (hover: hover) {
+@media @maxTablet {
   .text-link-border {
-    &:hover { color: #333;
-      &:before { transform: scaleX(1); transform-origin: bottom left; }
-      &:after { transform: scaleX(0); transform-origin: bottom right; }
-    }
+    &_black { }
+    &_white { border-bottom: solid 1px fade(#fff, 70%); }
 
-    &_white:hover { color: fade(#fff, 80%); }
+    @media (hover: hover) {
+      &:hover { border-bottom-color: transparent !important; }
+    }
   }
 }
 

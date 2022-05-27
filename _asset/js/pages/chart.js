@@ -183,10 +183,25 @@ const config = {
  Render
  ========================================================================== */
 
-const myChart = new Chart(
-	document.getElementById('chart'),
-	config
-);
+let myChart;
+
+initialChart();
+
+function initialChart() {
+	myChart = new Chart(
+		document.getElementById('chart'),
+		config
+	);
+}
+
+function refreshChart() {
+	myChart.destroy();
+	initialChart();
+}
+
+const refreshChartThrottle = refreshChart.throttle(1000);
+
+window.addEventListener('resize', refreshChartThrottle);
 
 /* ==========================================================================
  Response

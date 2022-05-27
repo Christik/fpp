@@ -80,6 +80,43 @@ $(document).ready(function(){
     }
 
     /* ==========================================================================
+     Enable/disable scroll page
+     ========================================================================== */
+
+    function getScrollbarWidth() {
+
+        // Creating invisible container
+        const outer = document.createElement('div');
+        outer.style.visibility = 'hidden';
+        outer.style.overflow = 'scroll'; // forcing scrollbar to appear
+        outer.style.msOverflowStyle = 'scrollbar'; // needed for WinJS apps
+        document.body.appendChild(outer);
+
+        // Creating inner element and placing it in the container
+        const inner = document.createElement('div');
+        outer.appendChild(inner);
+
+        // Calculating difference between container's full width and the child width
+        const scrollbarWidth = (outer.offsetWidth - inner.offsetWidth);
+
+        // Removing temporary elements from the DOM
+        outer.parentNode.removeChild(outer);
+
+        return scrollbarWidth;
+
+    }
+
+    function disableScroll() {
+        document.body.style.overflow = 'hidden';
+        document.body.style.marginRight = getScrollbarWidth() + 'px';
+    }
+
+    function enableScroll() {
+        document.body.style.overflow = 'auto';
+        document.body.style.marginRight = 0;
+    }
+
+    /* ==========================================================================
      Burger Menu
      ========================================================================== */
 
@@ -95,12 +132,14 @@ $(document).ready(function(){
 
     header.burger.addEventListener('click', function(){
 
-        if (header.parent.classList.contains(header.classFixed)) {
-            if (!header.burger.classList.contains(header.classActive)) {
-                setMenuCollapseHeight();
-            } else {
-                unsetMenuCollapseHeight();
-            }
+        if (!header.burger.classList.contains(header.classActive)) {
+            header.parent.classList.add('is-opened');
+            disableScroll();
+            setMenuCollapseHeight();
+        } else {
+            header.parent.classList.remove('is-opened');
+            enableScroll();
+            unsetMenuCollapseHeight();
         }
 
         header.burger.classList.toggle(header.classActive);
@@ -238,15 +277,17 @@ $(document).ready(function(){
 
         // custom panel max-width
         function fixWidthSelectDocs() {
-            if (window.matchMedia(breakpoints.minTablet).matches) {
-                const filter = document.querySelector('.filter-fields_docs');
+            const filter = document.querySelector('.filter-fields_docs');
 
-                if (filter) {
-                    const filterWidth = filter.offsetWidth;
-                    const selectType = filter.querySelector('.filter-field_type');
-                    const selectPanel = filter.querySelector('.custom-select-panel');
+            if (filter) {
+                const filterWidth = filter.offsetWidth;
+                const selectType = filter.querySelector('.filter-field_type');
+                const selectPanel = filter.querySelector('.custom-select-panel');
 
-                    selectPanel.style.width = (filterWidth - selectType.offsetLeft) + 'px';
+                if (window.matchMedia(breakpoints.minTablet).matches) {
+                    selectPanel.style.width = (filterWidth - selectType.offsetLeft + 40) + 'px';
+                } else {
+                    selectPanel.style.width = '100%';
                 }
             }
         }
