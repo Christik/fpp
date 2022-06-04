@@ -82,16 +82,22 @@
     &:after { transform: translate(-50%, 0) rotate(-45deg); }
   }
 }
-.button-header__search { width: .9rem; height: .9rem; fill: none; pointer-events: none;
+.button-header__search,
+.button-header__eye { fill: none; pointer-events: none;
   path { stroke: @color-text; }
 }
+.button-header__search { width: .9rem; height: .9rem; }
+.button-header__eye { width: 1.2rem; height: 1.2rem; }
 
 @media (hover: hover) {
   .button-header:hover {
     .button-header__burger { background-color: @color-secondary;
       &:before, &:after { background-color: @color-secondary; }
     }
-    .button-header__search path { stroke: @color-secondary; }
+    .button-header__search,
+    .button-header__eye {
+      path { stroke: @color-secondary; }
+    }
   }
 }
 
@@ -100,7 +106,9 @@
    ========================================================================== */
 
 .page-header__buttons { display: flex; align-items: center; }
-.page-header__buttons__button { margin-left: 2.5rem; }
+.page-header__buttons__button { margin-left: 2.5rem;
+  &:first-child { margin-left: 1.5rem; }
+}
 
 @media @maxMobile {
   .page-header__buttons { margin-bottom: auto; }
@@ -152,9 +160,6 @@
   }
 }
 
-
-
-
 /* ==========================================================================
    Search Opened
    ========================================================================== */
@@ -172,3 +177,13 @@
     }
   }
 }
+
+/* ==========================================================================
+   Bvi Button
+   ========================================================================== */
+
+.bvi-button { display: flex; align-items: center; border: none; background: none; text-align: left; white-space: nowrap; }
+.bvi-button__icon { width: 1.2rem; height: 1.2rem; min-width: 1.2rem; margin: 0 .7rem 0 0; fill: none; pointer-events: none;
+  path { stroke: @color-text; }
+}
+.bvi-button__text { pointer-events: none; font-weight: 400; font-size: .65rem; }

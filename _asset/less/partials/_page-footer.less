@@ -5,13 +5,13 @@
 .page-footer { margin-top: auto; background: @color-primary; color: #fff; padding: 3rem 0 2.5rem; }
 .page-footer__top,
 .page-footer__bottom { display: flex; }
-.page-footer__bottom { margin: 3rem 0 0; align-items: center; }
+.page-footer__bottom { margin: 1.5rem 0 0; align-items: center; }
 .page-footer__left { width: 18rem; min-width: 18rem; display: flex; flex-direction: column; padding: 0 5rem 0 0; }
 .page-footer__right { flex-grow: 1; }
 
 @media @maxTablet {
   .page-footer__left { width: 12rem; min-width: 12rem; padding-right: 2rem; }
-  .page-footer__bottom {
+  .page-footer__bottom { justify-content: flex-end; margin-top: 0; transform: translateY(-1.2rem);
     .page-footer__left { width: auto; min-width: auto; padding-right: 0; }
   }
 }
@@ -21,7 +21,7 @@
   .page-footer__top,
   .page-footer__bottom { display: block; }
   .page-footer__top { padding-top: 2rem; }
-  .page-footer__bottom { margin-top: 1rem; }
+  .page-footer__bottom { transform: none; }
   .page-footer__left { width: auto; min-width: auto; padding-right: 0; }
   .page-footer__bottom { border-top: solid 1px fade(#fff, 30%); margin-left: -1.2rem; margin-right: -1.2rem; padding-left: 1.2rem; padding-right: 1.2rem; }
 }
@@ -42,6 +42,27 @@
 }
 
 /* ==========================================================================
+   Page Footer Bvi
+   ========================================================================== */
+
+.page-footer__bvi {
+  .bvi-button { color: #fff; }
+  .bvi-button__icon path { stroke: #fff; }
+}
+
+@media @maxMobile {
+  .page-footer__bvi { border-top: solid 1px fade(#fff, 30%);
+    .bvi-button { height: 3.2rem; }
+  }
+}
+
+@media (hover: hover) {
+  .page-footer__bvi {
+    .bvi-button:hover { opacity: .7; }
+  }
+}
+
+/* ==========================================================================
    Page Footer Contacts
    ========================================================================== */
 
@@ -49,13 +70,10 @@
   .site-phone { color: inherit; }
 }
 .page-footer__mail,
-.page-footer__bvi,
 .page-footer__address { font-family: @font-addl; font-size: .75rem; line-height: 1.5; }
-.page-footer__mail,
-.page-footer__bvi { margin: 1em 0;
+.page-footer__mail { margin: 1em 0;
   a { /*color: #fff; border-bottom:  solid 1px fade(#fff, 50%);*/ }
 }
-.page-footer__bvi { margin-bottom: 0; }
 
 @media @maxTablet {
   .page-footer__phone {
@@ -67,7 +85,34 @@
    Page Footer Mobile Contacts
    ========================================================================== */
 
-.page-footer__contacts-mobile { padding: 2rem 0 1rem; border-top: solid 1px fade(#fff, 30%); }
+.page-footer__contacts-mobile { padding: 2rem 0 0; border-top: solid 1px fade(#fff, 30%); }
+
+/* ==========================================================================
+   Page Footer Social
+   ========================================================================== */
+
+.social { display: flex; align-items: center; flex-wrap: wrap; }
+.social__link { width: 1rem; height: 1rem;
+  path { fill: #fff; }
+
+  &:not(:first-child) { margin-left: 1rem; }
+}
+
+.page-footer__social { margin: 1.2rem 0 1.5rem; }
+
+@media @maxTablet {
+  .page-footer__social { margin: .75rem 0 1.75rem; }
+}
+
+@media @maxMobile {
+  .social__link { width: 1.3rem; height: 1.3rem;
+    &:not(:first-child) { margin-left: 1.5rem; }
+  }
+}
+
+@media (hover: hover) {
+  .social__link:hover { opacity: .7; }
+}
 
 /* ==========================================================================
    Page Footer Nav
@@ -90,15 +135,15 @@
 
 @media @maxTablet {
   .page-footer__nav { flex-wrap: wrap;
-    .page-group-nav__list { font-size: .6rem; }
-    .site-links__group { width: 40%;
-      &:nth-child(1) { width: 60%; }
+    .page-group-nav__list { font-size: .65rem; }
+    .site-links__group { width: 45%;
+      &:nth-child(1) { width: 55%; }
     }
   }
   .page-footer__nav__col {
-    &:nth-child(1) { width: 60%; padding-right: .5rem; }
-    &:nth-child(2) { width: 40%; padding-right: 0; }
-    &:nth-child(3) { width: 100%; padding: 2rem 0 0; margin: 2rem 0 0; border-left: none; border-top: solid 1px fade(#fff, 10%); }
+    &:nth-child(1) { width: 55%; padding-right: .5rem; }
+    &:nth-child(2) { width: 45%; padding-right: 0; }
+    &:nth-child(3) { width: 100%; padding: 2.5rem 0 0; margin: 2.5rem 0 0; border-left: none; border-top: solid 1px fade(#fff, 10%); }
   }
 }
 
@@ -142,7 +187,7 @@
     &:nth-child(2) {
       .page-group-nav__list { transform: translateX(-50%); }
     }
-    &:nth-child(3) { padding-left: 1.2rem; padding-right: 1.2rem; padding-bottom: 1.5rem; border-top: none; margin-top: 0; }
+    &:nth-child(3) { padding-left: 1.2rem; padding-right: 1.2rem; padding-bottom: 2rem; padding-top: 1.5rem; border-top: none; margin-top: 0; }
   }
 }
 
@@ -173,13 +218,13 @@
 }
 
 @media @maxTablet {
-  .page-footer__partners { margin: 2rem 0 0;
+  .page-footer__partners { margin: 1.75rem 0 0;
     li:not(:first-child) { margin-top: .75rem; }
   }
 }
 
 @media @maxMobile {
-  .page-footer__partners { border-top: solid 1px fade(#fff, 30%); padding: 2rem 0 .5rem; margin-top: 1.5rem; display: flex; flex-wrap: wrap; align-items: center; margin-right: -1rem;
+  .page-footer__partners { border-top: solid 1px fade(#fff, 30%); padding: 1.5rem 0 1rem; margin-top: 0; display: flex; flex-wrap: wrap; align-items: center; margin-right: 0;
     li { margin: 0 1rem .75rem 0 !important; }
   }
 }
