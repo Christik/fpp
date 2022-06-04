@@ -7909,6 +7909,11 @@ div.check-tabs__nav__link {
   top: -12rem;
   z-index: 4;
 }
+@media (max-width: 1400px) and (min-width: 1240px) {
+  .landing-head__illustrations {
+    width: 38.5rem;
+  }
+}
 @media (max-width: 1239px) {
   .landing-head__sub-title {
     font-size: 0.9rem;
@@ -8024,6 +8029,7 @@ div.check-tabs__nav__link {
 .landing-peter1 {
   position: relative;
   margin-right: 5rem;
+  z-index: -1;
 }
 .landing-peter1__photo {
   pointer-events: none;
@@ -8088,6 +8094,32 @@ div.check-tabs__nav__link {
 @media (max-width: 1239px) {
   .landing-period {
     font-size: 1.3rem;
+  }
+}
+/* ==========================================================================
+   Right Side
+   ========================================================================== */
+@media (max-width: 1440px) and (min-width: 1240px) {
+  .page-inside__side-note_right {
+    height: auto;
+  }
+  .page-inside__side-note_right .page-inside__side-note__right {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 /* ==========================================================================
@@ -8246,6 +8278,10 @@ div.check-tabs__nav__link {
   }
   .landing-pic-grid_initials .landing-pic {
     width: 7.4rem;
+  }
+  .landing-pic-grid_initials-new {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .landing-pic-grid_initials-new .landing-pic {
     width: 11rem;
