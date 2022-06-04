@@ -3185,6 +3185,12 @@ hr {
 .page-content__pagination {
   margin: 4rem 0 0;
 }
+@media (min-width: 1240px) {
+  .page-content__title {
+    padding-right: 15vw;
+    line-height: 1;
+  }
+}
 @media (max-width: 1239px) {
   .page-content__top-panel {
     margin: 2.5rem 0;
