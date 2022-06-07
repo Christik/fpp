@@ -3545,6 +3545,10 @@ hr {
   padding: 0 1rem;
   position: relative;
   white-space: nowrap;
+  max-width: 100%;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
 }
 .crumbs li:first-child {
   font-weight: 800;
@@ -3575,6 +3579,11 @@ hr {
 .crumbs_white .text-link {
   color: #fff;
 }
+@media (min-width: 768px) {
+  .crumbs li {
+    max-width: 60%;
+  }
+}
 @media (hover: hover) {
   .crumbs_white .text-link:hover {
     opacity: 0.7;
@@ -3597,6 +3606,7 @@ hr {
 }
 .crumbs-panel__left {
   margin: 0 2rem 0 0;
+  min-width: 0;
 }
 @media (max-width: 767px) {
   .crumbs-panel {
