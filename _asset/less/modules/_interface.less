@@ -35,3 +35,19 @@ hr { border: none; border-top: solid 1px @color-border; margin: 3.5rem 0; }
 @media @maxTablet {
   hr { margin: 2rem 0; }
 }
+
+/* ==========================================================================
+   Button Scroll Up
+   ========================================================================== */
+
+.button-scroll-up { position: fixed; bottom: 2rem; right: 2rem; z-index: 3; background: @color-bg; padding: .5rem 1rem; border-radius: .5rem; opacity: 0; pointer-events: none; transition: opacity .2s;
+  &.is-shown { opacity: 1; pointer-events: auto; }
+}
+
+@media @maxTablet {
+  .button-scroll-up { right: 1rem; bottom: 1rem; }
+}
+
+@media @maxMobile {
+  .button-scroll-up { right: .2rem; }
+}

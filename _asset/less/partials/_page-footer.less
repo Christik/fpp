@@ -219,13 +219,14 @@
 
 @media @maxTablet {
   .page-footer__partners { margin: 1.75rem 0 0;
-    li:not(:first-child) { margin-top: .75rem; }
+    li:not(:first-child),
+    a:not(:first-child) { margin-top: .75rem; }
   }
 }
 
 @media @maxMobile {
   .page-footer__partners { border-top: solid 1px fade(#fff, 30%); padding: 1.5rem 0 1rem; margin-top: 0; display: flex; flex-wrap: wrap; align-items: center; margin-right: 0;
-    li { margin: 0 1rem .75rem 0 !important; }
+    li, a { margin: 0 1rem .75rem 0 !important; }
   }
 }
 
@@ -233,7 +234,7 @@
    Gos Partner
    ========================================================================== */
 
-.gos-partner { display: flex; align-items: center; }
+.gos-partner { display: flex; align-items: center; color: #fff; }
 .gos-partner__logo { width: 2rem; min-width: 2rem; height: 2rem; }
 .gos-partner__text { font-size: .55rem; line-height: normal; font-weight: 700; margin: 0 0 0 1em; }
 
@@ -243,4 +244,8 @@
 
 @media @maxMobile {
   .gos-partner__text { font-size: .6rem; }
+}
+
+@media (hover: hover) {
+  a.gos-partner:hover { opacity: .75; }
 }

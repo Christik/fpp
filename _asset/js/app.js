@@ -200,11 +200,13 @@ $(document).ready(function(){
     function setMenuCollapseHeight() {
         if (!document.body.classList.contains('bvi-active')) {
             header.menuCollapse.style.maxHeight = window.innerHeight - header.topHeader.offsetHeight + 'px';
+            header.menuCollapse.style.minHeight = window.innerHeight - header.topHeader.offsetHeight + 'px';
         }
     }
 
     function unsetMenuCollapseHeight() {
         header.menuCollapse.style.maxHeight = null;
+        header.menuCollapse.style.minHeight = null;
     }
 
     //setMenuCollapseHeight();
@@ -438,6 +440,23 @@ $(document).ready(function(){
 
     });
 
+    /* ==========================================================================
+     Button Scroll Up
+     ========================================================================== */
+
+    const buttonScrollUp = $('.button-scroll-up');
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > $(window).height()) {
+            buttonScrollUp.addClass('is-shown');
+        } else {
+            buttonScrollUp.removeClass('is-shown');
+        }
+    });
+
+    buttonScrollUp.click(function() {
+        $("html, body").animate({scrollTop: 0}, 1000);
+    });
 
     /* ======================================================================== */
 });

@@ -82,7 +82,9 @@
 
 .button-more { border: none; background: none; display: flex; align-items: center; color: @color-text; white-space: nowrap; cursor: pointer; }
 .button-more__text { font-size: .8rem; font-weight: 500; }
-.button-more__icon { margin: 0 0 0 1rem; }
+.button-more__icon { margin: 0 0 0 1rem;
+  &_up { transform: rotate(-90deg); }
+}
 
 @media @maxTablet {
   .button-more__text { font-size: .6rem; }

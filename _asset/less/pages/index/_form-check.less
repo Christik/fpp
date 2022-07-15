@@ -3,13 +3,17 @@
    ========================================================================== */
 
 .form-check { background: #f1f1f1; position: relative; overflow: hidden; }
-.form-check__body { width: 200%; display: flex; transform: translateX(0); transition: transform .3s;
+.form-check__body { width: 200%; display: flex; transform: translateX(0);
   .form-check.is-slide & { transform: translateX(-50%); }
 }
 .form-check__form { width: 100%; padding: 1.5rem 3rem 3rem; display: flex; flex-direction: column; }
 
 @media @maxTablet {
   .form-check__form { padding: 1.2rem 2rem 2rem; }
+}
+
+@media @minMobile {
+  .form-check__body { transition: transform .3s; }
 }
 
 @media @maxMobile {
@@ -32,9 +36,8 @@
   &:first-child { padding-left: 3rem; }
 
   span { display: block; position: relative;
-    &:before { content: ''; display: block; position: absolute; left: 0; top: 100%; height: 2px; width: 0; background-color: @color-primary; transform: translateY(.25rem); transition: width .3s; }
   }
-  &.is-active { background-color: #f1f1f1; color: @color-primary; pointer-events: none;
+  &.is-active { background-color: #f1f1f1; color: @color-primary;
     span:before { width: 100%; }
   }
 }
@@ -52,9 +55,33 @@
   }
 }
 
+@media @minMobile {
+  .form-check-nav__item {
+    span {
+      &:before { content: ''; display: block; position: absolute; left: 0; top: 100%; height: 2px; width: 0; background-color: @color-primary; transform: translateY(.25rem); transition: width .3s; }
+    }
+    &.is-active { pointer-events: none; }
+  }
+}
+
+@media @maxMobile {
+  .form-check-nav__item { padding-left: 1.2rem !important; padding-right: 1.2rem;
+    &:first-child { border-right: solid 1px fade(#000, 10%); }
+
+    span {
+      &:after { content: ''; display: block; width: .6rem; height: 1rem; position: absolute; left: 100%; bottom: -.15rem; margin-left: .5rem; background: url('@{path-images}/select-arrow.svg') no-repeat 50% 50%; background-size: contain; }
+    }
+
+    &.is-active span:after { transform: scaleY(-1); }
+  }
+}
+
 @media @maxMobileOld {
   .form-check-nav__item { padding-left: 1.2rem; padding-right: 1.2rem;
-    &:first-child { padding-left: 1.2rem; }
+    &:first-child { padding-left: 1.2rem; width: 55%; }
+    &:last-child { width: 45%; }
+
+    span:after { margin-left: .2rem; width: .5rem; }
   }
 }
 

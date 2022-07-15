@@ -165,17 +165,27 @@ $(document).ready(function(){
 		}
 
 		firstLink.addEventListener('click', function (e) {
-			secondLink.classList.remove(classNavActive);
-			firstLink.classList.add(classNavActive);
-			formCheck.classList.remove(classSlideActive);
-			bodyShow();
+			if (firstLink.classList.contains(classNavActive)) {
+				body.classList.remove('is-opened');
+				firstLink.classList.remove(classNavActive);
+			} else {
+				secondLink.classList.remove(classNavActive);
+				firstLink.classList.add(classNavActive);
+				formCheck.classList.remove(classSlideActive);
+				bodyShow();
+			}
 		});
 
 		secondLink.addEventListener('click', function (e) {
-			firstLink.classList.remove(classNavActive);
-			secondLink.classList.add(classNavActive);
-			formCheck.classList.add(classSlideActive);
-			bodyShow();
+			if (secondLink.classList.contains(classNavActive)) {
+				body.classList.remove('is-opened');
+				secondLink.classList.remove(classNavActive);
+			} else {
+				firstLink.classList.remove(classNavActive);
+				secondLink.classList.add(classNavActive);
+				formCheck.classList.add(classSlideActive);
+				bodyShow();
+			}
 		});
 
 		function bodyShow() {

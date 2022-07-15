@@ -3,10 +3,10 @@
    ========================================================================== */
 
 .crumbs { font-size: .7rem; line-height: 2;
-  li { display: inline-block; padding: 0 1rem; position: relative; white-space: nowrap; max-width: 100%; text-overflow: ellipsis; overflow: hidden;
+  li { display: inline-block; padding: 0 .8rem 0 1.2rem; position: relative; white-space: nowrap; max-width: 100%; text-overflow: ellipsis; overflow: hidden;
     &:first-child { font-weight: 800; padding-left: 0; }
     &:last-child { padding-right: 0; }
-    &:not(:first-child):before { content: ''; display: block; position: absolute; left: 0; top: 50%; transform: translate(-50%,-50%) rotate(45deg); width: 4px; height: 4px; background: @color-text; }
+    &:not(:first-child):before { content: ''; display: block; position: absolute; left: 4px; top: 50%; transform: translate(-50%,-50%) rotate(45deg); width: 4px; height: 4px; background: @color-text; }
   }
 
   &_white { color: #fff;
